@@ -6,7 +6,7 @@ To run, first make sure you have all needed dependencies.
 
 Start by creating a virtual environment
 ```bash	
-python3 -m venv venv
+python -m venv venv
 ```
 Then activate it
 ```bash
