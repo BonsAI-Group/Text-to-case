@@ -1,5 +1,7 @@
-import { Stack, TextInput, Title } from "@mantine/core";
+import { Stack, Switch, Title } from "@mantine/core";
 import { Form, FormAnswer } from "../../../generated";
+import FormField from "./FormField";
+import { useState } from "react";
 
 type FormComponentProps = {
   form: Form;
@@ -13,18 +15,15 @@ type FormComponentProps = {
  * @returns 
  */
 const FormComponent = ({ form, answers } : FormComponentProps) => {
+  const [showConfidence, setShowConfidence] = useState<boolean>(false);
   return (
     <Stack>
       <Title order={2}>{form.name}</Title>
+      <Switch label="Show confidence" checked={showConfidence} onChange={(event) => setShowConfidence(event.currentTarget.checked)} size="xs" />
       {
         form.fields.map((field) => {
           return (
-            <TextInput
-              key={field.fieldName}
-              label={field.fieldName}
-              value={answers? answers.answers[field.fieldName].answer : ""}
-              disabled={!answers}
-              />
+            <FormField key={field.fieldName} formItem={field} answer={answers ? answers.answers[field.fieldName] : undefined} showConfidence={showConfidence} />
           );
         })
       }
