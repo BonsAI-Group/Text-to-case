@@ -41,7 +41,7 @@ const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.El
             borderStyle: "solid"
           } : {},
           rightSection: {
-            paddingRight: "5px"
+            paddingRight: "12px"
           }
         }}
         rightSection={answer && showConfidence ? (
