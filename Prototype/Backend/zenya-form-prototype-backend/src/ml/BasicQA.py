@@ -1,7 +1,7 @@
 from transformers import pipeline
-from ..models.form import Form
-from ..models.form_item import FormItem
-from ..models.form_answer import FormAnswer
+from ..models.Form import Form
+from ..models.FormItem import FormItem
+from ..models.FormAnswer import FormAnswer
 
 """
 Basic QA class

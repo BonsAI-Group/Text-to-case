@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .dto.form_submit import FormSubmit
-from .models.form_answer import FormAnswer
-from .ml.basic_qa import BasicQA
+from .dto.FormSubmit import FormSubmit
+from .models.FormAnswer import FormAnswer
+from .ml.BasicQA import BasicQA
 
 app = FastAPI()
 

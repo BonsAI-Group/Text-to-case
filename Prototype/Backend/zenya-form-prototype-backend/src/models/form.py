@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from .form_item import FormItem
+from .FormItem import FormItem
 
 class Form(BaseModel):
     name: str # The name of the form
