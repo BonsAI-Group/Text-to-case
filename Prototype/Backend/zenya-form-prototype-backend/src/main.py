@@ -1,9 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from .service.FormService import FormService
+
 from .dto.FormSubmit import FormSubmit
 from .models.FormAnswer import FormAnswer
-from .ml.BasicQA import BasicQA
 
 app = FastAPI()
 
@@ -20,8 +21,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-qa = BasicQA()
-
 @app.post("/forms")
 async def forms(formSubmit: FormSubmit) -> FormAnswer:
-    return qa.answer_form(formSubmit.context, formSubmit.form)
+    return FormService().fillQuestionForm(formSubmit)

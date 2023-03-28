@@ -22,7 +22,7 @@ const FormComponent = ({ form, answers } : FormComponentProps) => {
             <TextInput
               key={field.fieldName}
               label={field.fieldName}
-              value={answers? answers.answers[field.fieldName] : ""}
+              value={answers? answers.answers[field.fieldName].answer : ""}
               disabled={!answers}
               />
           );

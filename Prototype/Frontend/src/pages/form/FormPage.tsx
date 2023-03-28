@@ -25,6 +25,7 @@ const FormPage = () => {
     } as FormSubmit).then((response) => {
       setSending(false);
       setAnswers(response.data);
+      setError(undefined);
     }).catch((error) => {
       setSending(false);
       setError(error.message);
@@ -49,7 +50,7 @@ const FormPage = () => {
               loading={sending} 
               color={error ? "red" : "blue"} 
               >
-              {error ? "Error:" + error : 
+              {error ? "Error: " + error : 
                 sending ? "Sending" :
                   "Submit"}
             </Button>
