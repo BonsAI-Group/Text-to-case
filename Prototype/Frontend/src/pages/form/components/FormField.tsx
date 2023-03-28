@@ -7,14 +7,25 @@ type FormFieldProps = {
   showConfidence?: boolean;
 };
 
+/** 
+ * Returns a border color based on the confidence of the answer.
+ * @param confidence The confidence of the answer. Should be between 0 and 1.
+ * @returns  A CSS hsl color string fading from red to orange to yellow to green.
+ */
 const borderColor = (confidence: number) : string => {
-  // Fade from red to orange to yellow to green
   const hue = confidence * 0.4 * 360;
   const saturation = 90;
   const lightness = 50;
   return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 };
 
+/**
+ * Component for displaying a single form field.
+ * @param formItem The form item to display
+ * @param answer The answer to the form item. If not provided, the field will be empty.
+ * @param showConfidence If true, the confidence of the answer will be displayed.
+ * @returns 
+ */
 const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.Element => {
   return (
     <Stack p={0} spacing={0}>
