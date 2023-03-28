@@ -16,7 +16,7 @@ class FieldService:
         # Generate question
         question = self.QuestionGenerator.generateQuestion(field.fieldName)
         # Answer question
-        answer, confidence = self.QuestionAnswerer.answerQuestion(field.fieldName, context)
+        answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
         # Return answer
         return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
     
