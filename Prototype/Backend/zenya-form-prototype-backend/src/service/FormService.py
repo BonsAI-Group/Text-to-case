@@ -1,6 +1,6 @@
-from ..dto.FormSubmit import FormSubmit
-from ..models.FormAnswer import FormAnswer
-from ..service.FieldService import FieldService
+from dto.FormSubmit import FormSubmit
+from models.FormAnswer import FormAnswer
+from service.FieldService import FieldService
 
 
 class FormService:

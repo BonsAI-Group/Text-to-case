@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## How to run
 
-To run the backend, you need to run the following command
+To run the backend, you need to run the following command **while in the 'src' folder**:
 ```bash
-uvicorn src.main:app --reload
+uvicorn main:app --reload
 ```

@@ -1,8 +1,8 @@
-from ..ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestionAnswerer
-from ..ml.IQuestionGenerator import IQuestionGenerator
-from ..ml.QuestionAnswerModel import QuestionAnswerModel
-from ..models.FieldAnswer import FieldAnswer
-from ..models.FormItem import FormItem
+from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestionAnswerer
+from ml.IQuestionGenerator import IQuestionGenerator
+from ml.QuestionAnswerModel import QuestionAnswerModel
+from models.FieldAnswer import FieldAnswer
+from models.FormItem import FormItem
 
 
 class FieldService:

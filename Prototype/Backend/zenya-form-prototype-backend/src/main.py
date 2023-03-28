@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .service.FormService import FormService
+from service.FormService import FormService
 
-from .dto.FormSubmit import FormSubmit
-from .models.FormAnswer import FormAnswer
+from dto.FormSubmit import FormSubmit
+from models.FormAnswer import FormAnswer
 
 app = FastAPI()
 
