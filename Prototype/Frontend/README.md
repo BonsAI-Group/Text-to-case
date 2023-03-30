@@ -9,6 +9,7 @@ To run the application, you need to have the following installed:
 - Java (JDK 11 or higher)
 
 Node can be installed from [here](https://nodejs.org/en/download).
+Java can be installed from [here](https://www.oracle.com/java/technologies/downloads/#java11-windows).
 
 Once Node is installed, you can install Yarn with:
 ```
