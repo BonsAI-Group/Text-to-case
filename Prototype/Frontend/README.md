@@ -4,8 +4,9 @@ This is a web application for the prototype of the Text-to-case project. It is c
 
 ## Prerequisites
 To run the application, you need to have the following installed:
-- Node.js
+- Node.js (v 18 or higher)
 - Yarn
+- Java (JDK 11 or higher)
 
 Node can be installed from [here](https://nodejs.org/en/download).
 
