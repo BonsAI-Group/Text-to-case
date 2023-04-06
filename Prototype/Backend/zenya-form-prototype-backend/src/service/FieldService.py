@@ -1,20 +1,22 @@
 from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
-from ml.QuestionAnswerModel import QuestionAnswerModel
+from ml.IQuestionAnswerer import IQuestionAnswerer
+from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
+
 
 
 class FieldService:
     """Service for handling fields."""
     def __init__(self):
-        self.QuestionGenerator: IQuestionGenerator = None # TODO: Implement question generator
-        self.QuestionAnswerer: QuestionAnswerModel = BertLargeSingleModelQuestionAnswerer()
+        self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
+        self.QuestionAnswerer: IQuestionAnswerer = BertLargeSingleModelQuestionAnswerer()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
         # Generate question
-        question = self.QuestionGenerator.generateQuestion(field.fieldName)
+        question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
         # Answer question
         answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
         # Return answer

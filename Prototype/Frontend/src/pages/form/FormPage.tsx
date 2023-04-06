@@ -1,7 +1,7 @@
 import { Button, Container, Group, Stack, Textarea, Title } from "@mantine/core"
 import { useState } from "react";
 import FormComponent from "./components/FormComponent";
-import LunchForm from "./components/LunchForm";
+import LunchLabels from "./components/LunchLabels";
 import { DefaultApi, FormAnswer, FormSubmit } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
 
@@ -21,7 +21,7 @@ const FormPage = () => {
     setSending(true);
     api.formsFormsPost({
       context: story,
-      form: LunchForm()
+      form: LunchLabels()
     } as FormSubmit).then((response) => {
       setSending(false);
       setAnswers(response.data);
@@ -55,7 +55,7 @@ const FormPage = () => {
                   "Submit"}
             </Button>
         </Stack>
-        <FormComponent form={LunchForm()} answers={answers} />
+        <FormComponent form={LunchLabels()} answers={answers} />
       </Group>
 
     </Container>
