@@ -16,10 +16,6 @@ const FormPage = () => {
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
-  useEffect(() => {
-
-  }, [answers, error]);
-
   const onSubmit = async () => {
     const api = new DefaultApi(ApiConfiguration);
     setSending(true);
