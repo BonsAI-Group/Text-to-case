@@ -8,38 +8,38 @@ class InterrogativeQuestionGenerator(IQuestionGenerator):
     
     """Retrieves best interrogative question generated."""
     def __init__(self) -> None:
-        self.interrogative_pronouns_list = ["What", "Who",  "Where", "When", "Why", "How many", "How much", "How", "Whose", "Which"]
+        self.interrogativePronounsList = ["What", "Who",  "Where", "When", "Why", "How many", "How much", "How", "Whose", "Which"]
         self.QuestionAnswerer: IQuestionAnswerer = BertLargeSingleModelQuestionAnswerer()
     
     def generateQuestion(self, context, fieldName: str) -> str:
         """Generate the best question given a field name."""
         # Generate questions
-        field_questions = self.generateInterrogativeQuestions(fieldName)
+        fieldQuestions = self.generateInterrogativeQuestions(fieldName)
         # Answer questions
-        question_answer_dataframe = self.answerListQuestion(fieldName, field_questions, context)
+        questionAnswerDataframe = self.answerListQuestion(fieldName, fieldQuestions, context)
         # Get best question based on occurence and score
-        best_question = self.getBestQuestion(question_answer_dataframe)
-        return best_question
+        bestQuestion = self.getBestQuestion(questionAnswerDataframe)
+        return bestQuestion
 
     def generateInterrogativeQuestions(self, fieldName: str) -> str:
         """Generates the interrogative questions given a field name."""
-        field_questions = []
-        for question_word in self.interrogative_pronouns_list:
-            question = question_word + " " + fieldName + "?"
-            field_questions.append(question)
-        return field_questions
+        fieldQuestions = []
+        for questionWord in self.interrogativePronounsList:
+            question = questionWord + " " + fieldName + "?"
+            fieldQuestions.append(question)
+        return fieldQuestions
     
-    def answerListQuestion (self, label, question_list, context):
+    def answerListQuestion (self, label, questionList, context):
         """Gives back a dataframe with the questions, answers, confidence scores."""
-        answer_list = []
-        score_list = []
-        for question in question_list:
+        answerList = []
+        scoreList = []
+        for question in questionList:
             answer, score = self.QuestionAnswerer.answerQuestion(question, context)
-            answer_list.append(answer)
+            answerList.append(answer)
             score  = round(score * 100, 2)
-            score_list.append(score)
+            scoreList.append(score)
         # creating dataframe
-        dictionary = {'label' : label, 'questions': question_list, 'answer': answer_list, 'score': score_list}
+        dictionary = {'label' : label, 'questions': questionList, 'answer': answerList, 'score': scoreList}
         dataframe = pd.DataFrame(data=dictionary)
 
         return dataframe
@@ -47,9 +47,9 @@ class InterrogativeQuestionGenerator(IQuestionGenerator):
     def getBestQuestion (self, dataframe):
         """Retrieves the best question based on the highest occurence and confidence score."""
         # retrieving the value with the most occurence
-        best_result = dataframe.answer.value_counts().index[0]
+        bestResult = dataframe.answer.value_counts().index[0]
         # Getting the index of the best value with the highest confident score
-        index_best_result = dataframe.loc[dataframe['answer'] == best_result]['score'].idxmax()
+        indexBestResult = dataframe.loc[dataframe['answer'] == bestResult]['score'].idxmax()
         # Retrieving the question of the best result with the highest occurence and confident score
-        best_question = dataframe.iloc[[index_best_result]]['questions'].values[0]
-        return best_question
+        bestQuestion = dataframe.iloc[[indexBestResult]]['questions'].values[0]
+        return bestQuestion
