@@ -1,8 +1,8 @@
 import { Button, Container, Group, Stack, Textarea, Title } from "@mantine/core"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LunchLabels from "./components/LunchLabels";
-import { DefaultApi, FormAnswer, FormSubmit } from "../../generated";
+import { DefaultApi, FieldSubmit, FormAnswer, FormSubmit } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
 
 /**
@@ -12,24 +12,35 @@ import { ApiConfiguration } from "../../api/ApiConfiguration";
 const FormPage = () => {
 
   const [story, setStory] = useState<string | undefined>(undefined);
-  const [answers, setAnswers] = useState<FormAnswer | undefined>(undefined);
+  const [answers, setAnswers] = useState<FormAnswer>({answers: {}} as FormAnswer);
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
-  const onSubmit = () => {
+  useEffect(() => {
+
+  }, [answers, error]);
+
+  const onSubmit = async () => {
     const api = new DefaultApi(ApiConfiguration);
     setSending(true);
-    api.formsFormsPost({
-      context: story,
-      form: LunchLabels()
-    } as FormSubmit).then((response) => {
-      setSending(false);
-      setAnswers(response.data);
-      setError(undefined);
-    }).catch((error) => {
-      setSending(false);
-      setError(error.message);
-    });
+
+    const form = LunchLabels();
+    for (const field of form.fields) {
+      await api.fieldFieldPost({
+        context: story,
+        field: field
+      } as FieldSubmit).then((response) => {
+        const newAnswers = {
+          ...answers,
+        }
+        newAnswers.answers[field.fieldName] = response.data;
+        setAnswers(newAnswers);
+      }
+      ).catch((error) => {
+        setError(error.message);
+      });
+    }
+    setSending(false);
   };
 
   return (
