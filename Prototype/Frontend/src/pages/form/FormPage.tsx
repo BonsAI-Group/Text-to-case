@@ -1,8 +1,8 @@
 import { Button, Container, Group, Stack, Textarea, Title } from "@mantine/core"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LunchLabels from "./components/LunchLabels";
-import { DefaultApi, FieldSubmit, FormAnswer, FormSubmit } from "../../generated";
+import { DefaultApi, FieldSubmit, FormAnswer } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
 
 /**
