@@ -18,3 +18,17 @@ The research for this can be found in the structure below.
     - Interrogative pronounce
     - ChatGPT
 - Question Answering
+
+### Docker
+To run the solution in docker
+1. Go to the prototype folder
+2. Run:
+```bash
+cd backend/zenya-form-prototype-backend
+docker build -t infoland/backend .
+docker run -d -p 8000:8000 infoland/backend
+
+cd ../../frontend
+docker build -t infoland/frontend .
+docker run -d -p 80:80 infoland/frontend
+```

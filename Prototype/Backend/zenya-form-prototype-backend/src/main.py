@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
 from service.FormService import FormService
 from service.FieldService import FieldService
 
@@ -9,11 +8,15 @@ from models.FormAnswer import FormAnswer
 from models.FieldAnswer import FieldAnswer
 from dto.FieldSubmit import FieldSubmit
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 app = FastAPI()
 
 # CORS
 origins = [
-    "http://localhost:3000"
+    os.environ.get("FRONTEND_URL")
 ]
 
 app.add_middleware(
