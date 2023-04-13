@@ -1,8 +1,9 @@
-import { Button, Container, Group, Stack, Textarea, Title } from "@mantine/core"
+import { Button, Container, Group, Select, Stack, Textarea, Title } from "@mantine/core"
 import { useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LunchLabels from "./components/LunchLabels";
-import { DefaultApi, FieldSubmit, FormAnswer } from "../../generated";
+import SecurityForm from "./components/SecurityForm";
+import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
 
 /**
@@ -16,11 +17,17 @@ const FormPage = () => {
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
+  const forms = {
+    "Lunch": LunchLabels,
+    "Security": SecurityForm
+  } as {[key: string]: () => Form};
+
+  const [form, setForm] = useState(forms["Lunch"]());
+
   const onSubmit = async () => {
     const api = new DefaultApi(ApiConfiguration);
     setSending(true);
 
-    const form = LunchLabels();
     for (const field of form.fields) {
       await api.fieldFieldPost({
         context: story,
@@ -62,7 +69,19 @@ const FormPage = () => {
                   "Submit"}
             </Button>
         </Stack>
-        <FormComponent form={LunchLabels()} answers={answers} />
+        <Stack>
+          <Select
+            label="Form"
+            data={Object.keys(forms)}
+            value={form.name}
+            onChange={(event) => {
+              setForm(forms[event!]);
+            }
+            }
+          />
+          <FormComponent form={form} answers={answers} />
+        </Stack>
+        
       </Group>
 
     </Container>
