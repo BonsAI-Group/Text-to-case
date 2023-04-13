@@ -1,4 +1,6 @@
 from typing import Tuple
+
+from models.Answer import Answer
 from .IQuestionAnswerer import IQuestionAnswerer
 from .QuestionAnswerModel import QuestionAnswerModel
 
@@ -22,7 +24,7 @@ class MultiModelQuestionAnswerer(IQuestionAnswerer):
 
         self.similarityModel = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
-    def answerQuestion(self, question: str, context: str) -> Tuple[str, float]:
+    def answerQuestion(self, question: str, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence."""
         
 
@@ -43,4 +45,5 @@ class MultiModelQuestionAnswerer(IQuestionAnswerer):
         for modelName in answers:
             print(modelName, answers[modelName])
 
-        return answers[closestAnswer][0], averageConfidence
+        answer = Answer(answer=answers[closestAnswer][0], confidence=averageConfidence, isTrusted=True)
+        return answer
