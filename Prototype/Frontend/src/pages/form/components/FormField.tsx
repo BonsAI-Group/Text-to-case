@@ -32,7 +32,7 @@ const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.El
       <TextInput
         label={formItem.fieldName}
         value={answer ? answer.answer : ""}
-        disabled={!answer}
+        disabled={!answer || !answer.isTrusted}
         styles={{
           input: answer && showConfidence
            ? {
