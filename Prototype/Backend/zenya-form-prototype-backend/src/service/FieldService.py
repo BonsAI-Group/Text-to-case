@@ -11,8 +11,8 @@ from models.Answer import Answer
 
 class FieldService:
     """Service for handling fields."""
-    def __init__(self):
-        self.QuestionGenerator: IQuestionGenerator = QuestionGenerator("Lunch")
+    def __init__(self, formName: str):
+        self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:

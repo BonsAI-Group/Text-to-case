@@ -13,6 +13,5 @@ class QuestionGenerator(IQuestionGenerator):
         input_ids = tokenizer.encode(f"create a question to ask what, who, where, when, why, how many, how much, how, whose or which the {fieldName} is for the {self.formName}", return_tensors="pt")
         res = model.generate(input_ids)
         output = tokenizer.batch_decode(res, skip_special_tokens=True)
-        print(output)
         return output if not None else ""
 

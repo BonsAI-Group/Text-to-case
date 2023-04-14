@@ -31,7 +31,8 @@ const FormPage = () => {
     for (const field of form.fields) {
       await api.fieldFieldPost({
         context: story,
-        field: field
+        field: field,
+        formName: form.name
       } as FieldSubmit).then((response) => {
         const newAnswers = {
           ...answers,

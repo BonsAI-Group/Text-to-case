@@ -5,7 +5,7 @@ const SecurityForm = () : Form => {
     name: "Security",
     fields: [
       {
-        fieldName: "Reported by third party?"
+        fieldName: "Reported by third party"
       },
       {
         fieldName: "Date"
