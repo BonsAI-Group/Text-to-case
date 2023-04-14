@@ -2,7 +2,7 @@ from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestion
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
 from ml.IQuestionAnswerer import IQuestionAnswerer
-from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
+from ml.QuestionGenerator import QuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from models.Answer import Answer
@@ -12,13 +12,13 @@ from models.Answer import Answer
 class FieldService:
     """Service for handling fields."""
     def __init__(self):
-        self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
+        self.QuestionGenerator: IQuestionGenerator = QuestionGenerator("Lunch")
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
         # Generate question
-        question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+        question = self.QuestionGenerator.generateQuestion(field.fieldName)
         # Answer question
         answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
         # Return answer
