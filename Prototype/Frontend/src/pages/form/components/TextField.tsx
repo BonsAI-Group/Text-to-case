@@ -29,7 +29,7 @@ const TextField = ({formItem, answer, showConfidence} : TextFieldProps) : JSX.El
         styles={{
           input: answer && showConfidence
            ? {
-            borderColor: borderColor(answer.confidence),
+            borderColor: borderColor(answer.confidence[0]),
             borderWidth: "2px",
             borderStyle: "solid"
           } : {},
@@ -38,7 +38,7 @@ const TextField = ({formItem, answer, showConfidence} : TextFieldProps) : JSX.El
           }
         }}
         rightSection={answer && showConfidence ? (
-          <Text fz={"sm"}>{(answer.confidence*100).toFixed(1)}%</Text>
+          <Text fz={"sm"}>{(answer.confidence[0]*100).toFixed(1)}%</Text>
         ) : undefined}
         />
   );

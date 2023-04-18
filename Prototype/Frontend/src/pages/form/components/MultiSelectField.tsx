@@ -1,6 +1,7 @@
-import { MultiSelect } from "@mantine/core";
+import { Group, MultiSelect, Text } from "@mantine/core";
 import { FieldAnswer, FormItem } from "../../../generated";
 import { useEffect, useState } from "react";
+import ConfidenceBubble from "./ConfidenceBubble";
 
 type MultiSelectFieldProps = {
   formItem: FormItem;
@@ -15,7 +16,16 @@ const MultiSelectField = ({formItem, answer, showConfidence} : MultiSelectFieldP
     setValue(answer ? answer.answer: []);
   }, [answer]);
   return (
-    <MultiSelect data={formItem.params!} label={formItem.fieldName} value={value} onChange={setValue} />
+    <MultiSelect data={formItem.params!} label={formItem.fieldName} value={value} onChange={setValue} valueComponent={(value) => (
+      // Gray box with padding and rounded corners
+      <div style={{backgroundColor: "#f0f0f0", padding: "2px 4px", borderRadius: "4px", marginRight: "4px"}}>
+        <Group spacing={"xs"}>
+          <Text fz={"sm"}>{value.label}</Text>
+          {answer && showConfidence ? <ConfidenceBubble confidence={answer ? answer.confidence[0] : 0} /> : null}
+        </Group>
+        
+      </div>
+    )} />
   );
 };
 
