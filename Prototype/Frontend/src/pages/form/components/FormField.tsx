@@ -21,7 +21,7 @@ type FormFieldProps = {
 const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.Element => {
   
   let field;
-  switch (formItem.formType) {
+  switch (formItem.fieldType) {
     case FieldType.TEXT:
       field = <TextField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
       break;

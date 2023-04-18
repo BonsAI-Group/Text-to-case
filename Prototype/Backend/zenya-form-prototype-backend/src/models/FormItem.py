@@ -6,5 +6,5 @@ from enums.FieldType import FieldType
 
 class FormItem(BaseModel):
     fieldName: str
-    formType: FieldType
+    fieldType: FieldType
     params: Optional[list]
