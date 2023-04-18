@@ -1,4 +1,4 @@
-import { Form, FormItem } from "../../../generated";
+import { FieldType, Form, FormItem } from "../../../generated";
 
 const LunchLabels = () : Form => {
   return {
@@ -38,16 +38,16 @@ const LunchLabels = () : Form => {
       // },
       {
         fieldName: "Food Diets",
-        formType: "Normal"
+        formType: FieldType.TEXT,
       },
       {
         fieldName: "Created by Third Party",
-        formType: "RadioButton",
+        formType: FieldType.RADIO_BUTTON,
         params:["yes", "no"]
       },
       {
         fieldName: "Type of Lunch",
-        formType: "MultiChoice",
+        formType: FieldType.MULTI_SELECT,
         params:["Seafood", "Meat", "Vegan"]
       }
     ] as FormItem[]

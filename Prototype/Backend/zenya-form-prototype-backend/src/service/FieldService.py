@@ -7,6 +7,7 @@ from ml.IRadioButtonModel import IRadioButtonModel
 from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
+from enums.FieldType import FieldType
 
 
 
@@ -21,14 +22,14 @@ class FieldService:
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
         """Checking the field Type"""
-        if field.formType == "Normal":
+        if field.formType == FieldType.TEXT:
             # Generate question
             question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
             # Answer question
             answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
-        elif field.formType == "MultiChoice":
+        elif field.formType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")
             multi_choice = self.MultiChoiceModel.answerMultiChoice(context, field.params)
@@ -37,7 +38,7 @@ class FieldService:
             print(multi_choice[1])
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=multi_choice[1][0], confidence=multi_choice[2][0])
-        elif field.formType == "RadioButton":
+        elif field.formType == FieldType.RADIO_BUTTON:
             print("Radio Button")
             radio_button = self.RadioButtonModel.answerRadioButton(context, field.params)
             print(radio_button)
