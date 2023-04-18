@@ -9,10 +9,10 @@ type RadioButtonsFieldProps = {
 };
 
 const RadioButtonsField = ({formItem, answer, showConfidence} : RadioButtonsFieldProps) : JSX.Element => {
-  const [value, setValue] = useState<string>(answer ? answer.answer : "");
+  const [value, setValue] = useState<string>(answer ? answer.answer[0] : "");
 
   useEffect(() => {
-    setValue(answer ? answer.answer : "");
+    setValue(answer ? answer.answer[0] : "");
   }, [answer]);
   return (
     <Radio.Group label={formItem.fieldName} value={value} onChange={setValue}>

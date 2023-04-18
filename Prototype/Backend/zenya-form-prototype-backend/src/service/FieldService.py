@@ -28,7 +28,7 @@ class FieldService:
             # Answer question
             answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
             # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
+            return FieldAnswer(fieldName=field.fieldName, answer=[answer], confidence=confidence)
         elif field.fieldType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")
@@ -36,16 +36,15 @@ class FieldService:
             print(multi_choice)
             print(type(multi_choice))
             print(multi_choice[1])
+
+            # TODO: This is a temporary threshold. 
+            answers = [multi_choice[1][i] for i in range(len(multi_choice[1])) if multi_choice[2][i] > 0.5]
             # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=multi_choice[1][0], confidence=multi_choice[2][0])
+            return FieldAnswer(fieldName=field.fieldName, answer=answers, confidence=multi_choice[2][0])
         elif field.fieldType == FieldType.RADIO_BUTTON:
-            print("Radio Button")
             radio_button = self.RadioButtonModel.answerRadioButton(context, field.params)
-            print(radio_button)
-            print(type(radio_button))
-            print(radio_button[1])
             # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=radio_button[1][0], confidence=radio_button[2][0])
+            return FieldAnswer(fieldName=field.fieldName, answer=[radio_button[1][0]], confidence=radio_button[2][0])
     
     def fillInQuestionField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a question field."""

@@ -9,10 +9,10 @@ type MultiSelectFieldProps = {
 };
 
 const MultiSelectField = ({formItem, answer, showConfidence} : MultiSelectFieldProps) : JSX.Element => {
-  const [value, setValue] = useState<string[]>(answer ? answer.answer.split(",") : []);
+  const [value, setValue] = useState<string[]>(answer ? answer.answer : []);
 
   useEffect(() => {
-    setValue(answer ? answer.answer.split(",") : []);
+    setValue(answer ? answer.answer: []);
   }, [answer]);
   return (
     <MultiSelect data={formItem.params!} label={formItem.fieldName} value={value} onChange={setValue} />
