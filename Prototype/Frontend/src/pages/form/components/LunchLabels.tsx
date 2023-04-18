@@ -40,11 +40,11 @@ const LunchLabels = () : Form => {
       //   fieldName: "Food Diets",
       //   fieldType: FieldType.TEXT,
       // },
-      {
-        fieldName: "Created by Third Party",
-        fieldType: FieldType.RADIO_BUTTON,
-        params:["yes", "no"]
-      },
+      // {
+      //   fieldName: "Created by Third Party",
+      //   fieldType: FieldType.RADIO_BUTTON,
+      //   params:["yes", "no"]
+      // },
       {
         fieldName: "Type of Lunch",
         fieldType: FieldType.MULTI_SELECT,
