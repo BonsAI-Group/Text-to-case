@@ -1,4 +1,4 @@
-import { Stack, Text, TextInput } from "@mantine/core";
+import { Stack, Text } from "@mantine/core";
 import { FieldAnswer, FieldType, FormItem } from "../../../generated";
 import TextField from "./TextField";
 import RadioButtonsField from "./RadioButtonsField";

@@ -1,4 +1,6 @@
+import { MultiSelect } from "@mantine/core";
 import { FieldAnswer, FormItem } from "../../../generated";
+import { useEffect, useState } from "react";
 
 type MultiSelectFieldProps = {
   formItem: FormItem;
@@ -7,10 +9,13 @@ type MultiSelectFieldProps = {
 };
 
 const MultiSelectField = ({formItem, answer, showConfidence} : MultiSelectFieldProps) : JSX.Element => {
+  const [value, setValue] = useState<string[]>(answer ? answer.answer.split(",") : []);
+
+  useEffect(() => {
+    setValue(answer ? answer.answer.split(",") : []);
+  }, [answer]);
   return (
-    <>
-      To be implemented
-    </>
+    <MultiSelect data={formItem.params!} label={formItem.fieldName} value={value} onChange={setValue} />
   );
 };
 

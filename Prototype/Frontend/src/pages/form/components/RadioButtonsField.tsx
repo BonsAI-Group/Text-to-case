@@ -1,4 +1,6 @@
+import { Group, Radio } from "@mantine/core";
 import { FieldAnswer, FormItem } from "../../../generated";
+import { useEffect, useState } from "react";
 
 type RadioButtonsFieldProps = {
   formItem: FormItem;
@@ -7,10 +9,19 @@ type RadioButtonsFieldProps = {
 };
 
 const RadioButtonsField = ({formItem, answer, showConfidence} : RadioButtonsFieldProps) : JSX.Element => {
+  const [value, setValue] = useState<string>(answer ? answer.answer : "");
+
+  useEffect(() => {
+    setValue(answer ? answer.answer : "");
+  }, [answer]);
   return (
-    <>
-      To be implemented
-    </>
+    <Radio.Group label={formItem.fieldName} value={value} onChange={setValue}>
+      <Group>
+        {formItem.params!.map((option) => (
+          <Radio key={option} value={option} label={option} />
+        ))}
+      </Group>
+    </Radio.Group>    
   );
 };
 
