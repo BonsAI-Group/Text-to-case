@@ -6,19 +6,21 @@ from ml.QuestionGenerator import QuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from models.Answer import Answer
+from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 
 
 
 class FieldService:
     """Service for handling fields."""
     def __init__(self, formName: str):
-        self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
+        # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
+        self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
         # Generate question
-        question = self.QuestionGenerator.generateQuestion(field.fieldName)
+        question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
         # Answer question
         answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
         # Return answer
