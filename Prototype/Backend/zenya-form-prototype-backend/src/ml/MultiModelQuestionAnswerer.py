@@ -24,7 +24,7 @@ class MultiModelQuestionAnswerer(IQuestionAnswerer):
 
         self.similarityModel = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
-        self.trustModel = keras.models.load_model('../models/trust_model')
+        self.trustModel = keras.models.load_model('../models/trust_model.keras')
 
         self.TRUST_THRESHOLD = 0.72
 
