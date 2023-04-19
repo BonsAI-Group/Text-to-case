@@ -33,13 +33,11 @@ class FieldService:
             # Testing Multi-Choice
             print("Multiple Choice")
             multi_choice = self.MultiChoiceModel.answerMultiChoice(context, field.params)
-            print(multi_choice)
-            print(type(multi_choice))
-            print(multi_choice[1])
 
-            # TODO: This is a temporary threshold. 
-            answers = [multi_choice[1][i] for i in range(len(multi_choice[1])) if multi_choice[2][i] > 0.0]
-            confidences = [multi_choice[2][i] for i in range(len(multi_choice[2])) if multi_choice[2][i] > 0.0]
+            # TODO: This is a temporary threshold.
+            threshold = 0.0 
+            answers = [multi_choice.labels[i] for i in range(len(multi_choice.labels)) if multi_choice.confidences[i] > threshold]
+            confidences = [multi_choice.confidences[i] for i in range(len(multi_choice.confidences)) if multi_choice.confidences[i] > threshold]
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=answers, confidence=confidences)
         elif field.fieldType == FieldType.RADIO_BUTTON:
