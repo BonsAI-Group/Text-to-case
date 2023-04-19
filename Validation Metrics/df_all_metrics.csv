@@ -71,3 +71,147 @@ Hey so last Friday I was talking to Bob and we discussed that we should have som
 Hey so last Friday I was talking to Bob and we discussed that we should have some lunch. We discussed some dates but we didn't really find a common date. Bob said he could do Tomorrow and The Day after but I won't be available then. So instead we will plan it for next Friday. It Will be during The Break in Bob's Office. It will just be for Bob and me so two people. Please bring some sandwiches but no tomatoes for me. We also discussed the pricing. Bob has 10 Euros to spend. I have 15 euros. So in total that is 25 Euros. ,What is the end time?,,next Friday,bert_large_deepset,0.9302428960800171,0.8465851545333862,0.5750596125920614,0.05045687526391399,0.11114195734262466,2,0.1879063993692398,False
 Hey so last Friday I was talking to Bob and we discussed that we should have some lunch. We discussed some dates but we didn't really find a common date. Bob said he could do Tomorrow and The Day after but I won't be available then. So instead we will plan it for next Friday. It Will be during The Break in Bob's Office. It will just be for Bob and me so two people. Please bring some sandwiches but no tomatoes for me. We also discussed the pricing. Bob has 10 Euros to spend. I have 15 euros. So in total that is 25 Euros. ,Where will the lunch take place?,Bob's Office,Bob's Office,bert_large_deepset,0.9961988925933838,0.9923684597015381,0.977192759513855,0.40256736675898236,0.45621946454048157,2,1.0,True
 Hey so last Friday I was talking to Bob and we discussed that we should have some lunch. We discussed some dates but we didn't really find a common date. Bob said he could do Tomorrow and The Day after but I won't be available then. So instead we will plan it for next Friday. It Will be during The Break in Bob's Office. It will just be for Bob and me so two people. Please bring some sandwiches but no tomatoes for me. We also discussed the pricing. Bob has 10 Euros to spend. I have 15 euros. So in total that is 25 Euros. ,What allergies/diets do we need to take into account?,no tomatoes, no tomatoes,deberta,0.9110925197601318,0.879571815331777,0.6604698300361633,0.18441570239762464,0.3427717983722687,1,1.0,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",How many people are coming? ,8, 8,deberta,1.0000001192092896,1.0000001192092896,1.0000001192092896,0.5942266384760538,0.7570823431015015,1,1.0000001192092896,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",Who is the organizer?,Sarah, Sarah,deberta,1.000000238418579,1.000000238418579,1.000000238418579,0.520654613773028,0.9504345655441284,1,1.000000238418579,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",What is the budget?,$20 per person,$20 per person,bert_large_deepset,0.9881669878959656,0.9760398864746094,0.9289808471997579,0.7848269939422607,0.8885250091552734,2,0.9999999403953552,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",What is the date?,"Thursday, April 21st",April 21st,bert_large_deepset,0.9972256422042847,0.9944356481234232,0.98335333665212,0.6931803027788798,0.5713446736335754,2,0.8721197843551636,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",What is the start time?,1 PM, 1 PM,deberta,0.9824542999267578,0.9642455180486044,0.8946539163589478,0.4444197515646617,0.6123073101043701,1,1.0000001192092896,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",What is the end time?,2 PM, 2 PM,deberta,0.9343200922012329,0.8566453655560812,0.6007617712020874,0.2606603056192398,0.7075537443161011,1,1.0,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",Where will the lunch take place?,Vapiano,Vapiano's restaurant,bert_large_deepset,0.9972562789916992,0.994497279326121,0.9835372765858968,0.740995188554128,0.9162182211875916,2,0.7584933042526245,True
+"Hello, this is Sarah from the finance department. I'm looking to organize a team lunch at Vapiano's restaurant. We have 8 people attending, and we're looking to do this next Thursday, April 21st.
+
+We're hoping to start the lunch at around 1 PM and finish by 2 PM so that everyone can get back to work on time. We have a budget of $20 per person, including taxes and gratuity.
+
+We're interested in Vapiano's because of the delicious food options and the great reviews we've heard from colleagues. We're hoping to reserve a private area or a large table that can accommodate our group comfortably.
+
+We do have a couple of dietary restrictions in our group, including one member who is allergic to nuts, so we'd appreciate it if you could provide some options that cater to them.
+
+Please let us know if you're available on the 21st and if you can accommodate our request. We look forward to enjoying a delicious meal at Vapiano's.
+
+Here are my contact details in case you need to reach out to me for any further information or questions. Thank you!",What allergies/diets do we need to take into account?,allergic to nuts,one member who is allergic to nuts,bert_base,0.9774308204650879,0.9476178288459778,0.8469694256782532,0.4365428686141968,0.4287785589694977,1,0.7915813326835632,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",How many people are coming? ,15, 15,deberta,0.9999999403953552,0.9999999403953552,0.9999999403953552,0.7221535046895345,0.892253577709198,1,0.9999999403953552,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",Who is the organizer?,Mark, Mark,deberta,1.0,1.0,1.0,0.6183753609657288,0.9638912081718445,1,1.0,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",What is the budget?,$30 per person,$30 per person,bert_large_deepset,0.9985799789428711,0.997155765692393,0.9914791981379191,0.8180340528488159,0.9075082540512085,2,1.0000001192092896,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",What is the date?,"Friday, April 22nd",April 22nd,bert_large_deepset,0.9973771572113037,0.9947403868039449,0.9842623869578043,0.709889551003774,0.6331509351730347,2,0.8593693375587463,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",What is the start time?,12:30 PM, 12:30 PM,deberta,1.0,1.0,1.0,0.7102895677089691,0.7922230958938599,1,1.0,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",What is the end time?,2 PM,2 PM,bert_large_deepset,0.993840217590332,0.9876026709874471,0.9630385239919027,0.406950665016969,0.12372270971536636,2,1.0,True
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",Where will the lunch take place?,,Friday,bert_large_deepset,0.8128494024276733,0.717341403166453,0.2718680327137311,0.06406101398169994,0.09715527296066284,1,0.2554512023925781,False
+"Hello, this is Mark from the sales department. I'm looking to organize a team lunch. We have 15 people attending, and we're hoping to do this next Friday, April 22nd.
+We're looking for a sit-down meal and hoping to set a budget of $30 per person. We're hoping to start the lunch at around 12:30 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegetarian and a member who is allergic to shellfish, so we'd appreciate it if the lunch can provide some options that can cater to them.",What allergies/diets do we need to take into account?,a vegetarian and a member who is allergic to shellfish,vegetarian and a member who is allergic to shellfish,bert_base,0.9641801118850708,0.9091385205586752,0.7397991418838501,0.31396159032980603,0.07549868524074554,1,0.9402865767478943,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",How many people are coming? ,10, 10,deberta,1.0,1.0,1.0,0.6762203176816305,0.8268992304801941,1,1.0,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",Who is the organizer?,Lisa, Lisa,deberta,1.0,1.0,1.0,0.7212750911712646,0.7917025089263916,1,1.0,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",What is the budget?,$25 per person,$25 per person,bert_large_deepset,0.9984912872314453,0.9969778458277384,0.9909470478693644,0.8612927198410034,0.8863672018051147,2,1.0000001192092896,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",What is the date?,"Wednesday, April 20th",April 20th,bert_large_deepset,0.9973714351654053,0.9947287440299988,0.984227697054545,0.6334226429462433,0.4174228608608246,2,0.8675734400749207,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",What is the start time?,1 PM, 1 PM,deberta,0.9824542999267578,0.9642455180486044,0.8946539163589478,0.5579401155312856,0.5549472570419312,1,1.0000001192092896,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",What is the end time?,2 PM,2 PM,bert_large_deepset,0.993840217590332,0.9876026709874471,0.9630385239919027,0.5267389131089052,0.05975601449608803,2,1.0,True
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",Where will the lunch take place?,,Wednesday,bert_large_deepset,0.8085588812828064,0.7036900122960409,0.2427694002787272,0.033733690081608834,0.02624400332570076,1,0.21757230162620544,False
+"Hello, my name is Lisa from the HR department. I'm looking to organize a team lunch. We have 10 people attending, and we're hoping to do this next Wednesday, April 20th.
+We're looking for a buffet-style lunch and hoping to set a budget of $25 per person. We're hoping to start the lunch at around 1 PM and finish by 2 PM.
+We also have a few dietary restrictions in our group, including a vegan and a member who is allergic to dairy, so we'd like if there are some options that can cater to them.
+Thank you, and have a great day!",What allergies/diets do we need to take into account?,a vegan and a member who is allergic to dairy,vegan and a member who is allergic to dairy,bert_base,0.9668281078338623,0.921954890092214,0.7750011881192526,0.41146878401438397,0.3299574553966522,1,0.9533795714378357,True
