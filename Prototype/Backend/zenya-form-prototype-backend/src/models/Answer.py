@@ -1,8 +1,7 @@
 from pydantic import BaseModel
 
-
-class FieldAnswer(BaseModel):
-    fieldName: str
+class Answer(BaseModel):
     answer: str
     confidence: float
     isTrusted: bool
+        

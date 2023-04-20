@@ -6,8 +6,8 @@ from service.FieldService import FieldService
 class FormService:
     """Service for form operations."""
 
-    def __init__(self):
-        self.fieldService: FieldService = FieldService()
+    def __init__(self, formName: str):
+        self.fieldService: FieldService = FieldService(formName)
 
     def fillForm(self, formSubmit: FormSubmit) -> FormAnswer:
         """Fill a form given a form submit."""

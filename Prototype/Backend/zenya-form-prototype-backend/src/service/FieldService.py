@@ -2,15 +2,18 @@ from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestion
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
 from ml.IQuestionAnswerer import IQuestionAnswerer
-from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
+from ml.QuestionGenerator import QuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
+from models.Answer import Answer
+from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 
 
 
 class FieldService:
     """Service for handling fields."""
-    def __init__(self):
+    def __init__(self, formName: str):
+        # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
 
@@ -19,13 +22,13 @@ class FieldService:
         # Generate question
         question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
         # Answer question
-        answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
+        answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
         # Return answer
-        return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
+        return FieldAnswer(fieldName=field.fieldName, answer=answer.answer, confidence=answer.confidence, isTrusted=answer.isTrusted)
     
     def fillInQuestionField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a question field."""
         # Answer question
-        answer, confidence = self.QuestionAnswerer.answerQuestion(field.fieldName, context)
+        answer: Answer = self.QuestionAnswerer.answerQuestion(field.question, context)
         # Return answer
-        return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
+        return FieldAnswer(fieldName=field.fieldName, answer=answer.answer, confidence=answer.confidence, isTrusted=answer.isTrusted)

@@ -34,9 +34,9 @@ class InterrogativeQuestionGenerator(IQuestionGenerator):
         answerList = []
         scoreList = []
         for question in questionList:
-            answer, score = self.QuestionAnswerer.answerQuestion(question, context)
-            answerList.append(answer)
-            score  = round(score * 100, 2)
+            answerObj = self.QuestionAnswerer.answerQuestion(question, context)
+            answerList.append(answerObj.answer)
+            score  = round(answerObj.confidence * 100, 2)
             scoreList.append(score)
         # creating dataframe
         dictionary = {'label' : label, 'questions': questionList, 'answer': answerList, 'score': scoreList}

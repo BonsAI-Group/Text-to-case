@@ -29,8 +29,8 @@ app.add_middleware(
 
 @app.post("/forms")
 async def forms(formSubmit: FormSubmit) -> FormAnswer:
-    return FormService().fillForm(formSubmit)
+    return FormService(formSubmit.form.name).fillForm(formSubmit)
 
 @app.post("/field")
 async def field(field: FieldSubmit) -> FieldAnswer:
-    return FieldService().fillInField(field.field, field.context)
+    return FieldService(field.formName).fillInField(field.field, field.context)
