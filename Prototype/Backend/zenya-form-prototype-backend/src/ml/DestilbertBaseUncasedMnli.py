@@ -16,8 +16,8 @@ class DestilbertBaseSingleModelMultiChoice(IMultiChoiceModel, IRadioButtonModel)
 
     def answerMultiChoice(self, candidate_labels: list, context: str) -> MultiAnswer:
         """Answer a question given a context. Returns the answer and the confidence.""" 
-        sequence, labels, scores = self.multiChoiceModel.answerMultiChoice(context, candidate_labels)
-        return MultiAnswer(answers=labels, confidence=scores, isTrusted=[True for _ in range(len(sequence))])
+        answer: MultiAnswer = self.multiChoiceModel.answerMultiChoice(context, candidate_labels)
+        return MultiAnswer(answers=answer.answers, confidence=answer.confidence, isTrusted=[True for _ in range(len(answer.answers))])
 
     def answerRadioButton(self, candidate_labels: list, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence.""" 

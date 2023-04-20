@@ -2,7 +2,7 @@ import { Group, Text } from "@mantine/core";
 
 const ConfidenceBubble = ({confidence} : {confidence: number}) : JSX.Element => {
   return (
-    <Group spacing={3}>
+    <Group spacing={3} noWrap>
       <div
         style={{
           width: "10px",
