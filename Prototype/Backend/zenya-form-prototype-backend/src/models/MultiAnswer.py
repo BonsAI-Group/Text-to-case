@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 
 
-class FieldAnswer(BaseModel):
-    fieldName: str
-    answer: list[str]
+class MultiAnswer(BaseModel):
+    answers: list[str]
     confidence: list[float]
     isTrusted: list[bool]
+    

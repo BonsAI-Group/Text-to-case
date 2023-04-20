@@ -1,4 +1,6 @@
 from typing import Tuple
+
+from models.Answer import Answer
 from .IQuestionAnswerer import IQuestionAnswerer
 from .QuestionAnswerModel import QuestionAnswerModel
 
@@ -8,7 +10,8 @@ class BertLargeSingleModelQuestionAnswerer(IQuestionAnswerer):
     def __init__(self):
         self.model = QuestionAnswerModel("bert-large-uncased-whole-word-masking-finetuned-squad")
 
-    def answerQuestion(self, question: str, context: str) -> Tuple[str, float]:
+    def answerQuestion(self, question: str, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence.""" 
-        return self.model.answerQuestion(question, context)
+        answer, confidence = self.model.answerQuestion(question, context)
+        return Answer(answer=answer, confidence=confidence, isTrusted=True)
     

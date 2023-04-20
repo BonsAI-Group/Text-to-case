@@ -8,12 +8,19 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from enums.FieldType import FieldType
+from ml.QuestionGenerator import QuestionGenerator
+from models.FieldAnswer import FieldAnswer
+from models.FormItem import FormItem
+from models.Answer import Answer
+from models.MultiAnswer import MultiAnswer
+from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 
 
 
 class FieldService:
     """Service for handling fields."""
-    def __init__(self):
+    def __init__(self, formName: str):
+        # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
@@ -26,30 +33,22 @@ class FieldService:
             # Generate question
             question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
             # Answer question
-            answer, confidence = self.QuestionAnswerer.answerQuestion(question, context)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
             # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=[answer], confidence=[confidence])
+            return FieldAnswer(fieldName=field.fieldName, answer=[answer.answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
         elif field.fieldType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")
-            multi_choice = self.MultiChoiceModel.answerMultiChoice(context, field.params)
-            print(multi_choice)
-            print(type(multi_choice))
-            print(multi_choice[1])
-
-            # TODO: This is a temporary threshold. 
-            answers = [multi_choice[1][i] for i in range(len(multi_choice[1])) if multi_choice[2][i] > 0.0]
-            confidences = [multi_choice[2][i] for i in range(len(multi_choice[2])) if multi_choice[2][i] > 0.0]
-            # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=answers, confidence=confidences)
+            multi_choice: MultiAnswer = self.MultiChoiceModel.answerMultiChoice(context, field.params)
+            return FieldAnswer(fieldName=field.fieldName, answer=multi_choice.answers, confidence=multi_choice.confidence, isTrusted=multi_choice.isTrusted)
         elif field.fieldType == FieldType.RADIO_BUTTON:
-            radio_button = self.RadioButtonModel.answerRadioButton(context, field.params)
+            radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, field.params)
             # Return answer
-            return FieldAnswer(fieldName=field.fieldName, answer=[radio_button[1][0]], confidence=[radio_button[2][0]])
+            return FieldAnswer(fieldName=field.fieldName, answer=[radio_button.answer], confidence=[radio_button.confidence], isTrusted=[radio_button.isTrusted])
     
     def fillInQuestionField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a question field."""
         # Answer question
-        answer, confidence = self.QuestionAnswerer.answerQuestion(field.fieldName, context)
+        answer: Answer = self.QuestionAnswerer.answerQuestion(field.question, context)
         # Return answer
-        return FieldAnswer(fieldName=field.fieldName, answer=answer, confidence=confidence)
+        return FieldAnswer(fieldName=field.fieldName, answer=answer.answer, confidence=answer.confidence, isTrusted=answer.isTrusted)

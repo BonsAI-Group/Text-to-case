@@ -1,5 +1,6 @@
 import { TextInput, Text } from "@mantine/core";
 import { FieldAnswer, FormItem } from "../../../generated";
+import ConfidenceBubble from "./ConfidenceBubble";
 
 
 type TextFieldProps = {
@@ -38,7 +39,10 @@ const TextField = ({formItem, answer, showConfidence} : TextFieldProps) : JSX.El
           }
         }}
         rightSection={answer && showConfidence ? (
-          <Text fz={"sm"}>{(answer.confidence[0]*100).toFixed(1)}%</Text>
+          <>
+            {/* <Text fz={"sm"}>{(answer.confidence[0]*100).toFixed(1)}%</Text> */}
+            <ConfidenceBubble confidence={answer.confidence[0]} />
+          </>
         ) : undefined}
         />
   );
