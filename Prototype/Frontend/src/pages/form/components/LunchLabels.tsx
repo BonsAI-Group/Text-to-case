@@ -36,15 +36,15 @@ const LunchLabels = () : Form => {
       //   fieldName: "Food Allergies",
       //   formType: "Normal"
       // },
-      // {
-      //   fieldName: "Food Diets",
-      //   fieldType: FieldType.TEXT,
-      // },
-      // {
-      //   fieldName: "Created by Third Party",
-      //   fieldType: FieldType.RADIO_BUTTON,
-      //   params:["yes", "no"]
-      // },
+      {
+        fieldName: "Food Diets",
+        fieldType: FieldType.TEXT,
+      },
+      {
+        fieldName: "Created by Third Party",
+        fieldType: FieldType.RADIO_BUTTON,
+        params:["yes", "no"]
+      },
       {
         fieldName: "Type of Lunch",
         fieldType: FieldType.MULTI_SELECT,
