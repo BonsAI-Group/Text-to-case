@@ -1,4 +1,4 @@
-import { TextInput, Text } from "@mantine/core";
+import { TextInput } from "@mantine/core";
 import { FieldAnswer, FormItem } from "../../../generated";
 import ConfidenceBubble from "./ConfidenceBubble";
 
