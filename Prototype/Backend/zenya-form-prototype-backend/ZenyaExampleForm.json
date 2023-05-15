@@ -1,0 +1,5249 @@
+[
+    {
+      "type": "full",
+      "description": "Meldformulier voor verbetermaatregelen (corrigerend / preventief).",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 47,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "trending_up"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 48,
+      "title": "Verbeteractie / CAPA / CPM",
+      "case_type": {
+        "case_type_id": 28,
+        "name": "Maatregelen (CAPA / CPM)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van incidenten en niet-conformiteiten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze wordt zo snel mogelijk in behandeling genomen.",
+      "group": {
+        "group_id": 55,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 56,
+      "title": "Melding incident of niet-conformiteit",
+      "case_type": {
+        "case_type_id": 29,
+        "name": "Incidenten en niet-conformiteiten - BE"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier biedt u alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten in de bouw.",
+      "message_after_sending": "Bedankt voor uw melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 61,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 62,
+      "title": "Ongevallen en incidentenformulier",
+      "case_type": {
+        "case_type_id": 30,
+        "name": "Ongevallen en incidenten - NL"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Reporting form&nbsp;for improvement measures (corrective / preventive).",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 47,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "trending_up"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 66,
+      "title": "Corrective and preventive actions",
+      "case_type": {
+        "case_type_id": 28,
+        "name": "Maatregelen (CAPA / CPM)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "In te vullen door de medewerker van een winkelformule van ASW, of door een medewerker van de afdeling D&amp;V.&nbsp;In het laatste geval dient u de melding telefonisch door te geven op 0318-579400",
+      "message_after_sending": "<p><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">Beste collega,</span></p>\r\n<p><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">Dank je wel voor jouw melding van winkeldiefstal. </span><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">De informatie die je aan ons hebt doorgegeven helpt ons om winkeldiefstallen aan te pakken en de schade door winkeldiefstal te verminderen.</span></p>",
+      "group": {
+        "group_id": 65,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 68,
+      "title": "Meldingsformulier Winkeldiefstal",
+      "case_type": {
+        "case_type_id": 31,
+        "name": "Derving en Veiligheid"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Met dit formulier wordt de aanleiding van de audit vastgelegd. <br />\r\nHet uitvoeren van de audit wordt op een zelf te bepalen moment in de workflow gestart.</p>",
+      "message_after_sending": "Dank je wel voor het invullen van de initiatie. <br />",
+      "group": {
+        "group_id": 68,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 17,
+          "name": "Audits en KPI's"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 71,
+      "title": "Initiatie Audit",
+      "case_type": {
+        "case_type_id": 32,
+        "name": "Auditproces detailhandel"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>This form enables you to report incidents and non conformities.</p>",
+      "message_after_sending": "Thanks for your report. It will be dealth with as soon as possible.",
+      "group": {
+        "group_id": 55,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 74,
+      "title": "Report of incident or non conformity",
+      "case_type": {
+        "case_type_id": 29,
+        "name": "Incidenten en niet-conformiteiten - BE"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>This form enables you to report incidents and non conformities.</p>",
+      "message_after_sending": "Thanks for your report. It will be dealth with as soon as possible.",
+      "group": {
+        "group_id": 74,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 78,
+      "title": "Report of incident or non conformity",
+      "case_type": {
+        "case_type_id": 33,
+        "name": "TEST Incidenten en niet-conformiteiten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier is uitsluitend bedoeld om velden en hun gedrag te testen",
+      "message_after_sending": "Belt u ons niet - wij bellen u ook niet!",
+      "group": {
+        "group_id": 74,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 79,
+      "title": "Ron Testformulier NCR",
+      "case_type": {
+        "case_type_id": 33,
+        "name": "TEST Incidenten en niet-conformiteiten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier moet verplicht ingevuld worden om een call bij IT te maken. Gelieve zo duidelijk en nauwkeurig mogelijk dit formulier in te vullen.<br />\n<br />\nDit zowel voor nieuwe vragen als bugs.<br />",
+      "message_after_sending": "Bedankt voor uw melding.<br />",
+      "group": {
+        "group_id": 80,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 85,
+      "title": "IT melding",
+      "case_type": {
+        "case_type_id": 34,
+        "name": "IT-helpdesk"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kunnen klachten, afwijkingen en verbetervoorstellen worden geregistreerd",
+      "message_after_sending": "Bedankt voor de melding; deze zal z.s.m. door de verantwoordelijke functionaris in behandeling worden genomen.",
+      "group": {
+        "group_id": 91,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 96,
+      "title": "Klachten & afwijkende delen rapport",
+      "case_type": {
+        "case_type_id": 36,
+        "name": "Klachten &  afwijkingen in maatwerk productieomgeving"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 103,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 108,
+      "title": "Notification of Complaint",
+      "case_type": {
+        "case_type_id": 39,
+        "name": "Complaint Handling Industry"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 103,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 112,
+      "title": "Notification of Complaint",
+      "case_type": {
+        "case_type_id": 39,
+        "name": "Complaint Handling Industry"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 112,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 118,
+      "title": "Notification of Complaint (2)",
+      "case_type": {
+        "case_type_id": 40,
+        "name": "Complaint Handling Industry (decentral ownership)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 112,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 119,
+      "title": "Notification of Complaint (2)",
+      "case_type": {
+        "case_type_id": 40,
+        "name": "Complaint Handling Industry (decentral ownership)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Voor iedere audit wordt dit&nbsp;formulier ingevuld in het kader van de planning.&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 129,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 136,
+      "title": "Auditformulier",
+      "case_type": {
+        "case_type_id": 44,
+        "name": "Interne audits via iTask"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Beste,\r\n\r\nBijgaand tref je het formulier aan dat je kunt gebruiken voor het melden van een incident",
+      "message_after_sending": "merci",
+      "group": {
+        "group_id": 150,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 159,
+      "title": "Mobiel melden ongevallen",
+      "case_type": {
+        "case_type_id": 30,
+        "name": "Ongevallen en incidenten - NL"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meldformulier voor het melden van een afwijking bij een onderdeel, artikel etc.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 159,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 178,
+      "title": "Afwijking bij onderdeel",
+      "case_type": {
+        "case_type_id": 51,
+        "name": "Afwijkingen bij onderdelen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor het melden van&nbsp;constateringen, afwijkingen en afkeuring inkomende goederen",
+      "message_after_sending": "Je melding wordt in behandeling genomen en je wordt op de hoogte gehouden van de voortgang.",
+      "group": {
+        "group_id": 165,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 184,
+      "title": "Afwijking / non conformiteit",
+      "case_type": {
+        "case_type_id": 52,
+        "name": "Registratie afwijking"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meldformulier voor verbetermaatregelen (corrigerend / preventief).",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 47,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "trending_up"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 188,
+      "title": "Corrigerende en preventieve maatregelen",
+      "case_type": {
+        "case_type_id": 28,
+        "name": "Maatregelen (CAPA / CPM)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van incidenten en niet-conformiteiten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze wordt zo snel mogelijk in behandeling genomen.",
+      "group": {
+        "group_id": 55,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 195,
+      "title": "Melding incident of niet-conformiteit",
+      "case_type": {
+        "case_type_id": 29,
+        "name": "Incidenten en niet-conformiteiten - BE"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 61,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 200,
+      "title": "Ongevallen en incidentenformulier",
+      "case_type": {
+        "case_type_id": 30,
+        "name": "Ongevallen en incidenten - NL"
+      }
+    },
+    {
+      "type": "full",
+      "description": "In te vullen door de medewerker van een winkelformule van ASW, of door een medewerker van de afdeling D&amp;V.&nbsp;In het laatste geval dient u de melding telefonisch door te geven op 0318-579400",
+      "message_after_sending": "<p><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">Beste collega,</span></p>\r\n<p><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">Dank je wel voor jouw melding van winkeldiefstal. </span><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;\">De informatie die je aan ons hebt doorgegeven helpt ons om winkeldiefstallen aan te pakken en de schade door winkeldiefstal te verminderen.</span></p>",
+      "group": {
+        "group_id": 65,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 203,
+      "title": "Meldingsformulier Winkeldiefstal",
+      "case_type": {
+        "case_type_id": 31,
+        "name": "Derving en Veiligheid"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Met dit formulier wordt de aanleiding van de audit vastgelegd. <br />\r\nHet uitvoeren van de audit wordt op een zelf te bepalen moment in de workflow gestart.</p>",
+      "message_after_sending": "Dank je wel voor het invullen van de initiatie. <br />",
+      "group": {
+        "group_id": 68,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 17,
+          "name": "Audits en KPI's"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "de-DE",
+      "form_id": 205,
+      "title": "Initiatie Audit",
+      "case_type": {
+        "case_type_id": 32,
+        "name": "Auditproces detailhandel"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van incidenten en niet-conformiteiten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze wordt zo snel mogelijk in behandeling genomen.",
+      "group": {
+        "group_id": 74,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 210,
+      "title": "incident of niet-conformiteit",
+      "case_type": {
+        "case_type_id": 33,
+        "name": "TEST Incidenten en niet-conformiteiten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier moet verplicht ingevuld worden om een call bij IT te maken. Gelieve zo duidelijk en nauwkeurig mogelijk dit formulier in te vullen.<br />\n<br />\nDit zowel voor nieuwe vragen als bugs.<br />",
+      "message_after_sending": "Bedankt voor uw melding.<br />",
+      "group": {
+        "group_id": 80,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 215,
+      "title": "IT melding",
+      "case_type": {
+        "case_type_id": 34,
+        "name": "IT-helpdesk"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kunnen klachten, afwijkingen en verbetervoorstellen worden geregistreerd",
+      "message_after_sending": "Bedankt voor de melding; deze zal z.s.m. door de verantwoordelijke functionaris in behandeling worden genomen.",
+      "group": {
+        "group_id": 91,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 223,
+      "title": "Klachten & afwijkende delen rapport",
+      "case_type": {
+        "case_type_id": 36,
+        "name": "Klachten &  afwijkingen in maatwerk productieomgeving"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 112,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 235,
+      "title": "Notification of Complaint (2)",
+      "case_type": {
+        "case_type_id": 40,
+        "name": "Complaint Handling Industry (decentral ownership)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Voor iedere audit wordt dit&nbsp;formulier ingevuld in het kader van de planning.&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 129,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 242,
+      "title": "0. Planningsformulier Audit",
+      "case_type": {
+        "case_type_id": 44,
+        "name": "Interne audits via iTask"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>With this form complaints are registrated and assigned.</p>",
+      "message_after_sending": "Thank you for your complaint; The quality department will assign it to the department responsible.",
+      "group": {
+        "group_id": 103,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 269,
+      "title": "Notification of Complaint",
+      "case_type": {
+        "case_type_id": 39,
+        "name": "Complaint Handling Industry"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<table border=\"0\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"9\" style=\"border-color: windowtext black windowtext windowtext; width: 432pt; height: 15.75pt; background-color: rgb(220, 230, 241);\">Tijdens het lopen van de KAM-ronde kom je dingen tegen, deze schrijf je op.</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 272,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 398,
+      "title": "KAM Formulier",
+      "case_type": {
+        "case_type_id": 89,
+        "name": "KAM-Lijst"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Graag invullen",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 276,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 402,
+      "title": "Formulier evenementen en partijen",
+      "case_type": {
+        "case_type_id": 89,
+        "name": "KAM-Lijst"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Registreer hier uw klacht",
+      "group": {
+        "group_id": 278,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "thumb_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 404,
+      "title": "Klachtenformulier",
+      "case_type": {
+        "case_type_id": 91,
+        "name": "Klacht"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Hygi&euml;necode contractcatering, v01/2010 en hygi&euml;necode horeca v.12/2007",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 279,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 405,
+      "title": "HACCP Weekformulier",
+      "case_type": {
+        "case_type_id": 89,
+        "name": "KAM-Lijst"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het registreren en afhandelen van een klacht.",
+      "group": {
+        "group_id": 300,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "thumb_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 432,
+      "title": "Klachtenafhandelingsformulier 8D",
+      "case_type": {
+        "case_type_id": 97,
+        "name": "Klachtafhandelingsformulier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met behulp van dit formulier worden afwijkingen, die zijn gemaakt tijdens een interne audit, opgenomen in de verbetercyclus.",
+      "message_after_sending": "De afwijking is geregistreerd.",
+      "group": {
+        "group_id": 320,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 455,
+      "title": "Melden van een afwijking",
+      "case_type": {
+        "case_type_id": 102,
+        "name": "Verbetercyclus interne audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meldformulier",
+      "group": {
+        "group_id": 326,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 461,
+      "title": "Kwaliteitsrapport meldformulier",
+      "case_type": {
+        "case_type_id": 103,
+        "name": "Kwaliteitsrapport"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor de dagelijkse ingangscontrole.",
+      "message_after_sending": "Hartelijk dank voor het invullen van&nbsp;het registratieformulier&nbsp;ingangscontrole.",
+      "group": {
+        "group_id": 336,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 471,
+      "title": "Ingangscontrole",
+      "case_type": {
+        "case_type_id": 106,
+        "name": "HACCP registraties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor de controle van koelingen.",
+      "message_after_sending": "Hartelijk dank voor het invullen van&nbsp;het registratieformulier&nbsp;koelingen.",
+      "group": {
+        "group_id": 337,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 16,
+          "name": "HACCP Registraties"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 472,
+      "title": "Koelingen",
+      "case_type": {
+        "case_type_id": 106,
+        "name": "HACCP registraties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor de controle van bereidingen.",
+      "message_after_sending": "Hartelijk dank voor het invullen van het registratieformulier bereiden.",
+      "group": {
+        "group_id": 338,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 16,
+          "name": "HACCP Registraties"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 473,
+      "title": "Bereiden",
+      "case_type": {
+        "case_type_id": 106,
+        "name": "HACCP registraties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor de controle van het regenereren van maaltijden.",
+      "message_after_sending": "Hartelijk dank voor het invullen van het registratieformulier regenereren maaltijden.",
+      "group": {
+        "group_id": 339,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 16,
+          "name": "HACCP Registraties"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 474,
+      "title": "Regenereren maaltijden",
+      "case_type": {
+        "case_type_id": 106,
+        "name": "HACCP registraties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor de controle van het terugkoelen van bereide producten.",
+      "message_after_sending": "Hartelijk dank voor het invullen van het registratieformulier terugkoelen bereid product.",
+      "group": {
+        "group_id": 340,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 16,
+          "name": "HACCP Registraties"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 475,
+      "title": "Terugkoelen bereid product",
+      "case_type": {
+        "case_type_id": 106,
+        "name": "HACCP registraties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in bij onderhoud aan apparatuur",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 353,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 494,
+      "title": "Storing- en onderhoudsformulier",
+      "case_type": {
+        "case_type_id": 110,
+        "name": "Onderhouds records"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Job risk assessment form",
+      "message_after_sending": "Thank you for the registration of this Job Risk Assessment.<br />\r\n<br />\r\nFurther actions (approval etc.) have been activated now.",
+      "group": {
+        "group_id": 366,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 516,
+      "title": "Job Risk Assessment - Part 1",
+      "case_type": {
+        "case_type_id": 114,
+        "name": "Job Risk Assessment"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kan een toolbox aangevraagd of gerapporteerd worden.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 393,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 543,
+      "title": "Aanvraag/rapportage toolbox",
+      "case_type": {
+        "case_type_id": 115,
+        "name": "Toolbox Management"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Invullen a.u.b.",
+      "message_after_sending": "Bedankt voor uw melding.",
+      "group": {
+        "group_id": 400,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 550,
+      "title": "VF Formulier",
+      "case_type": {
+        "case_type_id": 118,
+        "name": "VF Registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<strong>Procedure voor het aanvragen van een (digitale) analyse in LIMS</strong>",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 413,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 563,
+      "title": "Aanvraag nieuwe analyse",
+      "case_type": {
+        "case_type_id": 120,
+        "name": "Aanvragen nieuwe analyse"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het registreren van toegang tot externe sites.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 462,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 20,
+          "name": "Risicobeheer en logboeken"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 612,
+      "title": "Toegang externe sites (NICESS)",
+      "case_type": {
+        "case_type_id": 130,
+        "name": "NICESS - Logboek Toegangen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het registreren van stilstand van een installatie.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 465,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 20,
+          "name": "Risicobeheer en logboeken"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 615,
+      "title": "Registratie stilstand (NICESS*)",
+      "case_type": {
+        "case_type_id": 130,
+        "name": "NICESS - Logboek Toegangen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "audit securite",
+      "group": {
+        "group_id": 471,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 621,
+      "title": "Audit Securite",
+      "case_type": {
+        "case_type_id": 132,
+        "name": "Kloosterboer"
+      }
+    },
+    {
+      "type": "full",
+      "description": "registratie non conformity",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 472,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 622,
+      "title": "Non conformity",
+      "case_type": {
+        "case_type_id": 132,
+        "name": "Kloosterboer"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Vul hier uw melding in",
+      "message_after_sending": "Hartelijk dank voor uw melding. Je krijgt z.s.m. een bericht over de afhandeling en eventuele vervolg acties.",
+      "group": {
+        "group_id": 479,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 629,
+      "title": "Accident - near miss",
+      "case_type": {
+        "case_type_id": 135,
+        "name": "VGM APP melding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "please fill in",
+      "message_after_sending": "thjank you",
+      "group": {
+        "group_id": 483,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 633,
+      "title": "incident form",
+      "case_type": {
+        "case_type_id": 137,
+        "name": "incident agrifirm"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulieren voor in dienst / mutatie / uit dienst personeel",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 494,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 644,
+      "title": "In / uit dienst personeel / mutatie personeel",
+      "case_type": {
+        "case_type_id": 147,
+        "name": "In-, uitdienst en Mutatie medewerker"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meldt hier een NC of RC",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 505,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 655,
+      "title": "NC en RC melding",
+      "case_type": {
+        "case_type_id": 148,
+        "name": "NC & RC"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in bij Facilitaire en IT incidenten en aanvragen",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 511,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 661,
+      "title": "Facilitair en IT meldingen",
+      "case_type": {
+        "case_type_id": 149,
+        "name": "IT en Facilaire Meldingen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor het indienen en registreren van klachten.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 532,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "thumb_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 686,
+      "title": "Klachtenformulier",
+      "case_type": {
+        "case_type_id": 154,
+        "name": "TÜV - Klachten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier bied je alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten binnen ons bedrijf.",
+      "message_after_sending": "Bedankt voor je&nbsp;melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 533,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 687,
+      "title": "Veiligheidsmeldingen",
+      "case_type": {
+        "case_type_id": 155,
+        "name": "Veiligheidsmeldingen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 533,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 688,
+      "title": "Ongevallen en incidentenformulier",
+      "case_type": {
+        "case_type_id": 155,
+        "name": "Veiligheidsmeldingen"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Beste,\n\nBijgaand tref je het formulier aan dat je kunt gebruiken voor het melden van een incident",
+      "message_after_sending": "merci",
+      "group": {
+        "group_id": 536,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 691,
+      "title": "Mobiel melden ongevallen",
+      "case_type": {
+        "case_type_id": 155,
+        "name": "Veiligheidsmeldingen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meldformulier voor het registreren van een <strong>beveiligingsincident</strong> en/of een <strong>datalek</strong>.",
+      "message_after_sending": "Indien u vragen heeft, kunt u terecht bij Servicedesk van de afdeling ICT, tel. nummer 0000000 en e-mail: XXX",
+      "group": {
+        "group_id": 537,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 22,
+          "name": "AVG"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 692,
+      "title": "Beveiligingsincident of datalek",
+      "case_type": {
+        "case_type_id": 156,
+        "name": "AVG GDPR Databeveiliging"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier voor het melden van afwijkingen, klachten, gevaarlijke situaties, (bijna) ongevallen, idee&euml;n en daaruit volgende&nbsp;verbetermaatregelen.",
+      "message_after_sending": "Bedankt voor uw melding.",
+      "group": {
+        "group_id": 539,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 694,
+      "title": "Verbeterformulier - Addit",
+      "case_type": {
+        "case_type_id": 157,
+        "name": "CONFORMISO TEMP"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Task Tracking &amp; Tracing",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 543,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 698,
+      "title": "New task request",
+      "case_type": {
+        "case_type_id": 158,
+        "name": "8d"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Task Tracking &amp; Tracing",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 543,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 710,
+      "title": "8d formulier",
+      "case_type": {
+        "case_type_id": 158,
+        "name": "8d"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier invullen ten behoeve van de start intake",
+      "message_after_sending": "De auditee ontvangt nu een uitnodiging per mail",
+      "group": {
+        "group_id": 564,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 730,
+      "title": "SCOB Audit intake formulier",
+      "case_type": {
+        "case_type_id": 161,
+        "name": "Audit SCOB"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form for accidents and near miss reports.",
+      "message_after_sending": "Thank you for filling out this report. Would you like to <strong>add, assign or close </strong>the action now?<br />\r\n<br />\r\nClick on <u><strong>&#39;Open this case&#39;</strong></u> below",
+      "group": {
+        "group_id": 567,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 733,
+      "title": "HSE - Accident and near miss form",
+      "case_type": {
+        "case_type_id": 162,
+        "name": "HSE Accidents / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form for accidents and near miss reports.",
+      "message_after_sending": "Thank you for filling out this report. Would you like to <strong>add, assign or close </strong>the action now?<br />\r\n<br />\r\nClick on <u><strong>&#39;Open this case&#39;</strong></u> below",
+      "group": {
+        "group_id": 567,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 734,
+      "title": "HSE - Accident and near miss form",
+      "case_type": {
+        "case_type_id": 162,
+        "name": "HSE Accidents / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form for accidents and near miss reports.",
+      "message_after_sending": "Thank you for filling out this report. Would you like to <strong>add, assign or close </strong>the action now?<br />\n<br />\nClick on <u><strong>&#39;Open this case&#39;</strong></u> below",
+      "group": {
+        "group_id": 570,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 738,
+      "title": "HSE - Accident and near miss form",
+      "case_type": {
+        "case_type_id": 163,
+        "name": "Accident - near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form for accidents and near miss reports.",
+      "message_after_sending": "Thank you for filling out this report. Would you like to <strong>add, assign or close </strong>the action now?<br />\n<br />\nClick on <u><strong>&#39;Open this case&#39;</strong></u> below",
+      "group": {
+        "group_id": 570,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 739,
+      "title": "HSE - Accident and near miss form",
+      "case_type": {
+        "case_type_id": 163,
+        "name": "Accident - near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form for accidents and near miss reports.",
+      "message_after_sending": "Thank you for filling out this report. Would you like to <strong>add, assign or close </strong>the action now?<br />\r\n<br />\r\nClick on <strong><u>&#39;Open this case&#39;</u></strong> below",
+      "group": {
+        "group_id": 573,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 743,
+      "title": "Accident - near miss form",
+      "case_type": {
+        "case_type_id": 163,
+        "name": "Accident - near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulieren voor in dienst / mutatie / uit dienst personeel",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 575,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 745,
+      "title": "In / uit dienst personeel / mutatie personeel",
+      "case_type": {
+        "case_type_id": 164,
+        "name": "In-, uitdienst medewerker - Crowe"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meld hier alle verbetervoorstellen.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 585,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "mdi-lightbulb"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 755,
+      "title": "Verbeterformulier (uitgebreid)",
+      "case_type": {
+        "case_type_id": 165,
+        "name": "Verbeteren (uitgebreid)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit controledocument laat toe de wijzigingen aan en de aankoop van een toestel, installatie, software en gebouwen op een gecontroleerde manier door te voeren en op te volgen.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 603,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 773,
+      "title": "Change request",
+      "case_type": {
+        "case_type_id": 167,
+        "name": "Change request"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meld hier alle verbetervoorstellen.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 612,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 782,
+      "title": "Issue management - verbeterformulier",
+      "case_type": {
+        "case_type_id": 170,
+        "name": "Issue registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "RF 035 Ingangscontrole vers fruit en verse groenten",
+      "group": {
+        "group_id": 616,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 786,
+      "title": "Ingangscontrole",
+      "case_type": {
+        "case_type_id": 171,
+        "name": "Ingangscontrole"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Melden van een afwijking",
+      "message_after_sending": "Dank voor u melding. Deze wordt in behandeling genomen.",
+      "group": {
+        "group_id": 617,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 787,
+      "title": "Afwijking",
+      "case_type": {
+        "case_type_id": 172,
+        "name": "Afwijkingen test Vitens"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul deze IAD-melding zo gedetailleerd mogelijk in.",
+      "message_after_sending": "Hartelijk dank voor uw melding.&nbsp;",
+      "group": {
+        "group_id": 623,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 793,
+      "title": "IAD-melding",
+      "case_type": {
+        "case_type_id": 173,
+        "name": "IAD-meldingen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Binnen <strong>RIBW ZWWF</strong> en <strong>RIBW K/AM</strong> worden&nbsp;vertrouwelijke persoonsgegevens verwerkt, zoals cli&euml;ntgegevens, gegevens over de omgeving van de cli&euml;nt en medewerker gegevens.<br />\r\n<br />\r\nAls persoonsgegevens terecht komen bij partijen voor welke zij <strong>niet</strong> bedoeld zijn, wordt er gesproken van een <strong>datalek</strong>. Voorbeelden van&nbsp;beveiligingsincidenten zijn: dossiers die bij onbevoegden terecht komen, hackaanvallen waarbij cli&euml;ntgegevens gestolen worden, maar ook het kwijtraken van een laptop of USB-stick&nbsp;waarop een Excel sheet met afspraken staat.<br />\r\n&nbsp;",
+      "message_after_sending": "<br />\r\nBedankt voor het invullen van het meldformulier Datalek.<br />\r\nVoor meer informatie kunt u contact opnemen met: ???",
+      "group": {
+        "group_id": 625,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 795,
+      "title": "TEST Melding datalek",
+      "case_type": {
+        "case_type_id": 175,
+        "name": "TEST RON Melding datalek RIBW v1"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in bij een correctieve of preventieve actie",
+      "group": {
+        "group_id": 628,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 798,
+      "title": "CAPA Report",
+      "case_type": {
+        "case_type_id": 176,
+        "name": "Capa report"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used for the registration and assessment of NEW risks.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 647,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 828,
+      "title": "Assessment of NEW risk",
+      "case_type": {
+        "case_type_id": 182,
+        "name": "Risk assessment (Schiphol)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used when conducting a control test.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 651,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 832,
+      "title": "Control test",
+      "case_type": {
+        "case_type_id": 183,
+        "name": "Control testing (Schiphol)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Als u, als bevoegd gezag, kennis neemt van een (vermoedelijke) integriteitsschending bent u verplicht deze schending te melden aan het Bureau Integriteit.<br />\r\n<br />\r\nDe feiten en omstandigheden van de (vermoedelijke) integriteitsschending kunnen zodanig zijn dat er zonder een onderzoek van het Bureau Integriteit vervolgstappen of (disciplinaire) maatregelen kunnen worden genomen.<br />\r\n<br />\r\n<strong>Met dit formulier meldt u deze categorie van integriteitsschending</strong>",
+      "message_after_sending": "Uw melding&nbsp;wordt in behandeling genomen.",
+      "group": {
+        "group_id": 654,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 835,
+      "title": "Integriteitsschending zonder onderzoek",
+      "case_type": {
+        "case_type_id": 184,
+        "name": "DJI BI Integriteitsschending 2018"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Als u, als bevoegd gezag, kennis neemt van een (vermoedelijke) integriteitsschending bent u verplicht deze schending te melden aan het Bureau Integriteit.<br />\r\n<br />\r\nDe feiten en omstandigheden van de (vermoedelijke) integriteitsschending kunnen zodanig zijn dat het noodzakelijk is een onderzoek in te stellen. Dit onderzoek mag u niet zelf doen, dat kan alleen door Bureau Integriteit uitgevoerd worden.<br />\r\n<br />\r\n<strong>Met dit formulier meldt u een schending en doet u een verzoek voor nader onderzoek door Bureau Integriteit</strong>",
+      "message_after_sending": "Bedankt voor de melding.<br />\r\n<br />\r\nNadat het Bureau Integriteit uw melding heeft ontvangen zal een onderzoeker van het Bureau Integriteit telefonisch contact met u opnemen voor het plannen van een intakegesprek.<br />\r\nDaarin wordt besproken welk type onderzoek het best past bij de calamiteit.<br />\r\n<br />\r\nVervolgens registreert het Bureau Integriteit de melding en de integriteitsschending voor de trendanalyses en de jaarrapportages t.b.v. HDJI en het ministerie van Binnenlandse Zaken en Koninkrijksrelaties.<br />\r\n<br />\r\nVoor vragen kunt u contact opnemen met het Bureau Integriteit en Veiligheid.<br />\r\nTelefoonnummer: 088 07 17520.",
+      "group": {
+        "group_id": 655,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 836,
+      "title": "Integriteitsschending met onderzoek",
+      "case_type": {
+        "case_type_id": 184,
+        "name": "DJI BI Integriteitsschending 2018"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het melden van een integriteitsschending.",
+      "message_after_sending": "Uw melding wordt binnen 3 werkdagen door het Bureau Integriteit in behandeling genomen.<br />\r\n<br />\r\nVoor eventuele informatie kunt u bellen naar 088-0717520",
+      "group": {
+        "group_id": 656,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 837,
+      "title": "Melding medewerker",
+      "case_type": {
+        "case_type_id": 184,
+        "name": "DJI BI Integriteitsschending 2018"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Melden van verdachte situaties, incidenten, datalekken, inbreuken&nbsp;etc op het gebied van informatiebeveiliging.",
+      "message_after_sending": "Bedankt voor je melding. We gaan er direct mee aan de slag.<br />\r\n<br />\r\nNa afhandeling ontvang je terugkoppeling over je melding.",
+      "group": {
+        "group_id": 661,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 842,
+      "title": "TEST Melden beveiligingsincident",
+      "case_type": {
+        "case_type_id": 185,
+        "name": "TEST RON Melding datalek"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Een bevinding vanuit een werkplekinspectie kan via dit formulier gemeld worden.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 668,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 849,
+      "title": "Werkplekinspectie",
+      "case_type": {
+        "case_type_id": 187,
+        "name": "Werkplekinspectie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Reporting form for issues.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 612,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 853,
+      "title": "Issue report",
+      "case_type": {
+        "case_type_id": 170,
+        "name": "Issue registratie"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "aa",
+      "message_after_sending": "aa",
+      "group": {
+        "group_id": 671,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "cancel"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 854,
+      "title": "incident melden",
+      "case_type": {
+        "case_type_id": 163,
+        "name": "Accident - near miss"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Maak bij elke vracht drie foto's",
+      "message_after_sending": "bedankt!",
+      "group": {
+        "group_id": 673,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 856,
+      "title": "hoogwegt formulier",
+      "case_type": {
+        "case_type_id": 162,
+        "name": "HSE Accidents / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "aaa",
+      "group": {
+        "group_id": 676,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 859,
+      "title": "in dienst",
+      "case_type": {
+        "case_type_id": 189,
+        "name": "in dienst melden"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form to report any security incident or supposed data breach",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 537,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 22,
+          "name": "AVG"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 861,
+      "title": "Security incident",
+      "case_type": {
+        "case_type_id": 156,
+        "name": "AVG GDPR Databeveiliging"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kunnen interne afwijkingen worden geregistreerd.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 678,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 863,
+      "title": "Interne afwijkingen",
+      "case_type": {
+        "case_type_id": 190,
+        "name": "Registratie interne afwijkingen"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "vul in",
+      "message_after_sending": "dankje",
+      "group": {
+        "group_id": 689,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 874,
+      "title": "vb form",
+      "case_type": {
+        "case_type_id": 135,
+        "name": "VGM APP melding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "sdgsgfsfg",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 690,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 875,
+      "title": "vb",
+      "case_type": {
+        "case_type_id": 135,
+        "name": "VGM APP melding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "vul dit in bij het aanmelden van een nieuwe medewerker",
+      "message_after_sending": "bedankt, we zetten het in gang",
+      "group": {
+        "group_id": 692,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 877,
+      "title": "onboard formulier",
+      "case_type": {
+        "case_type_id": 193,
+        "name": "onboarden"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Heeft u een klacht? Laat het ons weten!",
+      "message_after_sending": "Bedankt voor uw bericht. Wij gaan hier meteen mee aan de slag!",
+      "group": {
+        "group_id": 693,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "thumb_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 878,
+      "title": "Klacht formulier",
+      "case_type": {
+        "case_type_id": 91,
+        "name": "Klacht"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Wanneer er sprake is van een (bijna) ongeval, doe daar dan melding van",
+      "message_after_sending": "Bedankt voor het melden!",
+      "group": {
+        "group_id": 696,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 881,
+      "title": "(bijna) ongeval melden",
+      "case_type": {
+        "case_type_id": 194,
+        "name": "(Bijna) ongeval meldformulier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het beschrijven van een gevaarlijke situatie&nbsp;of (bijna) incident waarbij een cli&euml;nt e/o medewerker lichamelijk e/o mentaal&nbsp;letsel had kunnen oplopen of heeft opgelopen.",
+      "message_after_sending": "Bedankt voor de melding.<br />\r\nHet melden helpt ons verbeteren!<br />\r\n&nbsp;",
+      "group": {
+        "group_id": 698,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 883,
+      "title": "Incidentregistratie",
+      "case_type": {
+        "case_type_id": 195,
+        "name": "wzh"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier enkel gebruiken bij valincidenten of medicatieweigering, waarbij:\r\n<ul>\r\n\t<li>Geen letsel aanwezig is;</li>\r\n\t<li>Het valrisico geaccepteerd is, blijkend uit de cli&euml;ntkaart;</li>\r\n\t<li>De medicatieweigering geaccepteerd is, blijkend uit de cli&euml;ntkaart;</li>\r\n</ul>\r\nAls bovenstaande niet van toepassing is, graag het incident melden via het <a href=\"https://infolandtest.wzh.nl/Management/LinkLoader.aspx?ID=18862040-1f2d-4d37-a811-2fa5c322f3ca\">incidentenregistratie</a>",
+      "message_after_sending": "Bedankt voor de melding.<br />\r\nHet melden helpt ons verbeteren!",
+      "group": {
+        "group_id": 699,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 884,
+      "title": "Melding geaccepteerd valrisico en medicatieweigering",
+      "case_type": {
+        "case_type_id": 195,
+        "name": "wzh"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het melden van signaleringen van proces- en projectverstoringen door eigen organisatie, leveranciers, onderaannemers en klanten.&nbsp;",
+      "message_after_sending": "Bedankt voor het maken van de melding.&nbsp;<br />\r\nDeze wordt nu verstuurd aan de projectmanager die de verdere afhandeling van de melding co&ouml;rdineert.",
+      "group": {
+        "group_id": 706,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 893,
+      "title": "Signaleringsbon",
+      "case_type": {
+        "case_type_id": 198,
+        "name": "Signaleringsproces Hollandia"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Maak door middel van het invullen van dit formulier een melding van een incident.",
+      "message_after_sending": "Bedankt voor de melding van het incident. Deze zal verder worden beoordeeld, onderzocht en afgehandeld.&nbsp;",
+      "group": {
+        "group_id": 710,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 897,
+      "title": "Incidentenrapport - melding",
+      "case_type": {
+        "case_type_id": 197,
+        "name": "Incidentmelding / Bijna ongeval"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in bij verbruik van Gas Water en Electra per vestiging",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 713,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 14,
+          "name": "Controles en inspecties"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 900,
+      "title": "Verbruik invulformulier",
+      "case_type": {
+        "case_type_id": 199,
+        "name": "Verbruik meten De Groot"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Bij een klacht dit formulier invullen a.u.b.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 716,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 903,
+      "title": "Klachtenregistratie Transport",
+      "case_type": {
+        "case_type_id": 200,
+        "name": "Klachten Raben"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Vul in bij klantklachten",
+      "message_after_sending": "Bedankt voor het melden van de klacht",
+      "group": {
+        "group_id": 718,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 905,
+      "title": "Klachten Raben",
+      "case_type": {
+        "case_type_id": 200,
+        "name": "Klachten Raben"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used to registrate an audit.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 726,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 917,
+      "title": "Registrate Audit",
+      "case_type": {
+        "case_type_id": 204,
+        "name": "Registrate Audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used to registrate an audit.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 726,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 919,
+      "title": "Registrate Audit",
+      "case_type": {
+        "case_type_id": 204,
+        "name": "Registrate Audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used for the registration of&nbsp;findings and issues.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 728,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 920,
+      "title": "Finding / issue form (Audits, Risks, Controls, IT)",
+      "case_type": {
+        "case_type_id": 205,
+        "name": "Finding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used for the registration of&nbsp;findings and issues.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 728,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 921,
+      "title": "Finding / issue form (Audits, Risks, Controls, IT)",
+      "case_type": {
+        "case_type_id": 205,
+        "name": "Finding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used to describe and monitor Actions",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 733,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 928,
+      "title": "Action Form Audit Finding (eerst een finding registreren voordat je dit formulier invult!",
+      "case_type": {
+        "case_type_id": 207,
+        "name": "Actions"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Form to be used to describe and monitor Actions",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 733,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 929,
+      "title": "Action Form Audit Finding (first registrate Finding before filling in this form!)",
+      "case_type": {
+        "case_type_id": 207,
+        "name": "Actions"
+      }
+    },
+    {
+      "type": "full",
+      "description": "We spreken van een voedselveiligheidsincident wanneer er spraken is van een onbeheerst voedsel-veiligheidsgevaar van een product/proces dat een mogelijke impact heeft op de klant op gebied van chemische, microbiologische, fysische of allergenen contaminatie.",
+      "message_after_sending": "Bedankt voor uw melding",
+      "group": {
+        "group_id": 737,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 934,
+      "title": "Melding voedselveiligheidsincident - KV",
+      "case_type": {
+        "case_type_id": 208,
+        "name": "Voedselveiligheidsincident - Koninklijke Vezet"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meld hier een nieuwe verwerking van persoonsgegevens. Deze zal hierna door de Privacy Officer worden gecontroleerd. Bij eventuele vragen of opmerkingen zal hij contact met je opnemen.",
+      "message_after_sending": "Dankjewel voor je aanmelding!",
+      "group": {
+        "group_id": 744,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 22,
+          "name": "AVG"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 942,
+      "title": "Aanmelden nieuwe verwerking persoonsgegevens",
+      "case_type": {
+        "case_type_id": 212,
+        "name": "AVG GDPR Verwerkingsregister"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Aanmelden nieuwe verwerkingen.",
+      "message_after_sending": "Bedankt voor de aanmelden. De FG neemt deze in behandeling.",
+      "group": {
+        "group_id": 747,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 945,
+      "title": "Aanmelden nieuwe verwerking",
+      "case_type": {
+        "case_type_id": 212,
+        "name": "AVG GDPR Verwerkingsregister"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier ter ondersteuning van de OOG-ronde binnen Feadship / Koninklijke De Vries Scheepsbouw",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 750,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 14,
+          "name": "Controles en inspecties"
+        },
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "thumbs_up_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 948,
+      "title": "OOG-ronde Feadship",
+      "case_type": {
+        "case_type_id": 213,
+        "name": "Feadship - OOG"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier dient dagelijks ingevuld te worden. Vul elk uur in en sla op. Aan het einde van de dag mag het formulier verstuurd worden",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 753,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 951,
+      "title": "RF Controle glaslijn",
+      "case_type": {
+        "case_type_id": 214,
+        "name": "RF Controle glaslijn"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Fill out this form in case of a NCR or request for concession",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 757,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 955,
+      "title": "NCR  & Request for Concession form",
+      "case_type": {
+        "case_type_id": 215,
+        "name": "NCR & Request for concession"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier wordt gebruikt voor het melden van een (verbeter)actie.&nbsp;",
+      "message_after_sending": "Bedankt voor je melding!<br />\r\n<br />\r\nDeze wordt nu beoordeeld en opgepakt. Je wordt op de hoogte gebracht als de melding is afgerond.&nbsp;",
+      "group": {
+        "group_id": 759,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "thumbs_up_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 957,
+      "title": "Melding (verbeter)actie - KV",
+      "case_type": {
+        "case_type_id": 216,
+        "name": "PDCA cyclus - Koninklijke Vezet"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Wil je iets melden, vul dan dit formulier in.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 794,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1007,
+      "title": "Meldformulier",
+      "case_type": {
+        "case_type_id": 222,
+        "name": "Twence meldformulier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "vul in",
+      "message_after_sending": "bedankt!",
+      "group": {
+        "group_id": 799,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1012,
+      "title": "auditform.",
+      "case_type": {
+        "case_type_id": 223,
+        "name": "auditform."
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het uitzetten van een controletaak op bewijsmateriaal ten behoeve van een normkader",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 801,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "help"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1014,
+      "title": "Periodieke controle op bewijs",
+      "case_type": {
+        "case_type_id": 224,
+        "name": "Compliance controle op bewijsmateriaal"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Binnen onze organisatie&nbsp;worden&nbsp;vertrouwelijke persoonsgegevens verwerkt, zoals cli&euml;ntgegevens, gegevens over de omgeving van de cli&euml;nt en medewerker gegevens.<br />\r\n<br />\r\nAls persoonsgegevens terecht komen bij partijen voor welke zij <strong>niet</strong> bedoeld zijn, wordt er gesproken van een <strong>datalek</strong>. Voorbeelden van&nbsp;beveiligingsincidenten zijn: dossiers die bij onbevoegden terecht komen, hackaanvallen waarbij cli&euml;ntgegevens gestolen worden, maar ook het kwijtraken van een laptop of USB-stick&nbsp;waarop een Excel sheet met afspraken staat.",
+      "message_after_sending": "<br />\r\nBedankt voor het invullen van het meldformulier Datalek.<br />\r\nVoor meer informatie kunt u contact opnemen met het Privacy Loket -&nbsp;privacyloket@klantnaam.nl",
+      "group": {
+        "group_id": 804,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1017,
+      "title": "Melding datalek",
+      "case_type": {
+        "case_type_id": 225,
+        "name": "AVG GDPR Melding Datalek"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in voor het aanvragen van een werkvergunning",
+      "message_after_sending": "Je aanvraag wordt in behandeling genomen",
+      "group": {
+        "group_id": 809,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1022,
+      "title": "Werkvergunning aanvragen",
+      "case_type": {
+        "case_type_id": 226,
+        "name": "Werkvergunningen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier om een SHE melding te doen.<br />\r\n<br />\r\n<br />\r\n&nbsp;",
+      "message_after_sending": "Je melding zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 813,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1026,
+      "title": "Ongevallen en incidentenformulier 2.0",
+      "case_type": {
+        "case_type_id": 227,
+        "name": "Incident / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Verwenden Sie dieses Formular, um einen Ereignis zu melden.",
+      "message_after_sending": "Ihre Meldung wird so schnell wie m&ouml;glich bearbeitet.",
+      "group": {
+        "group_id": 813,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 1027,
+      "title": "Ereignisbericht 2.0",
+      "case_type": {
+        "case_type_id": 227,
+        "name": "Incident / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form to&nbsp;make a SHE report.<br />\n&nbsp;",
+      "message_after_sending": "Your report will be processed as soon as possible.",
+      "group": {
+        "group_id": 813,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 1028,
+      "title": "SHE report 2.0",
+      "case_type": {
+        "case_type_id": 227,
+        "name": "Incident / near miss"
+      }
+    },
+    {
+      "type": "full",
+      "description": "fill out in case of an accident or near miss",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 710,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 1050,
+      "title": "Accident - near miss",
+      "case_type": {
+        "case_type_id": 197,
+        "name": "Incidentmelding / Bijna ongeval"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het uitvoeren van een&nbsp;Business Impact Scan (BIS).",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 824,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1053,
+      "title": "Business Impact Scan (BIS)       ",
+      "case_type": {
+        "case_type_id": 228,
+        "name": "BIS RDW"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form&nbsp;for any deviations&nbsp;of&nbsp;incoming goods inspection.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 832,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 1061,
+      "title": "Incoming Goods Inspection",
+      "case_type": {
+        "case_type_id": 230,
+        "name": "NCR test Dennis"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Please use this form&nbsp;for any deviations&nbsp;of&nbsp;incoming goods inspection.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 832,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1062,
+      "title": "Incoming Goods Inspection",
+      "case_type": {
+        "case_type_id": 230,
+        "name": "NCR test Dennis"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Vul dit formulier in bij storing aan apparatuur en machines",
+      "message_after_sending": "je melding wordt in behandeling genomen",
+      "group": {
+        "group_id": 837,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "grey",
+          "icon_material_design_name": "build"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1070,
+      "title": "Storing melden",
+      "case_type": {
+        "case_type_id": 110,
+        "name": "Onderhouds records"
+      }
+    },
+    {
+      "type": "full",
+      "description": "vul dit in als er een klacht is",
+      "message_after_sending": "bedankt voor je melding",
+      "group": {
+        "group_id": 841,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1074,
+      "title": "voorbeeld meldformulier",
+      "case_type": {
+        "case_type_id": 231,
+        "name": "voorbeeld meldformulier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Wanneer er sprake is van klant-, leveranciers- of interne klacht vul dan dit formulier in",
+      "message_after_sending": "De klacht wordt in behandeling genomen",
+      "group": {
+        "group_id": 843,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1076,
+      "title": "Klachtenformulier ",
+      "case_type": {
+        "case_type_id": 232,
+        "name": "Verbeter- en signaleringsrapport"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier dient ingevuld te worden om een verbetervoorstel in te dienen.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 846,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "mdi-lightbulb"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1079,
+      "title": "Verbetervoorstel algemeen",
+      "case_type": {
+        "case_type_id": 233,
+        "name": "Verbetervoorstel"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Fill out this form by a new product request",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 867,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1112,
+      "title": "New Product Request (NPR)",
+      "case_type": {
+        "case_type_id": 235,
+        "name": "New Product Request"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Vul op dit formulier je temperatuurregistraties in. ",
+      "message_after_sending": "Temperatuurregistraties zijn succesvol verwerkt.",
+      "group": {
+        "group_id": 878,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1123,
+      "title": "Temperatuur registraties",
+      "case_type": {
+        "case_type_id": 236,
+        "name": "HACCP registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "vul formulier in",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 879,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1124,
+      "title": "Aftekenlijst keukenhygiëne schoonmaakplan",
+      "case_type": {
+        "case_type_id": 236,
+        "name": "HACCP registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "vul in",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 880,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1125,
+      "title": "Temperatuur registraties 1",
+      "case_type": {
+        "case_type_id": 236,
+        "name": "HACCP registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Aanvraag drukwerk/verpakkingsmateriaal",
+      "message_after_sending": "Je aanvraag wordt in behandeling genomen",
+      "group": {
+        "group_id": 883,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1128,
+      "title": "Aanvraag drukwerk/verpakkingsmateriaal",
+      "case_type": {
+        "case_type_id": 237,
+        "name": "DKL Aanvragen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul onderstaande aanvraagformulier in",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 890,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1135,
+      "title": "Aanvraag voor overig",
+      "case_type": {
+        "case_type_id": 238,
+        "name": "DKL Aanvragen 2"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier wanneer er een afwijking geconstateerd wordt.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 892,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1137,
+      "title": "Afwijking registratie",
+      "case_type": {
+        "case_type_id": 239,
+        "name": "Afwijking registratie Ausnutria"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in wanneer er sprake is van een klacht",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 897,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1142,
+      "title": "Klachten registratie",
+      "case_type": {
+        "case_type_id": 240,
+        "name": "Klacht Ausnutria"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "In het geval van een klantklacht, vul dit formulier in",
+      "message_after_sending": "De klacht wordt in behandeling genomen",
+      "group": {
+        "group_id": 906,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1151,
+      "title": "Klantklacht mobiel",
+      "case_type": {
+        "case_type_id": 241,
+        "name": "Klantklacht Ausnutria"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Plan a supplier audit via this form",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 910,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1155,
+      "title": "Plan supplier audit",
+      "case_type": {
+        "case_type_id": 242,
+        "name": "Supplier audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Report findings during a supplier audit via this form",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 913,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1158,
+      "title": "Audit finding ",
+      "case_type": {
+        "case_type_id": 243,
+        "name": "Audit finding creation form"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Fill in this form to calculate the RPN score",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 916,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1161,
+      "title": "RPN Score suppliers",
+      "case_type": {
+        "case_type_id": 244,
+        "name": "Risk priority number"
+      }
+    },
+    {
+      "type": "full",
+      "description": "invullen aub",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 918,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1163,
+      "title": "meldformulier",
+      "case_type": {
+        "case_type_id": 245,
+        "name": "voorbeeld melding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Report non conformities with this form",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 920,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1165,
+      "title": "Non conformity report ",
+      "case_type": {
+        "case_type_id": 246,
+        "name": "Non conformity report"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier om een afwijking of observatie uit een audit te registreren",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 926,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1175,
+      "title": "Afwijking of observatie uit audit",
+      "case_type": {
+        "case_type_id": 247,
+        "name": "Afwijking of observatie uit audit"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "invullen bij elke levering",
+      "message_after_sending": "dankje",
+      "group": {
+        "group_id": 938,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1187,
+      "title": "ingangscontrole formulier",
+      "case_type": {
+        "case_type_id": 248,
+        "name": "ingangscontrole2"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "dankje",
+      "message_after_sending": "dankje",
+      "group": {
+        "group_id": 939,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "whatshot"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1188,
+      "title": "abc",
+      "case_type": {
+        "case_type_id": 240,
+        "name": "Klacht Ausnutria"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Via dit formulieren kunnen incidenten en gevaarlijke situaties gemeld worden.",
+      "message_after_sending": "Bedankt voor je melding, we nemen hem in behandeling",
+      "group": {
+        "group_id": 955,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1213,
+      "title": "Registratie incident",
+      "case_type": {
+        "case_type_id": 252,
+        "name": "Registratie incidenten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<p>Dit formulier biedt u alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten.</p>",
+      "message_after_sending": "Bedankt voor uw melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 955,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 1214,
+      "title": "Ongevallen en incidentenformulier",
+      "case_type": {
+        "case_type_id": 252,
+        "name": "Registratie incidenten"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Beste,\r\nVia dit formulier kun je een incident of gevaarlijke situatie melden",
+      "message_after_sending": "Bedankt voor het melden",
+      "group": {
+        "group_id": 959,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1220,
+      "title": "Mobiel melden incident",
+      "case_type": {
+        "case_type_id": 252,
+        "name": "Registratie incidenten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Toelichting Conformity Assessment",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 971,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "cancel"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 1242,
+      "title": "Conformity Assessment (NPR) Infoland test 3 juni",
+      "case_type": {
+        "case_type_id": 255,
+        "name": "ICL NPR 3 juni 2020"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Toelichting Conformity Assessment",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 971,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "cancel"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1243,
+      "title": "Conformity Assessment (NPR)",
+      "case_type": {
+        "case_type_id": 255,
+        "name": "ICL NPR 3 juni 2020"
+      }
+    },
+    {
+      "type": "full",
+      "description": "<table border=\"0\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Probeer dit ongevallenregistratieformulier bij alle (bijna-) ongevallen zo volledig mogelijk in te vullen. Vul daarom alles in wat bekend is van het (bijna-) ongeval, met de mogelijke oorzaken en ook eventueel bedachte oplossingen.</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n",
+      "message_after_sending": "Bedankt voor jouw melding!<br />\r\nDe melding is ingediend bij QHSE, jouw manager en de gebiedsverantwoordelijke.<br />\r\nDe melding wordt zo spoedig mogelijk in behandeling genomen door de HSE-officer.",
+      "group": {
+        "group_id": 995,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1289,
+      "title": "Melding (bijna-) ongeval (KVB)",
+      "case_type": {
+        "case_type_id": 256,
+        "name": "(bijna) ongeval"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Tekst toelichting",
+      "message_after_sending": "Bedankt voor je melding",
+      "group": {
+        "group_id": 1003,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1297,
+      "title": "Melding (bijna) ongeval",
+      "case_type": {
+        "case_type_id": 256,
+        "name": "(bijna) ongeval"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Voor iedere audit wordt dit&nbsp;formulier ingevuld in het kader van de planning.&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1005,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1300,
+      "title": "Auditformulier",
+      "case_type": {
+        "case_type_id": 257,
+        "name": "Interne audits via M&A NL"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Meld het hier als je een gevaarlijke situatie hebt ontdekt.&nbsp;",
+      "message_after_sending": "Bedankt voor je melding.&nbsp;",
+      "group": {
+        "group_id": 1019,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1331,
+      "title": "Meld een gevaarlijke situatie",
+      "case_type": {
+        "case_type_id": 259,
+        "name": "Gevaarlijke situaties"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Heb je een gevaarlijke situatie ontdekt, meld dat dan via dit formulier.",
+      "message_after_sending": "Bedankt voor je melding. ",
+      "group": {
+        "group_id": 1023,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1335,
+      "title": "Melding gevaarlijke situatie mobiel",
+      "case_type": {
+        "case_type_id": 259,
+        "name": "Gevaarlijke situaties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formulier om een klacht aan een leverancier te registreren.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1024,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "primary",
+          "icon_material_design_name": "thumbs_up_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1336,
+      "title": "Klacht leverancier",
+      "case_type": {
+        "case_type_id": 260,
+        "name": "Klacht leverancier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "als er een klacht over de dienstverlening binnenkomt dan hier registreren",
+      "message_after_sending": "hartelijk dank, we nemen de klacht in behandeling",
+      "group": {
+        "group_id": 1029,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1341,
+      "title": "klachten wiebe",
+      "case_type": {
+        "case_type_id": 261,
+        "name": "Klacht wiebe"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het melden van klachten, aanvragen van een dossier, registreren van een compliment of een blanco melding.",
+      "message_after_sending": "De melding werd geregistreerd.",
+      "group": {
+        "group_id": 1032,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "thumb_down"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1344,
+      "title": "Klachtenregistratie",
+      "case_type": {
+        "case_type_id": 263,
+        "name": "Klachten"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Heeft u een compliment voor ons? Leuk! Gebruik daarvoor dit formulier.\n",
+      "message_after_sending": "Bedankt voor uw compliment!",
+      "group": {
+        "group_id": 1034,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "thumb_up"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1346,
+      "title": "Compliment (mobiel)",
+      "case_type": {
+        "case_type_id": 263,
+        "name": "Klachten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kan je een Verwerking registreren in het Verwerkingsregister&nbsp;",
+      "message_after_sending": "Bedankt voor de registratie; deze zal door de Privacy Contactpersoon verder worden behandeld.",
+      "group": {
+        "group_id": 1040,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1352,
+      "title": "Registreer Verwerking",
+      "case_type": {
+        "case_type_id": 265,
+        "name": "Verwerking (BB)"
+      }
+    },
+    {
+      "type": "full",
+      "description": "fadfdas",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1043,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1355,
+      "title": "360",
+      "case_type": {
+        "case_type_id": 266,
+        "name": "360"
+      }
+    },
+    {
+      "type": "full",
+      "description": "test report form",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1045,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 1357,
+      "title": "Report form",
+      "case_type": {
+        "case_type_id": 267,
+        "name": "Test case type"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Formuleer hieronder het voorstel tot verbetering.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1046,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1358,
+      "title": "Verzoek/voorstel tot verbetering",
+      "case_type": {
+        "case_type_id": 268,
+        "name": "Verebetermaatregelen - Rob"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Het binnen de apotheek van het ASZ vastleggen en beoordelen van afwijkingen tijdens de bereiding of analyse van (voorraad)producten.<br />\r\n&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1051,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1363,
+      "title": "Deviatie (ongeplande afwijking) formulier   ",
+      "case_type": {
+        "case_type_id": 269,
+        "name": "Deviaties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "With this form a non-conformity can be registrated",
+      "message_after_sending": "The non-conformity will be sent to the body&#39;s representative for response",
+      "group": {
+        "group_id": 1056,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 17,
+          "name": "Audits en KPI's"
+        },
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 1368,
+      "title": "Non-conformity form",
+      "case_type": {
+        "case_type_id": 270,
+        "name": "Control Union Internal Audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Verbetersuggesties, onveilige situaties, klachten en project evaluaties meld je via dit formulier",
+      "message_after_sending": "Bedankt voor je melding, deze zal in behandeling genomen worden.",
+      "group": {
+        "group_id": 1058,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2082,
+      "title": "SPIE - Focus notificaties",
+      "case_type": {
+        "case_type_id": 271,
+        "name": "SPIE - Focus notificaties"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Verbetersuggesties, onveilige situaties, klachten en project evaluaties meld je via dit formulier",
+      "message_after_sending": "Bedankt voor je melding, deze zal in behandeling genomen worden.",
+      "group": {
+        "group_id": 1060,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2084,
+      "title": "SPIE - Focus notificaties app",
+      "case_type": {
+        "case_type_id": 271,
+        "name": "SPIE - Focus notificaties"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Via dit formulier meld je incidenten en ongevallen",
+      "message_after_sending": "Bedankt voor je melding, we nemen deze in behandeling",
+      "group": {
+        "group_id": 1062,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2086,
+      "title": "SPIE - Incident-/ongevalmelding",
+      "case_type": {
+        "case_type_id": 272,
+        "name": "SPIE - Incident-/ongevalmelding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "plan een interne audit in via dit formulier",
+      "message_after_sending": "De audit wordt ingepland",
+      "group": {
+        "group_id": 1067,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2091,
+      "title": "SPIE - Interne audit ",
+      "case_type": {
+        "case_type_id": 273,
+        "name": "SPIE - Interne audit"
+      }
+    },
+    {
+      "type": "full",
+      "description": "registreer audit findings via dit formulier",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1069,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2093,
+      "title": "SPIE - Audit finding formulier",
+      "case_type": {
+        "case_type_id": 274,
+        "name": "SPIE - audit findings"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier wanneer een toolbox heeft plaatsgevonden",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1071,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "assignment_turned_in"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2095,
+      "title": "SPIE - Toolbox registratie",
+      "case_type": {
+        "case_type_id": 275,
+        "name": "SPIE - Toolbox registratie"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Dit formulier biedt u alle mogelijkheden voor het melden van ongevallen en&nbsp;incidenten in de bouw.",
+      "message_after_sending": "Bedankt voor uw melding. Deze zal zo spoedig mogelijk in behandeling genomen worden.",
+      "group": {
+        "group_id": 1078,
+        "form_type": "reporter",
+        "active": false,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "mdi-vlc"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2103,
+      "title": "oefenen",
+      "case_type": {
+        "case_type_id": 30,
+        "name": "Ongevallen en incidenten - NL"
+      }
+    },
+    {
+      "type": "full",
+      "description": "succes",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1084,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2109,
+      "title": "testformulier",
+      "case_type": {
+        "case_type_id": 280,
+        "name": "Rob test"
+      }
+    },
+    {
+      "type": "full",
+      "description": "test",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1086,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2111,
+      "title": "travel request",
+      "case_type": {
+        "case_type_id": 281,
+        "name": "Travel process ITG"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier in om een nieuwe leverancier aan te maken.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1100,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2125,
+      "title": "Agristo - Aanmaak leverancier",
+      "case_type": {
+        "case_type_id": 283,
+        "name": "Agristo - Aanmaak leverancier"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Vul dit formulier aan bij het aanmaken van een grondstof",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1103,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2128,
+      "title": "Agristo - Aanmaak grondstof",
+      "case_type": {
+        "case_type_id": 284,
+        "name": "Agristo - Aanmaak grondstof"
+      }
+    },
+    {
+      "type": "full",
+      "description": "please fill this out when we receive a complaint",
+      "message_after_sending": "Thank you",
+      "group": {
+        "group_id": 1107,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2132,
+      "title": "GY complaint",
+      "case_type": {
+        "case_type_id": 286,
+        "name": "GY complaints"
+      }
+    },
+    {
+      "type": "full",
+      "description": "complaint form",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1107,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 18,
+          "name": "Meldformulieren"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 2133,
+      "title": "english complaint",
+      "case_type": {
+        "case_type_id": 286,
+        "name": "GY complaints"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Melden van verdachte situaties, incidenten, datalekken, inbreuken&nbsp;etc op het gebied van informatiebeveiliging.",
+      "message_after_sending": "Bedankt voor je melding. We gaan er direct mee aan de slag.<br />\r\n<br />\r\nNa afhandeling ontvang je terugkoppeling over je melding.",
+      "group": {
+        "group_id": 1108,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2134,
+      "title": "Beveiligingsincident",
+      "case_type": {
+        "case_type_id": 287,
+        "name": "ISMS Beveiligingsincidenten"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier voor het melden van een ongeval of bijna ongeval.",
+      "message_after_sending": "Bedankt voor het invullen van het formulier.",
+      "group": {
+        "group_id": 1113,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "blue",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2139,
+      "title": "(Bijna) ongevallenformulier",
+      "case_type": {
+        "case_type_id": 288,
+        "name": "Meerlanden Ongevallen"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Gebruik dit formulier om een incident of gevaarlijke situatie te melden.",
+      "message_after_sending": "Bedankt voor het invullen van het incidentformulier.",
+      "group": {
+        "group_id": 1116,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "cancel"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2142,
+      "title": "XMeld ongeval",
+      "case_type": {
+        "case_type_id": 288,
+        "name": "Meerlanden Ongevallen"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Gebruik dit formulier om de bevindingen uit de werkplekinspectie algemeen in te voeren",
+      "message_after_sending": "Bedankt voor het invullen van het meldformulier.",
+      "group": {
+        "group_id": 1117,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2143,
+      "title": "Werkplekinspectie Algemeen",
+      "case_type": {
+        "case_type_id": 289,
+        "name": "Meerlanden WPI"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Gebruik dit formulier voor het melden van een algemene WPI",
+      "message_after_sending": "Bedankt voor het invullen van het formulier. Je ontvangt nog een terugkoppeling.",
+      "group": {
+        "group_id": 1133,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2159,
+      "title": "Algemeen",
+      "case_type": {
+        "case_type_id": 289,
+        "name": "Meerlanden WPI"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Indien een ongeval heeft geleid tot ziekenhuisopname, blijvend letsel of de dood, dan moet te allen tijde een melding bij de Inspectie SZW worden gedaan.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1135,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2161,
+      "title": "Registratie bij ISZW",
+      "case_type": {
+        "case_type_id": 290,
+        "name": "Meerlanden ISZW melding"
+      }
+    },
+    {
+      "type": "full",
+      "description": "test",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1153,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "computer"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2179,
+      "title": "travel request",
+      "case_type": {
+        "case_type_id": 294,
+        "name": "aaa"
+      }
+    },
+    {
+      "type": "full",
+      "description": "via dit formulier meld je onveilige situaties, afwijkingen, verbeterpunten of complimenten",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1158,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2184,
+      "title": "Focus melding",
+      "case_type": {
+        "case_type_id": 298,
+        "name": "Focus"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "focus melding",
+      "message_after_sending": "danku",
+      "group": {
+        "group_id": 1159,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {},
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2185,
+      "title": "focus",
+      "case_type": {
+        "case_type_id": 298,
+        "name": "Focus"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "vul in",
+      "message_after_sending": "dankje",
+      "group": {
+        "group_id": 1160,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "nl-NL",
+      "form_id": 2186,
+      "title": "job registratie",
+      "case_type": {
+        "case_type_id": 280,
+        "name": "Rob test"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Registreer audit findings via dit formulier",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1166,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 17,
+          "name": "Audits en KPI's"
+        },
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2192,
+      "title": "Twence Audit finding formulier",
+      "case_type": {
+        "case_type_id": 300,
+        "name": "Audit Finding Twence"
+      }
+    },
+    {
+      "type": "full",
+      "description": "In diesem Formular werden alle Meldungen von Kunden wie z.B. Reklamationen, Beanstandungen oder Sch&auml;den erfasst.&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1168,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "de-DE",
+      "form_id": 2194,
+      "title": "Reklamationserfassung",
+      "case_type": {
+        "case_type_id": 301,
+        "name": "test2"
+      }
+    },
+    {
+      "type": "full",
+      "description": "In this form all issues such as claims, complaints or damages from customers are reported.",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1168,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "en-US",
+      "form_id": 2195,
+      "title": "Claim capturing",
+      "case_type": {
+        "case_type_id": 301,
+        "name": "test2"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Mobile Version für die Reklamationserfassung",
+      "message_after_sending": "Vielen Dank!",
+      "group": {
+        "group_id": 1170,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "red",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "de-DE",
+      "form_id": 2197,
+      "title": "Mobile Reklamationserfassung",
+      "case_type": {
+        "case_type_id": 301,
+        "name": "test2"
+      }
+    },
+    {
+      "type": "full",
+      "description": "In diesem Formular werden alle Meldungen von Kunden wie z.B. Reklamationen, Beanstandungen oder Sch&auml;den erfasst.&nbsp;",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1168,
+        "form_type": "reporter",
+        "active": false,
+        "icon": {
+          "icon_color": "green",
+          "icon_material_design_name": "edit"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2198,
+      "title": "Reklamationserfassung",
+      "case_type": {
+        "case_type_id": 301,
+        "name": "test2"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier kan je een RI&amp;E analyse voor een locatie uitvoeren.",
+      "message_after_sending": "Bedankt voor het invullen van de RI&amp;E! Je ontvangt een email met de conclusies en een formulier om je plan van aanpak in te vullen. Vul dit formulier in waarna het verzonden zal worden aan de centrale Arbo co&ouml;rdinator.",
+      "group": {
+        "group_id": 1172,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 21,
+          "name": "Risicoanalyses"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2200,
+      "title": "RI&E HEMA",
+      "case_type": {
+        "case_type_id": 302,
+        "name": "RI&E HEMA"
+      }
+    },
+    {
+      "type": "full",
+      "description": "Met dit formulier wordt een RI&amp;E gepland",
+      "message_after_sending": "",
+      "group": {
+        "group_id": 1180,
+        "form_type": "reporter",
+        "active": true,
+        "category": {
+          "category_id": 21,
+          "name": "Risicoanalyses"
+        },
+        "icon": {
+          "icon_color": "orange",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": true,
+        "can_mail_after_sending": true,
+        "show_navigate_to_case_after_sending": true
+      },
+      "language": "nl-NL",
+      "form_id": 2208,
+      "title": "RI&E Hema",
+      "case_type": {
+        "case_type_id": 304,
+        "name": "RI&E HEMA inclusief planning"
+      }
+    },
+    {
+      "type": "mobile",
+      "description": "Verbetersuggesties, onveilige situaties, klachten en project evaluaties meld je via dit formulier",
+      "message_after_sending": "Bedankt voor je melding, deze zal in behandeling genomen worden.",
+      "group": {
+        "group_id": 1182,
+        "form_type": "reporter",
+        "active": true,
+        "icon": {
+          "icon_color": "yellow darken-1",
+          "icon_material_design_name": "warning"
+        },
+        "visibility": "public",
+        "can_print_after_sending": false,
+        "can_mail_after_sending": false,
+        "show_navigate_to_case_after_sending": false
+      },
+      "language": "en-US",
+      "form_id": 2210,
+      "title": "SPIE - Focus notificaties app (1)",
+      "case_type": {
+        "case_type_id": 271,
+        "name": "SPIE - Focus notificaties"
+      }
+    }
+  ]

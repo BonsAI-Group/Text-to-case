@@ -10,6 +10,8 @@ from dto.FieldSubmit import FieldSubmit
 
 import os
 from dotenv import load_dotenv
+from service.FormRequesterService import FormRequesterService
+from util.ZenyaFormParser import ZenyaFormParser
 load_dotenv()
 
 app = FastAPI()
@@ -34,3 +36,8 @@ async def forms(formSubmit: FormSubmit) -> FormAnswer:
 @app.post("/field")
 async def field(field: FieldSubmit) -> FieldAnswer:
     return FieldService(field.formName).fillInField(field.field, field.context)
+
+# try
+form = FormRequesterService.getFormById(1289)
+form = ZenyaFormParser.parseForm(form)
+print(form)
