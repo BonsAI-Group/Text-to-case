@@ -10,8 +10,6 @@ from dto.FieldSubmit import FieldSubmit
 
 import os
 from dotenv import load_dotenv
-from service.FormRequesterService import FormRequesterService
-from util.ZenyaFormParser import ZenyaFormParser
 load_dotenv()
 
 app = FastAPI()
@@ -30,14 +28,15 @@ app.add_middleware(
 )
 
 @app.post("/forms")
-async def forms(formSubmit: FormSubmit) -> FormAnswer:
+async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
     return FormService(formSubmit.form.name).fillForm(formSubmit)
 
 @app.post("/field")
-async def field(field: FieldSubmit) -> FieldAnswer:
+async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:
     return FieldService(field.formName).fillInField(field.field, field.context)
 
-# try
-form = FormRequesterService.getFormById(1289)
-form = ZenyaFormParser.parseForm(form)
-print(form)
+@app.get("/forms")
+async def formsGetAll() -> list:
+    # This empty string is a hack because of a bad design of the FormService class.
+    return FormService("")\
+        .getAllForms()

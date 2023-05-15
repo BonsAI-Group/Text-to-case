@@ -5,6 +5,7 @@ import LunchLabels from "./components/LunchLabels";
 import SecurityForm from "./components/SecurityForm";
 import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
+import UseZenyaForms from "./components/UseZenyaForms";
 
 /**
  * Page for displaying a form and submitting it.
@@ -17,9 +18,12 @@ const FormPage = () => {
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
+  const { forms:zenyaForms, arePending } = UseZenyaForms();
+
   const forms = {
     "Lunch": LunchLabels,
-    "Security": SecurityForm
+    "Security": SecurityForm,
+    ...zenyaForms
   } as {[key: string]: () => Form};
 
   const [form, setForm] = useState(forms["Lunch"]());
@@ -29,7 +33,7 @@ const FormPage = () => {
     setSending(true);
 
     for (const field of form.fields) {
-      await api.fieldFieldPost({
+      await api.fieldSubmitFieldPost({
         context: story,
         field: field,
         formName: form.name
@@ -74,7 +78,8 @@ const FormPage = () => {
           <Select
             label="Form"
             data={Object.keys(forms)}
-            value={form.name}
+            value={arePending ? "Loading..." : form.name}
+            disabled={arePending}
             onChange={(event) => {
               setForm(forms[event!]);
             }

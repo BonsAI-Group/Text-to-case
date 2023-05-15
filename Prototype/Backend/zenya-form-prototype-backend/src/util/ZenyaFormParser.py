@@ -6,7 +6,7 @@ class ZenyaFormParser:
     """
     A class that parses a form from Zenya's API into a Form object.
     """
-    
+
     @staticmethod
     def parseForm(form: dict) -> Form:
         """
@@ -86,3 +86,19 @@ class ZenyaFormParser:
         for option in field["field"]["list_items"]:
             fields.append(option["name"])
         return FormItem(fieldName=name, fieldType=type, params=fields)
+    
+    @staticmethod
+    def parseFormList(forms: list[dict]) -> list[Form]:
+        """
+        Parses a dictionary representing a list of forms (with designs) and returns a list of Form objects.
+
+        Args:
+        forms (dict): A dictionary representing a list of forms.
+
+        Returns:
+        list: A list of Form objects representing the parsed forms.
+        """
+        formList = []
+        for form in forms:
+            formList.append(ZenyaFormParser.parseForm(form))
+        return formList

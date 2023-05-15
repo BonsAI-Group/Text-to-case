@@ -1,6 +1,6 @@
 import requests
 
-# from auth.ApiAuthorization import ApiAuthorization
+from auth.ApiAuthorization import ApiAuthorization
 
 class FormRequesterService:
     """
@@ -17,8 +17,9 @@ class FormRequesterService:
         Returns:
         dict: The response from the GET request as a JSON object.
         """
-        # api_key = ApiAuthorization.getAuthorizationToken()
-        headers = {}
+        api_key = ApiAuthorization.getAuthorizationToken()
+        api_key_name = ApiAuthorization.getAuthorizationTokenName()
+        headers = {api_key_name: api_key}
         response = requests.get(url, headers=headers)
         if response.status_code == 200:
             return response.json()
@@ -49,7 +50,5 @@ class FormRequesterService:
         Returns:
         dict: The list of forms as a JSON object. These do not include the form design.
         """
-        url = 'https://ai.zenya.work/api/cases/reporter_forms'
-        
-        response = FormRequesterService.requestForm(url)
-        return response
+        url = 'https://ai.zenya.work/api/cases/reporter_forms/'
+        return FormRequesterService.requestForm(url)
