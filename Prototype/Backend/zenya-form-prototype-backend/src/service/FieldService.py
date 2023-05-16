@@ -14,8 +14,8 @@ from models.FormItem import FormItem
 from models.Answer import Answer
 from models.MultiAnswer import MultiAnswer
 from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
-
-
+from ml.TextToNum import TextToNum
+from ml.ITextToNum import ITextToNum
 
 class FieldService:
     """Service for handling fields."""
@@ -25,6 +25,7 @@ class FieldService:
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
+        self.TextToNum: ITextToNum = TextToNum()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
@@ -36,6 +37,22 @@ class FieldService:
             answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[answer.answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.NUMERIC:
+            print(field.fieldName)
+            ### Commented section out due to blue screen
+            # # Generate question
+            # question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            # # Answer question
+            # answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            # print(answer)
+            # numeric_answer = self.TextToNum.textToNum(answer)
+            
+            print(context)
+            predicted_answer = context
+            numeric_answer = self.TextToNum.textToNum(predicted_answer)
+            print(numeric_answer)
+            # return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+            return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[0.97], isTrusted=[True])
         elif field.fieldType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")
