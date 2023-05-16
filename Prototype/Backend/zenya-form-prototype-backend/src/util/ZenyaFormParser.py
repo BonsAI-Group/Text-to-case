@@ -32,7 +32,7 @@ class ZenyaFormParser:
                 elif element["field"]["list_display_type"] == "radio":
                     fields.append(ZenyaFormParser.parseRadioField(element))
             else:
-                continue
+                fields.append(ZenyaFormParser.parseOther(element))
 
         return Form(name=name, fields=fields)
 
@@ -102,3 +102,18 @@ class ZenyaFormParser:
         for form in forms:
             formList.append(ZenyaFormParser.parseForm(form))
         return formList
+    
+    @staticmethod
+    def parseOther(field: dict) -> FormItem:
+        """
+        Parses a dictionary representing a field that is not supported and returns a text FormItem object.
+
+        Args:
+        field (dict): A dictionary representing a field that is not supported.
+
+        Returns:
+        FormItem: A FormItem object representing the parsed field.
+        """
+        type = FieldType.TEXT
+        name = field["field"]["name"]
+        return FormItem(fieldName=name, fieldType=type, params=None)

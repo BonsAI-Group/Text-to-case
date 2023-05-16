@@ -27,16 +27,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+fieldService = FieldService()
+formService = FormService()
+
 @app.post("/forms")
 async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
-    return FormService(formSubmit.form.name).fillForm(formSubmit)
+    return formService.fillForm(formSubmit)
 
 @app.post("/field")
 async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:
-    return FieldService(field.formName).fillInField(field.field, field.context)
+    return fieldService.fillInField(field.field, field.context)
 
 @app.get("/forms")
 async def formsGetAll() -> list:
-    # This empty string is a hack because of a bad design of the FormService class.
-    return FormService("")\
+    return formService\
         .getAllForms()

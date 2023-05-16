@@ -19,7 +19,7 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 
 class FieldService:
     """Service for handling fields."""
-    def __init__(self, formName: str):
+    def __init__(self):
         # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()

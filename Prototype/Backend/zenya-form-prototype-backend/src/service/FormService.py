@@ -9,8 +9,8 @@ from util.ZenyaFormParser import ZenyaFormParser
 class FormService:
     """Service for form operations."""
 
-    def __init__(self, formName: str):
-        self.fieldService: FieldService = FieldService(formName)
+    def __init__(self):
+        self.fieldService: FieldService = FieldService()
 
     def fillForm(self, formSubmit: FormSubmit) -> FormAnswer:
         """Fill a form given a form submit."""
@@ -31,8 +31,6 @@ class FormService:
         allForms = FormRequesterService.getAllForms()
         allFormsRequested = []
         for form in allForms:
-            if len(allFormsRequested) >= 10:
-                break
             try:
                 requestedForm = FormRequesterService.getFormById(form["form_id"])
                 allFormsRequested.append(requestedForm)

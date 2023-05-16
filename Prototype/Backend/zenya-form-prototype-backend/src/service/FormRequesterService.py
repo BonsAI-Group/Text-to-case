@@ -50,5 +50,5 @@ class FormRequesterService:
         Returns:
         dict: The list of forms as a JSON object. These do not include the form design.
         """
-        url = 'https://ai.zenya.work/api/cases/reporter_forms/'
+        url = 'https://ai.zenya.work/api/cases/reporter_forms?can_report=true'
         return FormRequesterService.requestForm(url)
