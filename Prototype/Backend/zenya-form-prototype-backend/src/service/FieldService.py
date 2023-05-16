@@ -39,20 +39,13 @@ class FieldService:
             return FieldAnswer(fieldName=field.fieldName, answer=[answer.answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
         elif field.fieldType == FieldType.NUMERIC:
             print(field.fieldName)
-            ### Commented section out due to blue screen
-            # # Generate question
-            # question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
-            # # Answer question
-            # answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
-            # print(answer)
-            # numeric_answer = self.TextToNum.textToNum(answer)
-            
-            print(context)
-            predicted_answer = context
-            numeric_answer = self.TextToNum.textToNum(predicted_answer)
-            print(numeric_answer)
-            # return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
-            return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[0.97], isTrusted=[True])
+            # Generate question
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            # Answer question
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            # Convert datatype
+            numeric_answer = self.TextToNum.textToNum(answer.answer)
+            return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
         elif field.fieldType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")
