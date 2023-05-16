@@ -38,50 +38,50 @@ const LunchLabels = () : Form => {
       // },
       {
         fieldName: "Number of Attendees",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.NUMERIC,
       },
-      {
-        fieldName: "Organizer",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Budget",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Date",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Start Time",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "End Time",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Location",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Food Diets",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Food Allergies",
-        fieldType: FieldType.TEXT,
-      },
-      {
-        fieldName: "Created by Third Party",
-        fieldType: FieldType.RADIO_BUTTON,
-        params:["yes", "no"]
-      },
-      {
-        fieldName: "Type of Lunch",
-        fieldType: FieldType.MULTI_SELECT,
-        params:["Seafood", "Meat", "Vegan"]
-      }
+      // {
+      //   fieldName: "Organizer",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Budget",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Date",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Start Time",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "End Time",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Location",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Food Diets",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Food Allergies",
+      //   fieldType: FieldType.TEXT,
+      // },
+      // {
+      //   fieldName: "Created by Third Party",
+      //   fieldType: FieldType.RADIO_BUTTON,
+      //   params:["yes", "no"]
+      // },
+      // {
+      //   fieldName: "Type of Lunch",
+      //   fieldType: FieldType.MULTI_SELECT,
+      //   params:["Seafood", "Meat", "Vegan"]
+      // }
     ] as FormItem[]
   } as Form;
 };
