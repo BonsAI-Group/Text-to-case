@@ -16,7 +16,6 @@ const UseZenyaForms = () => {
     useEffect(() => {
         const api = new DefaultApi(ApiConfiguration);
         api.formsGetAllFormsGet().then((response) => {
-            console.log(response.data);
             const newForms = {
                 ...forms,
             }
