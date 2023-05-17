@@ -1,6 +1,7 @@
 import { TimeInput } from "@mantine/dates";
 import ConfidenceBubble from "./ConfidenceBubble";
 import { FieldAnswer, FormItem } from "../../../generated";
+import { Clock } from "tabler-icons-react";
 
 type TimeFieldProps = {
   formItem: FormItem;
@@ -26,6 +27,7 @@ const TimeField = ({formItem, answer, showConfidence} : TimeFieldProps) : JSX.El
       label={formItem.fieldName}
       value={answer?.answer[0]}
       disabled={!answer || !answer.isTrusted[0]}
+      icon={ <Clock size={20}/>}
       styles={{
         input: answer && showConfidence
           ? {

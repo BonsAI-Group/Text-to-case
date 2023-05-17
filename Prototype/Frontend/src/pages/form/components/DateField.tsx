@@ -2,6 +2,7 @@ import { DatePickerInput } from "@mantine/dates";
 import ConfidenceBubble from "./ConfidenceBubble";
 import { FieldAnswer, FormItem } from "../../../generated";
 import { useMemo } from "react";
+import { Calendar } from "tabler-icons-react";
 
 type DateFieldProps = {
     formItem: FormItem;
@@ -36,6 +37,7 @@ const DateField = ({formItem, answer, showConfidence} : DateFieldProps) : JSX.El
     label={formItem.fieldName}
     value={date}
     disabled={!answer || !answer.isTrusted[0]}
+    icon = {<Calendar size={20}/>}
     styles={{
       input: answer && showConfidence
        ? {
