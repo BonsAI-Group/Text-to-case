@@ -16,10 +16,13 @@ class DateTimeConverter(IDateTimeConverter):
         if date is None:
             return None
         # expected formats:
-        # yyyy-mm-ddThh:mm:ss
-        
-        
-        raise NotImplementedError
+        # yyyy-mm-ddThh:mm
+        if re.match(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$', date):
+            parsed_date = datetime.datetime.strptime(date, '%Y-%m-%dT%H:%M')
+            return parsed_date
+        else:
+            print("Warning: unknown date format detected: " + date)
+            return None
     
     def convertDate(self, date: str) -> Optional[datetime.date]:
         """Convert a date to a date."""
