@@ -14,6 +14,9 @@ from models.FormItem import FormItem
 from models.Answer import Answer
 from models.MultiAnswer import MultiAnswer
 from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
+from ml.IDateTimeConverter import IDateTimeConverter
+
+import datetime
 
 
 
@@ -25,6 +28,7 @@ class FieldService:
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
+        self.DateTimeConverter: IDateTimeConverter = DateTimeConverter()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
@@ -45,6 +49,24 @@ class FieldService:
             radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, field.params)
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[radio_button.answer], confidence=[radio_button.confidence], isTrusted=[radio_button.isTrusted])
+        elif field.fieldType == FieldType.DATE:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            date_str = answer.answer[0]
+            date = self.DateTimeConverter.convertDate(date_str).isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[date], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.TIME:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            time_str = answer.answer[0]
+            time = self.DateTimeConverter.convertTime(time_str).isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[time], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.DATE_TIME:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            date_time_str = answer.answer[0]
+            date_time = self.DateTimeConverter.convertDateTime(date_time_str).isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[date_time], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
     
     def fillInQuestionField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a question field."""
