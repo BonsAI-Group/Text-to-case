@@ -10,6 +10,11 @@ from dto.FieldSubmit import FieldSubmit
 
 import os
 from dotenv import load_dotenv
+
+from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestionAnswerer
+from ml.DateTimeConverter import DateTimeConverter
+from ml.DestilbertBaseUncasedMnli import DestilbertBaseSingleModelMultiChoice
+from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 load_dotenv()
 
 app = FastAPI()

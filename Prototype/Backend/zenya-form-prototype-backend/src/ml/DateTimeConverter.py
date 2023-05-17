@@ -29,7 +29,6 @@ class DateTimeConverter(IDateTimeConverter):
         dateParsed = self._parseDateTime(date)
         if dateParsed is None:
             return None
-
         # expected formats:
         # yyyy-mm-dd
         if re.match(r'^\d{4}-\d{2}-\d{2}$', dateParsed):
@@ -79,6 +78,10 @@ class DateTimeConverter(IDateTimeConverter):
         if re.match(r'^PT\d{2}H$', date):
             current_time = datetime.datetime.now()
             parsed_date = current_time + datetime.timedelta(hours=int(date[2:4]))
+            return parsed_date.time()
+        # Try parsing as a datetime
+        parsed_date = self.convertDateTime(date)
+        if parsed_date is not None:
             return parsed_date.time()
         else:  
             print("Warning: unknown time format detected: " + date)

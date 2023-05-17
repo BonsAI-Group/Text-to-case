@@ -30,7 +30,7 @@ const UseZenyaForms = () => {
             setArePending(false);
         });
     
-    }, []);
+    }, [forms]);
 
     return {
         forms,
