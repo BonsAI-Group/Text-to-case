@@ -31,6 +31,10 @@ class ZenyaFormParser:
                     fields.append(ZenyaFormParser.parseMultiSelectField(element))
                 elif element["field"]["list_display_type"] == "radio":
                     fields.append(ZenyaFormParser.parseRadioField(element))
+            elif element["field"]["type"] == "date":
+                fields.append(ZenyaFormParser.parseDateField(element))
+            elif element["field"]["type"] == "time":
+                fields.append(ZenyaFormParser.parseTimeField(element))
             else:
                 fields.append(ZenyaFormParser.parseOther(element))
 
@@ -86,6 +90,36 @@ class ZenyaFormParser:
         for option in field["field"]["list_items"]:
             fields.append(option["name"])
         return FormItem(fieldName=name, fieldType=type, params=fields)
+    
+    @staticmethod
+    def parseDateField(field: dict) -> FormItem:
+        """
+        Parses a dictionary representing a date field and returns a FormItem object.
+
+        Args:
+        field (dict): A dictionary representing a date field.
+
+        Returns:
+        FormItem: A FormItem object representing the parsed date field.
+        """
+        type = FieldType.DATE
+        name = field["field"]["name"]
+        return FormItem(fieldName=name, fieldType=type, params=None)
+    
+    @staticmethod
+    def parseTimeField(field: dict) -> FormItem:
+        """
+        Parses a dictionary representing a time field and returns a FormItem object.
+
+        Args:
+        field (dict): A dictionary representing a time field.
+
+        Returns:
+        FormItem: A FormItem object representing the parsed time field.
+        """
+        type = FieldType.TIME
+        name = field["field"]["name"]
+        return FormItem(fieldName=name, fieldType=type, params=None)
     
     @staticmethod
     def parseFormList(forms: list[dict]) -> list[Form]:
