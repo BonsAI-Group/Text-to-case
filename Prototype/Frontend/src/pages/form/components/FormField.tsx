@@ -4,6 +4,9 @@ import TextField from "./TextField";
 import NumericField from "./NumericField";
 import RadioButtonsField from "./RadioButtonsField";
 import MultiSelectField from "./MultiSelectField";
+import DateField from "./DateField";
+import TimeField from "./TimeField";
+import DateTimeField from "./DateTimeField";
 
 type FormFieldProps = {
   formItem: FormItem;
@@ -35,7 +38,15 @@ const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.El
     case FieldType.MULTI_SELECT:
       field = <MultiSelectField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
       break;
-
+    case FieldType.DATE:
+      field = <DateField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
+      break;
+    case FieldType.TIME:
+      field = <TimeField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
+      break;
+    case FieldType.DATE_TIME:
+      field = <DateTimeField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
+      break;
     default:
       field = <Text>Unknown field type</Text>;
       break;

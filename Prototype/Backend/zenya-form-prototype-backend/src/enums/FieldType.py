@@ -5,3 +5,6 @@ class FieldType(Enum):
     NUMERIC = "numeric"
     MULTI_SELECT = "multi_select"
     RADIO_BUTTON = "radio_button"
+    DATE = "date"
+    TIME = "time"
+    DATE_TIME = "date_time"

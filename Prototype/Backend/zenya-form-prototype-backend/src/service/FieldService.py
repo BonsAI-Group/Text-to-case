@@ -16,6 +16,9 @@ from models.MultiAnswer import MultiAnswer
 from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from ml.TextToNum import TextToNum
 from ml.ITextToNum import ITextToNum
+from ml.IDateTimeConverter import IDateTimeConverter
+from ml.DateTimeConverter import DateTimeConverter
+import datetime
 
 class FieldService:
     """Service for handling fields."""
@@ -26,6 +29,7 @@ class FieldService:
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
         self.TextToNum: ITextToNum = TextToNum()
+        self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a field."""
@@ -55,6 +59,36 @@ class FieldService:
             radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, field.params)
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[radio_button.answer], confidence=[radio_button.confidence], isTrusted=[radio_button.isTrusted])
+        elif field.fieldType == FieldType.DATE:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            date_str = answer.answer
+            date = self.DateTimeConverter.convertDate(date_str)
+            # If the date could not be converted, return an empty answer. TODO: Maybe handle this better?
+            if date is None:
+                return FieldAnswer(fieldName=field.fieldName, answer=[], confidence=[answer.confidence], isTrusted=[False])
+            date = date.isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[date], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.TIME:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            time_str = answer.answer
+            time = self.DateTimeConverter.convertTime(time_str)
+            # If the time could not be converted, return an empty answer. TODO: Maybe handle this better?
+            if time is None:
+                return FieldAnswer(fieldName=field.fieldName, answer=[], confidence=[answer.confidence], isTrusted=[False])
+            time = time.isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[time], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.DATE_TIME:
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            date_time_str = answer.answer
+            date_time = self.DateTimeConverter.convertDateTime(date_time_str)
+            # If the date time could not be converted, return an empty answer. TODO: Maybe handle this better?
+            if date_time is None:
+                return FieldAnswer(fieldName=field.fieldName, answer=[], confidence=[answer.confidence], isTrusted=[False])
+            date_time = date_time.isoformat()
+            return FieldAnswer(fieldName=field.fieldName, answer=[date_time], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
     
     def fillInQuestionField(self, field: FormItem, context: str) -> FieldAnswer:
         """Fill in a question field."""

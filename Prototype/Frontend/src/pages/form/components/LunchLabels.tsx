@@ -4,38 +4,6 @@ const LunchLabels = () : Form => {
   return {
     name: "Lunch",
     fields: [
-      // {
-      //   fieldName: "Number of Attendees",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Organizer",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Budget",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Date",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Start Time",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "End Time",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Location",
-      //   formType: "Normal"
-      // },
-      // {
-      //   fieldName: "Food Allergies",
-      //   formType: "Normal"
-      // },
       {
         fieldName: "Number of Attendees",
         fieldType: FieldType.NUMERIC,
@@ -50,15 +18,15 @@ const LunchLabels = () : Form => {
       },
       {
         fieldName: "Date",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.DATE,
       },
       {
         fieldName: "Start Time",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.TIME,
       },
       {
         fieldName: "End Time",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.TIME,
       },
       {
         fieldName: "Location",
