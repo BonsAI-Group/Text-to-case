@@ -14,12 +14,11 @@ from models.FormItem import FormItem
 from models.Answer import Answer
 from models.MultiAnswer import MultiAnswer
 from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
+from ml.TextToNum import TextToNum
+from ml.ITextToNum import ITextToNum
 from ml.IDateTimeConverter import IDateTimeConverter
 from ml.DateTimeConverter import DateTimeConverter
-
 import datetime
-
-
 
 class FieldService:
     """Service for handling fields."""
@@ -29,6 +28,7 @@ class FieldService:
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
+        self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
@@ -41,6 +41,15 @@ class FieldService:
             answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[answer.answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
+        elif field.fieldType == FieldType.NUMERIC:
+            print(field.fieldName)
+            # Generate question
+            question = self.QuestionGenerator.generateQuestion(context, field.fieldName)
+            # Answer question
+            answer: Answer = self.QuestionAnswerer.answerQuestion(question, context)
+            # Convert datatype
+            numeric_answer = self.TextToNum.textToNum(answer.answer)
+            return FieldAnswer(fieldName=field.fieldName, answer=[numeric_answer], confidence=[answer.confidence], isTrusted=[answer.isTrusted])
         elif field.fieldType == FieldType.MULTI_SELECT:
             # Testing Multi-Choice
             print("Multiple Choice")

@@ -6,7 +6,7 @@ const LunchLabels = () : Form => {
     fields: [
       {
         fieldName: "Number of Attendees",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.NUMERIC,
       },
       {
         fieldName: "Organizer",

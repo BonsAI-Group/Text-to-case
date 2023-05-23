@@ -1,6 +1,7 @@
 import { Stack, Text } from "@mantine/core";
 import { FieldAnswer, FieldType, FormItem } from "../../../generated";
 import TextField from "./TextField";
+import NumericField from "./NumericField";
 import RadioButtonsField from "./RadioButtonsField";
 import MultiSelectField from "./MultiSelectField";
 import DateField from "./DateField";
@@ -27,6 +28,9 @@ const FormField = ({formItem, answer, showConfidence} : FormFieldProps) : JSX.El
   switch (formItem.fieldType) {
     case FieldType.TEXT:
       field = <TextField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
+      break;
+    case FieldType.NUMERIC:
+      field = <NumericField formItem={formItem} answer={answer} showConfidence={showConfidence} />;
       break;
     case FieldType.RADIO_BUTTON:
       field = <RadioButtonsField formItem={formItem} answer={answer} showConfidence={showConfidence} />;

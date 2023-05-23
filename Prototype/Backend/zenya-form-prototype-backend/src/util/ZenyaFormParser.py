@@ -54,6 +54,21 @@ class ZenyaFormParser:
         type = FieldType.TEXT
         name = field["field"]["name"]
         return FormItem(fieldName=name, fieldType=type, params=None)
+
+    @staticmethod
+    def parseNumericField(field: dict) -> FormItem:
+        """
+        Parses a dictionary representing a numeric field and returns a FormItem object.
+
+        Args:
+        field (dict): A dictionary representing a numeric field.
+
+        Returns:
+        FormItem: A FormItem object representing the parsed numeric field.
+        """
+        type = FieldType.NUMERIC
+        name = field["field"]["name"]
+        return FormItem(fieldName=name, fieldType=type, params=None)
     
     @staticmethod
     def parseMultiSelectField(field: dict) -> FormItem:
