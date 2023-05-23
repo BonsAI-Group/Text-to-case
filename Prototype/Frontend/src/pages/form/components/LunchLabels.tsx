@@ -14,7 +14,7 @@ const LunchLabels = () : Form => {
       },
       {
         fieldName: "Budget",
-        fieldType: FieldType.TEXT,
+        fieldType: FieldType.NUMERIC,
       },
       {
         fieldName: "Date",
