@@ -18,7 +18,11 @@ const MultiSelectField = ({formItem, answer, showConfidence} : MultiSelectFieldP
 
   useEffect(() => {
     if (answer) {
-      setSelected(answer.answer);
+      let selected = []
+      for(let i = 0; i < answer.answer.length; i++) {
+        if(answer.isTrusted[i]) selected.push(answer.answer[i])
+      }
+      setSelected(selected);
     }
   }, [answer]);
   return (

@@ -8,16 +8,23 @@ from .IRadioButtonModel import IRadioButtonModel
 from .RadioButtonModel import RadioButtonModel
 
 
-class DestilbertBaseSingleModelMultiChoice(IMultiChoiceModel, IRadioButtonModel):
+class DabertaLargeMultiChoice(IMultiChoiceModel, IRadioButtonModel):
     """A Question Answering model that uses a single BERT Large model."""
     def __init__(self):
-        self.multiChoiceModel = MultiChoiceModel("typeform/distilbert-base-uncased-mnli")
-        self.radioModel = RadioButtonModel("typeform/distilbert-base-uncased-mnli")
+        self.multiChoiceModel = MultiChoiceModel("microsoft/deberta-large-mnli")
+        self.radioModel = RadioButtonModel("microsoft/deberta-large-mnli")
 
     def answerMultiChoice(self, candidate_labels: list, context: str) -> MultiAnswer:
         """Answer a question given a context. Returns the answer and the confidence.""" 
         answer: MultiAnswer = self.multiChoiceModel.answerMultiChoice(context, candidate_labels)
-        return MultiAnswer(answers=answer.answers, confidence=answer.confidence, isTrusted=[True for _ in range(len(answer.answers))])
+        # return MultiAnswer(answers=answer.answers, confidence=answer.confidence, isTrusted=[True for _ in range(len(answer.answers))])
+        return MultiAnswer(
+            answers=answer.answers, 
+            confidence=answer.confidence, 
+            # isTrusted=answer.confidence.map(lambda c: True if c > .6 else False)
+            isTrusted=[confidence >= .5 for confidence in answer.confidence]
+            # [True for confidence in answer.confidence if confidence > .6 else False]
+        )
 
     def answerRadioButton(self, candidate_labels: list, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence.""" 

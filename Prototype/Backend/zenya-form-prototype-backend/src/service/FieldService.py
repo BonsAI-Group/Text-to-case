@@ -1,4 +1,4 @@
-from ml.DestilbertBaseUncasedMnli import DestilbertBaseSingleModelMultiChoice
+from ml.DabertaLargeMnli import DabertaLargeMultiChoice
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
 from ml.IQuestionAnswerer import IQuestionAnswerer
@@ -26,8 +26,8 @@ class FieldService:
         # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
-        self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
-        self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
+        self.MultiChoiceModel: IMultiChoiceModel = DabertaLargeMultiChoice()
+        self.RadioButtonModel: IRadioButtonModel = DabertaLargeMultiChoice()
         self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
 
