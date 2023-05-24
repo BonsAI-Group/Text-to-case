@@ -56,7 +56,8 @@ class FieldService:
             multi_choice: MultiAnswer = self.MultiChoiceModel.answerMultiChoice(context, field.params)
             return FieldAnswer(fieldName=field.fieldName, answer=multi_choice.answers, confidence=multi_choice.confidence, isTrusted=multi_choice.isTrusted)
         elif field.fieldType == FieldType.RADIO_BUTTON:
-            radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, field.params)
+            radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, list(map(lambda x: f"{x} {field.fieldName}", field.params)))
+            radio_button.answer = radio_button.answer.replace(field.fieldName, "").strip()
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[radio_button.answer], confidence=[radio_button.confidence], isTrusted=[radio_button.isTrusted])
         elif field.fieldType == FieldType.DATE:

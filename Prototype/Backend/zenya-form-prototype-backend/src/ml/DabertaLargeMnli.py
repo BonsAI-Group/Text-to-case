@@ -12,7 +12,7 @@ class DabertaLargeMultiChoice(IMultiChoiceModel, IRadioButtonModel):
     """A Question Answering model that uses a single BERT Large model."""
     def __init__(self):
         self.multiChoiceModel = MultiChoiceModel("microsoft/deberta-large-mnli")
-        self.radioModel = RadioButtonModel("microsoft/deberta-large-mnli")
+        self.radioModel = RadioButtonModel("valhalla/distilbart-mnli-12-1")
 
     def answerMultiChoice(self, candidate_labels: list, context: str) -> MultiAnswer:
         """Answer a question given a context. Returns the answer and the confidence.""" 
@@ -21,9 +21,7 @@ class DabertaLargeMultiChoice(IMultiChoiceModel, IRadioButtonModel):
         return MultiAnswer(
             answers=answer.answers, 
             confidence=answer.confidence, 
-            # isTrusted=answer.confidence.map(lambda c: True if c > .6 else False)
-            isTrusted=[confidence >= .5 for confidence in answer.confidence]
-            # [True for confidence in answer.confidence if confidence > .6 else False]
+            isTrusted=[confidence >= .6 for confidence in answer.confidence]
         )
 
     def answerRadioButton(self, candidate_labels: list, context: str) -> Answer:
@@ -31,5 +29,6 @@ class DabertaLargeMultiChoice(IMultiChoiceModel, IRadioButtonModel):
         sequence, labels, scores = self.radioModel.answerRadioButton(context, candidate_labels)
         highest_score = max(scores)
         highest_score_index = scores.index(highest_score)
-        return Answer(answer=labels[highest_score_index], confidence=highest_score, isTrusted=True)
+        highest_score_trusted = True if highest_score > .26 else False
+        return Answer(answer=labels[highest_score_index], confidence=highest_score, isTrusted=highest_score_trusted)
     
