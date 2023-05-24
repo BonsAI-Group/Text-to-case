@@ -78,7 +78,10 @@ const MultiSelectField = ({ formItem, answer, showConfidence }: MultiSelectField
       >
         <Group spacing={"xs"}>
           <Text fz={"sm"}>{props.label}</Text>
-          {answer && showConfidence ? <ConfidenceBubble confidence={answer ? answer.confidence[index] : 0} /> : null}
+          {answer && showConfidence ?
+            <ConfidenceBubble confidence={answer ? answer.confidence[index] : 0} />
+            : null
+          }
         </Group>
       </div>
     )
@@ -96,7 +99,6 @@ const MultiSelectField = ({ formItem, answer, showConfidence }: MultiSelectField
       filter={(value, selected, item) =>
         !selected && item.toLowerCase().startsWith(value.toLowerCase())
       }
-      initiallyOpened={true}
     />
   );
 };
