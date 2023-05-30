@@ -18,20 +18,26 @@ from ml.TextToNum import TextToNum
 from ml.ITextToNum import ITextToNum
 from ml.IDateTimeConverter import IDateTimeConverter
 from ml.DateTimeConverter import DateTimeConverter
-import datetime
+from ml.SpeechToText import SpeechToText
+from ml.ISpeechToText import ISpeechToText
+import os
 
 class FieldService:
     """Service for handling fields."""
     def __init__(self):
-        # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
         self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
+        self.SpeechToText: ISpeechToText = SpeechToText()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
+        path = os.getcwd() + '//audio_files//recording0.wav'
+        print(path)
+        self.SpeechToText.speechToText(path)
+        
         """Fill in a field."""
         """Checking the field Type"""
         if field.fieldType == FieldType.TEXT:
