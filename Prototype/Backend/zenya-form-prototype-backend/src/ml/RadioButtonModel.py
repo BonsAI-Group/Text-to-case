@@ -6,11 +6,11 @@ class RadioButtonModel:
     def __init__(self, model_path):
         self.model_path = model_path
         from transformers import pipeline
-        self.model = pipeline(model=model_path)
+        self.model = pipeline("zero-shot-classification", model=model_path)
     
     def answerRadioButton(self, candidate_labels: list, context: str) -> Tuple[str, float]:
         """Answer a radio button question given a context and labels. Returns the confidence for each label."""
-        result = self.model(context, candidate_labels=candidate_labels)
+        result = self.model(context, candidate_labels, multi_label = False)
         return result["sequence"], result["labels"], result["scores"]
     
     # To make this class a singleton if a class with that model_path already exists

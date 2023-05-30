@@ -41,7 +41,7 @@ const LunchLabels = () : Form => {
         fieldType: FieldType.TEXT,
       },
       {
-        fieldName: "Created by Third Party",
+        fieldName: "Planned for Third Party",
         fieldType: FieldType.RADIO_BUTTON,
         params:["yes", "no"]
       },

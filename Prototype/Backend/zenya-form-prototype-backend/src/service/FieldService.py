@@ -1,4 +1,5 @@
-from ml.DestilbertBaseUncasedMnli import DestilbertBaseSingleModelMultiChoice
+from ml.DabertaLargeMnli import DabertaLargeMultiChoice
+from ml.DistilbartMnli import DistilbartRadioChoice
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
 from ml.IQuestionAnswerer import IQuestionAnswerer
@@ -8,7 +9,6 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from enums.FieldType import FieldType
-from ml.QuestionGenerator import QuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from models.Answer import Answer
@@ -26,8 +26,8 @@ class FieldService:
         # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
-        self.MultiChoiceModel: IMultiChoiceModel = DestilbertBaseSingleModelMultiChoice()
-        self.RadioButtonModel: IRadioButtonModel = DestilbertBaseSingleModelMultiChoice()
+        self.MultiChoiceModel: IMultiChoiceModel = DabertaLargeMultiChoice()
+        self.RadioButtonModel: IRadioButtonModel = DistilbartRadioChoice()
         self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
 
@@ -56,7 +56,8 @@ class FieldService:
             multi_choice: MultiAnswer = self.MultiChoiceModel.answerMultiChoice(context, field.params)
             return FieldAnswer(fieldName=field.fieldName, answer=multi_choice.answers, confidence=multi_choice.confidence, isTrusted=multi_choice.isTrusted)
         elif field.fieldType == FieldType.RADIO_BUTTON:
-            radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, field.params)
+            radio_button: Answer = self.RadioButtonModel.answerRadioButton(context, list(map(lambda x: f"{x} {field.fieldName}", field.params)))
+            radio_button.answer = radio_button.answer.replace(field.fieldName, "").strip()
             # Return answer
             return FieldAnswer(fieldName=field.fieldName, answer=[radio_button.answer], confidence=[radio_button.confidence], isTrusted=[radio_button.isTrusted])
         elif field.fieldType == FieldType.DATE:
