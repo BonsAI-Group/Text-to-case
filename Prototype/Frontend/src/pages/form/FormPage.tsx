@@ -52,7 +52,7 @@ const FormPage = () => {
   };
 
   return (
-    <Container>
+    <Container mb={"15vh"}>
       <Title order={1}>Form</Title>
       <Group grow align="start">
         <Stack>

@@ -1,4 +1,5 @@
 from ml.DabertaLargeMnli import DabertaLargeMultiChoice
+from ml.DistilbartMnli import DistilbartRadioChoice
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from ml.IQuestionGenerator import IQuestionGenerator
 from ml.IQuestionAnswerer import IQuestionAnswerer
@@ -8,7 +9,6 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from enums.FieldType import FieldType
-from ml.QuestionGenerator import QuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from models.Answer import Answer
@@ -27,7 +27,7 @@ class FieldService:
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DabertaLargeMultiChoice()
-        self.RadioButtonModel: IRadioButtonModel = DabertaLargeMultiChoice()
+        self.RadioButtonModel: IRadioButtonModel = DistilbartRadioChoice()
         self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
 
