@@ -1,6 +1,6 @@
 # Create the frontend webapp, pass in the App Service Plan ID
 resource "azurerm_linux_web_app" "frontend" {
-    name                                    = "webapp-ml-text-to-case-frontend"
+    name                                    = "webapp-${local.resource_prefix}-frontend"
     location                                = azurerm_resource_group.rg.location
     resource_group_name                     = azurerm_resource_group.rg.name
     service_plan_id                         = azurerm_service_plan.appserviceplan.id
@@ -15,7 +15,7 @@ resource "azurerm_linux_web_app" "frontend" {
         always_on                           = false
         minimum_tls_version                 = 1.2
         application_stack {
-            docker_image     = "ericvdberge/infoland.frontend"
+            docker_image     = local.frontend_docker_image
             docker_image_tag = "latest"
         }
     }
@@ -23,7 +23,7 @@ resource "azurerm_linux_web_app" "frontend" {
 
 # Create the backend webapp, pass in the App Service Plan ID
 resource "azurerm_linux_web_app" "backend" {
-    name                                    = "webapp-ml-text-to-case-backend"
+    name                                    = "webapp-${local.resource_prefix}-backend"
     location                                = azurerm_resource_group.rg.location
     resource_group_name                     = azurerm_resource_group.rg.name
     service_plan_id                         = azurerm_service_plan.appserviceplan.id
@@ -38,7 +38,7 @@ resource "azurerm_linux_web_app" "backend" {
         always_on                           = false
         minimum_tls_version                 = 1.2
         application_stack {
-            docker_image     = "ericvdberge/infoland.backend"
+            docker_image     = local.backend_docker_image
             docker_image_tag = "latest"
         }
     }

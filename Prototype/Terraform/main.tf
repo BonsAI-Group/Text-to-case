@@ -10,15 +10,15 @@ terraform {
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-  subscription_id = "f76a9885-d2db-43ee-85dd-267a6228a9bf"
-  tenant_id = "c66b6765-b794-4a2b-84ed-845b341c086a"
+  subscription_id = local.subscription_id
+  tenant_id = local.tenant_id
   features {}
 }
 
 # Create the resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "Infoland-text-to-case"
-  location = "West Europe"
+  name     = local.resource_group_name
+  location = local.location
 }
 
 # Create the Linux App Service Plan
@@ -27,5 +27,5 @@ resource "azurerm_service_plan" "appserviceplan" {
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
     os_type             = "Linux"
-    sku_name            = "B1"
+    sku_name            = local.service_plan_sku
 }
