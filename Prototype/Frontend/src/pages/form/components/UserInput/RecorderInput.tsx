@@ -11,7 +11,7 @@ type RecorderProps = {
     answers: FormAnswer;
 }
 
-const RecorderInput = ( {  }: RecorderProps ) => {
+const RecorderInput = ( { form }: RecorderProps ) => {
     const { isRecording, audioUrl, startRecording, stopRecording } = useRecorder();
 
     const [error, setError] = useState<string | undefined>(undefined);
@@ -21,16 +21,43 @@ const RecorderInput = ( {  }: RecorderProps ) => {
         const api = new DefaultApi(ApiConfiguration);
         setSending(true);
         const audioFile = new File([audioUrl!], "audio.wav");
-        api.convertSpeechToTextSpeechPost({audioFile: audioFile}).then((response) => {
-            console.log(response);
+        const audioFileBytes = await convertAudioToBytes(audioFile);
+        console.log('Audio bytes:', audioFileBytes);
+        for (const field of form.fields) {
+            console.log(audioFile instanceof File)
+            api.convertSpeechToTextSpeechPost({
+                audioFile: audioFile,
+                field: field,
+                formName: form.name }).then((response) => {
+                console.log(response);
+            }
+            ).catch((error) => {
+                setError(error.message);
+            }
+            );
         }
-        ).catch((error) => {
-            setError(error.message);
-        }
-        );
         setSending(false);
       };
 
+      function convertAudioToBytes(file: File): Promise<Uint8Array> {
+        return new Promise<Uint8Array>((resolve, reject) => {
+          const reader = new FileReader();
+      
+          reader.onload = () => {
+            const buffer = reader.result as ArrayBuffer;
+            const bytes = new Uint8Array(buffer);
+      
+            resolve(bytes);
+          };
+      
+          reader.onerror = () => {
+            reject(new Error('Failed to convert audio to bytes.'));
+          };
+      
+          reader.readAsArrayBuffer(file);
+        });
+      }
+      
     useEffect(() => {
         if (audioUrl) {
             onSubmit();
