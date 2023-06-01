@@ -6,15 +6,18 @@ resource "azurerm_linux_web_app" "frontend" {
     service_plan_id                         = azurerm_service_plan.appserviceplan.id
     https_only                              = true
     app_settings = {
-        DOCKER_REGISTRY_SERVER_URL          = "https://registry.hub.docker.com/ericvdberge/infoland.frontend"
-        DOCKER_REGISTRY_SERVER_USERNAME     = "ericvdberge"
-        DOCKER_REGISTRY_SERVER_PASSWORD     = "LXBS3yQtxk85fP8@"
+        DOCKER_REGISTRY_SERVER_URL          = "https://index.docker.io"
+        DOCKER_REGISTRY_SERVER_USERNAME     = ""
+        DOCKER_REGISTRY_SERVER_PASSWORD     = ""
         WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
-        WEBSITES_PORT                       = 8000
     }
     site_config {
         always_on                           = false
         minimum_tls_version                 = 1.2
+        application_stack {
+            docker_image     = "ericvdberge/infoland.frontend"
+            docker_image_tag = "latest"
+        }
     }
 }
 
@@ -26,15 +29,18 @@ resource "azurerm_linux_web_app" "backend" {
     service_plan_id                         = azurerm_service_plan.appserviceplan.id
     https_only                              = true
     app_settings = {
-        DOCKER_REGISTRY_SERVER_URL          = "https://registry.hub.docker.com/ericvdberge/infoland.backend"
-        DOCKER_REGISTRY_SERVER_USERNAME     = "ericvdberge"
-        DOCKER_REGISTRY_SERVER_PASSWORD     = "LXBS3yQtxk85fP8@"
+        DOCKER_REGISTRY_SERVER_URL          = "https://index.docker.io"
+        DOCKER_REGISTRY_SERVER_USERNAME     = ""
+        DOCKER_REGISTRY_SERVER_PASSWORD     = ""
         WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
-        WEBSITES_PORT                       = 80
     }
     site_config {
         always_on                           = false
         minimum_tls_version                 = 1.2
+        application_stack {
+            docker_image     = "ericvdberge/infoland.backend"
+            docker_image_tag = "latest"
+        }
     }
 }
 

@@ -10,6 +10,8 @@ terraform {
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
+  subscription_id = "f76a9885-d2db-43ee-85dd-267a6228a9bf"
+  tenant_id = "c66b6765-b794-4a2b-84ed-845b341c086a"
   features {}
 }
 
@@ -25,5 +27,5 @@ resource "azurerm_service_plan" "appserviceplan" {
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
     os_type             = "Linux"
-    sku_name            = "F1"
+    sku_name            = "B1"
 }
