@@ -34,8 +34,7 @@ class FieldService:
         self.SpeechToText: ISpeechToText = SpeechToText()
 
     def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
-        path = os.getcwd() + '//audio_files//recording0.wav'
-        print(path)
+        path = os.getcwd() + '//audio_files//recording.wav'
         self.SpeechToText.speechToText(path)
         
         """Fill in a field."""

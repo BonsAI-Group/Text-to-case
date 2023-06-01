@@ -2,11 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from service.FormService import FormService
 from service.FieldService import FieldService
+from service.SpeechToTextService import SpeechToTextService
 
 from dto.FormSubmit import FormSubmit
 from models.FormAnswer import FormAnswer
 from models.FieldAnswer import FieldAnswer
 from dto.FieldSubmit import FieldSubmit
+from dto.AudioSubmit import AudioSubmit
 
 import os
 from dotenv import load_dotenv
@@ -34,10 +36,15 @@ app.add_middleware(
 
 fieldService = FieldService()
 formService = FormService()
+speechToTextServiceService = SpeechToTextService()
 
 @app.post("/forms")
 async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
     return formService.fillForm(formSubmit)
+
+@app.post("/speech")
+async def convertSpeechToText(audio_file : AudioSubmit) -> str:
+    return speechToTextServiceService.fillInSpeechToText(audio_file)
 
 @app.post("/field")
 async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:
