@@ -5,7 +5,7 @@ class ISpeechToText:
     def __init__(self) -> None:
         pass
     
-    def speechToText(self, spoken_context: wave) -> str:
+    def speechToText(self, spoken_context: bytes) -> str:
         """Converts spoken text to represent context format written. Returns written context of the spoken text."""
         raise NotImplementedError
     
