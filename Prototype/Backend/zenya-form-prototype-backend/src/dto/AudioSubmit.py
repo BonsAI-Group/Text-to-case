@@ -1,7 +1,5 @@
 from pydantic import BaseModel
-
-from src.models.FormItem import FormItem
-
+from models.FormItem import FormItem
 
 class AudioSubmit(BaseModel):
     audioFile: bytes
