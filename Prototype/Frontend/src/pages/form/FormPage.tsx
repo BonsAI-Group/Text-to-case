@@ -6,17 +6,15 @@ import SecurityForm from "./components/SecurityForm";
 import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
 import UseZenyaForms from "./components/UseZenyaForms";
+import RecorderInput from "./components/UserInput/RecorderInput";
+import UserInput from "./components/UserInput/UserInput";
 
 /**
  * Page for displaying a form and submitting it.
  * @returns 
  */
 const FormPage = () => {
-
-  const [story, setStory] = useState<string | undefined>(undefined);
   const [answers, setAnswers] = useState<FormAnswer>({answers: {}} as FormAnswer);
-  const [sending, setSending] = useState<boolean>(false);
-  const [error, setError] = useState<string | undefined>(undefined);
 
   const { forms:zenyaForms, arePending } = UseZenyaForms();
 
@@ -28,52 +26,11 @@ const FormPage = () => {
 
   const [form, setForm] = useState(forms["Lunch"]());
 
-  const onSubmit = async () => {
-    const api = new DefaultApi(ApiConfiguration);
-    setSending(true);
-
-    for (const field of form.fields) {
-      await api.fieldSubmitFieldPost({
-        context: story,
-        field: field,
-        formName: form.name
-      } as FieldSubmit).then((response) => {
-        const newAnswers = {
-          ...answers,
-        }
-        newAnswers.answers[field.fieldName] = response.data;
-        setAnswers(newAnswers);
-      }
-      ).catch((error) => {
-        setError(error.message);
-      });
-    }
-    setSending(false);
-  };
-
   return (
     <Container>
       <Title order={1}>Form</Title>
       <Group grow align="start">
-        <Stack>
-          <Textarea
-            placeholder="Enter your story"
-            label="Your story"
-            value={story}
-            onChange={(event) => setStory(event.currentTarget.value)}
-            minRows={10}
-            />            
-            <Button 
-              onClick={() => onSubmit()} 
-              disabled={!story} 
-              loading={sending} 
-              color={error ? "red" : "blue"} 
-              >
-              {error ? "Error: " + error : 
-                sending ? "Sending" :
-                  "Submit"}
-            </Button>
-        </Stack>
+        <UserInput answers={answers} setAnswers={setAnswers} form={form} />
         <Stack>
           <Select
             label="Form"

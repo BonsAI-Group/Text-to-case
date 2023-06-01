@@ -8,7 +8,7 @@ class SpeechToText(ISpeechToText):
     def __init__(self ):
         self
 
-    def speechToText(self, spoken_context: wave) -> str:
+    def speechToText(self, spoken_context: bytes) -> str:
         context = ''
         converted_audio_path = 'converted.wav'
         audio_path = os.getcwd() + '//audio_files//' + converted_audio_path

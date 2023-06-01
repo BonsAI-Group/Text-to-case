@@ -42,9 +42,11 @@ formService = FormService()
 async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
     return formService.fillForm(formSubmit)
 
-# @app.post("/speech")
-# async def convertSpeechToText(audio_file : AudioSubmit) -> str:
-#     return speechToTextServiceService.fillInSpeechToText(audio_file)
+@app.post("/speech")
+async def convertSpeechToText(audioSubmit : AudioSubmit) -> str:
+    context = speechToTextServiceService.fillInSpeechToText(audioSubmit)
+    field = FieldSubmit(context=context, field=audioSubmit.field, formName=audioSubmit.formName)
+    return fieldSubmit(field)
 
 @app.post("/field")
 async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:
