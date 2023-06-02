@@ -17,7 +17,7 @@ const useRecorder = (): UseRecorderProps => {
 
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
-            const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm", audioBitsPerSecond: 128000 });
+            const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm", audioBitsPerSecond: 44100 });
             setMediaRecorder(mediaRecorder);
             mediaRecorder.ondataavailable = (e) => {
                 setAudioChunks((chunks) => [...chunks, e.data]);

@@ -91,3 +91,4 @@ watchfiles==0.18.1
 websockets==10.4
 Werkzeug==2.3.4
 wrapt==1.15.0
+MoviePy==1.0.3
