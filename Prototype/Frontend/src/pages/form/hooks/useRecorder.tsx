@@ -9,7 +9,7 @@ type UseRecorderProps = {
     stopRecording: () => void;
 }
 
-const useRecorder = () : UseRecorderProps => {
+const useRecorder = (): UseRecorderProps => {
     const [isRecording, setIsRecording] = useState<boolean>(false);
     const [audioChunks, setAudioChunks] = useState<Blob[]>([]);
     const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | undefined>(undefined);
@@ -17,14 +17,14 @@ const useRecorder = () : UseRecorderProps => {
 
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
-            const mediaRecorder = new MediaRecorder(stream);
+            const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/wav" });
             setMediaRecorder(mediaRecorder);
             mediaRecorder.ondataavailable = (e) => {
                 setAudioChunks((chunks) => [...chunks, e.data]);
             };
         });
     }
-    , []);
+        , []);
 
     const startRecording = () => {
         if (mediaRecorder) {
@@ -44,11 +44,11 @@ const useRecorder = () : UseRecorderProps => {
         if (audioChunks.length === 0) {
             return;
         }
-        const audioBlob = new Blob(audioChunks);
+        const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
         const audioUrl = URL.createObjectURL(audioBlob);
         setAudioUrl(audioUrl);
     }
-    , [audioChunks, mediaRecorder]);
+        , [audioChunks, mediaRecorder]);
 
     return {
         isRecording,

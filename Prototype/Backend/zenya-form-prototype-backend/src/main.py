@@ -1,4 +1,6 @@
-from fastapi import FastAPI
+import json
+from typing import Annotated
+from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from service.FormService import FormService
 from service.FieldService import FieldService
@@ -17,6 +19,7 @@ from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestion
 from ml.DateTimeConverter import DateTimeConverter
 from ml.DestilbertBaseUncasedMnli import DestilbertBaseSingleModelMultiChoice
 from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
+from models.FormItem import FormItem
 load_dotenv()
 
 app = FastAPI()
@@ -34,19 +37,28 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-fieldService = FieldService()
-formService = FormService()
+# fieldService = FieldService()
+# formService = FormService()
 audioServiceService = AudioService()
+fieldService = None
+formService = None
+# audioServiceService = None
 
 @app.post("/forms")
 async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
     return formService.fillForm(formSubmit)
 
 @app.post("/speech")
-async def convertSpeechToText(audioSubmit : AudioSubmit) -> str:
-    context = audioServiceService.fillInAudioToText(audioSubmit)
-    field = FieldSubmit(context=context, field=audioSubmit.field, formName=audioSubmit.formName)
-    return fieldSubmit(field)
+async def convertSpeechToText(audioFile: bytes = File(...), field: str = Form(...), formName: str = Form(...)) -> FieldAnswer:
+    field = json.loads(field)
+    context = audioServiceService.fillInAudioToText(audioFile)
+    field = FieldSubmit(context=context, field=field, formName=formName)
+    # return fieldSubmit(field)
+    return context
+
+@app.post("/testFile")
+async def testFile(file: bytes = File(...)) -> str:
+    return len(file)
 
 @app.post("/field")
 async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:

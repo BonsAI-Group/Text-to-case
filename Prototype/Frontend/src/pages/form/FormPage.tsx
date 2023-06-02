@@ -14,15 +14,15 @@ import UserInput from "./components/UserInput/UserInput";
  * @returns 
  */
 const FormPage = () => {
-  const [answers, setAnswers] = useState<FormAnswer>({answers: {}} as FormAnswer);
+  const [answers, setAnswers] = useState<FormAnswer>({ answers: {} } as FormAnswer);
 
-  const { forms:zenyaForms, arePending } = UseZenyaForms();
+  const { forms: zenyaForms, arePending } = UseZenyaForms();
 
   const forms = {
     "Lunch": LunchLabels,
     "Security": SecurityForm,
     ...zenyaForms
-  } as {[key: string]: () => Form};
+  } as { [key: string]: () => Form };
 
   const [form, setForm] = useState(forms["Lunch"]());
 
@@ -44,7 +44,7 @@ const FormPage = () => {
           />
           <FormComponent form={form} answers={answers} />
         </Stack>
-        
+
       </Group>
 
     </Container>
