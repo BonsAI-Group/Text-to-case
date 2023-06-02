@@ -4,6 +4,7 @@ from .ISpeechToText import ISpeechToText
 import speech_recognition as sr
 import soundfile
 import os
+import moviepy.editor as mp
 
 class SpeechToText(ISpeechToText):
     def __init__(self ):
@@ -11,20 +12,24 @@ class SpeechToText(ISpeechToText):
 
     def speechToText(self, spoken_context: bytes) -> str:
         context = ''
-        converted_audio_path = 'converted.wav'
+        converted_audio_path = 'converted.webm'
         audio_dir = os.path.dirname(os.path.abspath(__file__))
         # go up one directory
         audio_dir = os.path.dirname(audio_dir)
         audio_path = os.path.join(audio_dir, 'audio_files', converted_audio_path)
-        
-        # Write the spoken context to a WAV file
+
+        # write to webm file
         with open(audio_path, 'wb') as f:
             f.write(spoken_context)
+
+        # convert webm to wav
+        clip = mp.VideoFileClip(audio_path)
+        clip.audio.write_audiofile(audio_path.replace('webm', 'wav'))
         
         # Load the WAV file and transcribe the audio
-        data, samplerate = soundfile.read(audio_path)
+        data, samplerate = soundfile.read(audio_path.replace('webm', 'wav'))
         r = sr.Recognizer()
-        with sr.AudioFile(audio_path) as source:
+        with sr.AudioFile(audio_path.replace('webm', 'wav')) as source:
             audio = r.record(source)
         
         try:

@@ -17,11 +17,14 @@ const useRecorder = (): UseRecorderProps => {
 
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
-            const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/wav" });
+            const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm", audioBitsPerSecond: 128000 });
             setMediaRecorder(mediaRecorder);
             mediaRecorder.ondataavailable = (e) => {
                 setAudioChunks((chunks) => [...chunks, e.data]);
             };
+            mediaRecorder.onerror = (e) => {
+                console.log(e);
+            }
         });
     }
         , []);
@@ -44,7 +47,7 @@ const useRecorder = (): UseRecorderProps => {
         if (audioChunks.length === 0) {
             return;
         }
-        const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
+        const audioBlob = new Blob(audioChunks, { type: "audio/webm" });
         const audioUrl = URL.createObjectURL(audioBlob);
         setAudioUrl(audioUrl);
     }

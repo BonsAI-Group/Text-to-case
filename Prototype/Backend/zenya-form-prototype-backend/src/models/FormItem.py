@@ -7,4 +7,4 @@ from enums.FieldType import FieldType
 class FormItem(BaseModel):
     fieldName: str
     fieldType: FieldType
-    parameters: Optional[list]
+    params: Optional[list]

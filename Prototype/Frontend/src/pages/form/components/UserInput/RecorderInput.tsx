@@ -2,7 +2,7 @@ import { Button, Loader } from "@mantine/core";
 import { useEffect, useState } from "react";
 import { Microphone, PlayerStop, Tex } from "tabler-icons-react";
 import useRecorder from "../../hooks/useRecorder";
-import { FormAnswer, Form, DefaultApi, FieldSubmit, FormItem, AudioSubmit } from "../../../../generated";
+import { FormAnswer, Form, DefaultApi, FieldSubmit, FormItem } from "../../../../generated";
 import { ApiConfiguration } from "../../../../api/ApiConfiguration";
 
 type RecorderProps = {
@@ -21,7 +21,7 @@ const RecorderInput = ({ form }: RecorderProps) => {
         const api = new DefaultApi(ApiConfiguration);
         setSending(true);
         const audioFileWav = await fetch(audioUrl!).then((response) => response.blob());
-        const audioFile = new File([audioFileWav], "audio.wav", { type: "audio/wav" });
+        const audioFile = new File([audioFileWav], "audio.webm", { type: "audio/webm" });
         const formData = new FormData();
         formData.append("audioFile", audioFile);
         formData.append("formName", form.name);
