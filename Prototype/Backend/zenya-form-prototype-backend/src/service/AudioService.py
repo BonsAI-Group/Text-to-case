@@ -12,10 +12,8 @@ class AudioService:
         self.SpeechToText: ISpeechToText = SpeechToText()
 
     def fillInAudioToText(self, spoken_context: bytes) -> str:
-        # path = os.getcwd() + '//audio_files//recording.wav'
-        # self.SpeechToText.speechToText(path)
-        self.SpeechToText.speechToText(spoken_context)
-        
         """Fill in spoken context."""
         """Checking the field Type"""
+        return(self.SpeechToText.speechToText(spoken_context))
+        
         

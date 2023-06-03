@@ -37,11 +37,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# fieldService = FieldService()
-# formService = FormService()
+fieldService = FieldService()
+formService = FormService()
 audioServiceService = AudioService()
-fieldService = None
-formService = None
+# fieldService = None
+# formService = None
 # audioServiceService = None
 
 @app.post("/forms")
@@ -52,8 +52,9 @@ async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
 async def convertSpeechToText(audioFile: bytes = File(...), field: str = Form(...), formName: str = Form(...)) -> FieldAnswer:
     field = json.loads(field)
     context = audioServiceService.fillInAudioToText(audioFile)
+    print(context)
     field = FieldSubmit(context=context, field=field, formName=formName)
-    # return fieldSubmit(field)
+    return fieldSubmit(field)
     return context
 
 @app.post("/testFile")
