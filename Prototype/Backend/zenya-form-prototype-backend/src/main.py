@@ -52,7 +52,6 @@ async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
 async def convertSpeechToText(audioFile: bytes = File(...), field: str = Form(...), formName: str = Form(...)) -> FieldAnswer:
     field = json.loads(field)
     context = audioServiceService.fillInAudioToText(audioFile)
-    print(context)
     field = FieldSubmit(context=context, field=field, formName=formName)
     return fieldSubmit(field)
     return context
