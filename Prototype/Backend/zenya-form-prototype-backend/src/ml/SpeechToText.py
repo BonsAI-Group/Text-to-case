@@ -1,7 +1,7 @@
 from .ISpeechToText import ISpeechToText
 import speech_recognition as sr
-import soundfile
 import os
+import ffmpeg
 
 class SpeechToText(ISpeechToText):
     def __init__(self ):
@@ -9,27 +9,20 @@ class SpeechToText(ISpeechToText):
 
     def speechToText(self, spoken_context: bytes) -> str:
         context = ''
-        audio_file = './converted.webm'
-        audio_path = (os.getcwd() + '//' + audio_file)
-        audio_output_file = './out.wav'
-        audio_output_path =(os.getcwd() + '//' + audio_output_file)
+        webm_file = './converted.webm'
+        webm_path = (os.getcwd() + '/converted.webm')
+        wav_file = './out.wav'
+        wav_path =(os.getcwd() + '/out.wav')
 
         # write to webm file
-        with open(audio_file, 'wb') as f:
+        with open(webm_file, 'wb') as f:
             f.write(spoken_context)
-        print(audio_file)
-        
+            
         # Convert webm to wav
-        command = "ffmpeg -i " + audio_file + " -c:a pcm_f32le " + audio_output_file
-        os.system(command)
-        
-        # fix wav format
-        converted_audio_path = audio_output_file
-        data, samplerate = soundfile.read(audio_output_path)
-        soundfile.write(converted_audio_path, data, samplerate, subtype='PCM_16')
+        ffmpeg.input(webm_file).output(wav_file, format='wav').run()
         
         r = sr.Recognizer()
-        videototext = sr.AudioFile(converted_audio_path)
+        videototext = sr.AudioFile(wav_path)
         with videototext as source:
             audio = r.record(source)
         
@@ -42,6 +35,6 @@ class SpeechToText(ISpeechToText):
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
         
         # removing recordings
-        os.remove(audio_path)
-        os.remove(converted_audio_path)
+        os.remove(webm_path)
+        os.remove(wav_path)
         return context
