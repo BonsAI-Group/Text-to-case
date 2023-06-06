@@ -4,7 +4,6 @@ This is a simple backend for the prototype of the Text-to-case project. It is cr
 ## Prerequisites
 - Python 3.9 or higher 
 - [Maven](https://maven.apache.org/) (for installing java libraries)
-- [ffmpeg](https://bobbyhadz.com/blog/ffmpeg-is-not-recognized-as-internal-or-external-command) (for converting webm to wav file)
 
 ## How to install
 

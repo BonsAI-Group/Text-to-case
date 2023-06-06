@@ -1,9 +1,9 @@
 import { Button, Loader } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { Microphone, PlayerStop, Tex } from "tabler-icons-react";
-import useRecorder from "../../hooks/useRecorder";
-import { FormAnswer, Form, DefaultApi, FieldSubmit, FormItem } from "../../../../generated";
+import { Microphone } from "tabler-icons-react";
+import { FormAnswer, Form, DefaultApi } from "../../../../generated";
 import { ApiConfiguration } from "../../../../api/ApiConfiguration";
+import UseRecordJs from "../../hooks/useRecordJs";
 
 type RecorderProps = {
     form: Form;
@@ -12,7 +12,7 @@ type RecorderProps = {
 }
 
 const RecorderInput = ({ form }: RecorderProps) => {
-    const { isRecording, audioUrl, startRecording, stopRecording } = useRecorder();
+    const { isRecording, blob, startRecording, stopRecording } = UseRecordJs();
 
     const [error, setError] = useState<string | undefined>(undefined);
     const [sending, setSending] = useState<boolean>(false);
@@ -20,8 +20,9 @@ const RecorderInput = ({ form }: RecorderProps) => {
     const onSubmit = async () => {
         const api = new DefaultApi(ApiConfiguration);
         setSending(true);
-        const audioFileWav = await fetch(audioUrl!).then((response) => response.blob());
-        const audioFile = new File([audioFileWav], "audio.webm", { type: "audio/webm" });
+        const audioFileWav = await blob!.arrayBuffer();
+        const audioFile = new File([audioFileWav], "audio.wav", { type: "audio/wav" });
+
         const formData = new FormData();
         formData.append("audioFile", audioFile);
         formData.append("formName", form.name);
@@ -29,39 +30,23 @@ const RecorderInput = ({ form }: RecorderProps) => {
 
         for (const field of form.fields!) {
             formData.append("field", JSON.stringify(field));
-            // send post form to localhost:8000/speech
-            // fetch("http://localhost:8000/speech", {
-            //     method: "POST",
-            //     body: formData
-            // }).then((response) => {
-            //     console.log(response);
-            // }).catch((error) => {
-            //     console.log(error);
-            // });
             api.convertSpeechToTextSpeechPost(
                 audioFile, JSON.stringify(field), form.name
             ).then((response) => {
                 console.log(response);
             }).catch((error) => {
-                console.log(error);
+                setError(error.message);
             });
-            // api.testFileTestFilePost(audioFile).then((response) => {
-            //     console.log(response);
-            // }
-            // ).catch((error) => {
-            //     console.log(error);
-            // }
-            // );
         }
         setSending(false);
     };
 
     useEffect(() => {
-        if (audioUrl) {
+        if (blob) {
             onSubmit();
         }
     }
-        , [audioUrl]);
+        , [blob]);
 
     return (
         <div style={{ display: "grid", placeItems: "center", height: "330px", border: "1px solid #ccc", borderRadius: "5px", padding: "10px" }}>

@@ -1,12 +1,10 @@
-import { Button, Container, Group, Select, Stack, Textarea, Title } from "@mantine/core"
+import { Container, Group, Select, Stack, Title } from "@mantine/core"
 import { useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LunchLabels from "./components/LunchLabels";
 import SecurityForm from "./components/SecurityForm";
-import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../generated";
-import { ApiConfiguration } from "../../api/ApiConfiguration";
+import { Form, FormAnswer } from "../../generated";
 import UseZenyaForms from "./components/UseZenyaForms";
-import RecorderInput from "./components/UserInput/RecorderInput";
 import UserInput from "./components/UserInput/UserInput";
 
 /**

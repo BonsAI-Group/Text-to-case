@@ -1,7 +1,6 @@
-import { Group, Textarea, Button, Stack, Switch } from "@mantine/core"
+import { Stack, Switch } from "@mantine/core"
 import { useState } from "react";
-import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../../../generated";
-import { ApiConfiguration } from "../../../../api/ApiConfiguration";
+import { Form, FormAnswer } from "../../../../generated";
 import FullTextInput from "./FullTextInput";
 import RecorderInput from "./RecorderInput";
 

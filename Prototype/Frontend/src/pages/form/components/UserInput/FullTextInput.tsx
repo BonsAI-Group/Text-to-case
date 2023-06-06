@@ -1,5 +1,5 @@
 import { Textarea, Button, Stack } from "@mantine/core";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ApiConfiguration } from "../../../../api/ApiConfiguration";
 import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../../../generated";
 
