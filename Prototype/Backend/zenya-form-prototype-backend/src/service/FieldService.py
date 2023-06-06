@@ -8,19 +8,14 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from enums.FieldType import FieldType
-from ml.QuestionGenerator import QuestionGenerator
-from models.FieldAnswer import FieldAnswer
-from models.FormItem import FormItem
 from models.Answer import Answer
 from models.MultiAnswer import MultiAnswer
-from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from ml.TextToNum import TextToNum
 from ml.ITextToNum import ITextToNum
 from ml.IDateTimeConverter import IDateTimeConverter
 from ml.DateTimeConverter import DateTimeConverter
 from ml.SpeechToText import SpeechToText
 from ml.ISpeechToText import ISpeechToText
-import os
 
 class FieldService:
     """Service for handling fields."""
@@ -33,10 +28,7 @@ class FieldService:
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
         self.SpeechToText: ISpeechToText = SpeechToText()
 
-    def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
-        path = os.getcwd() + '//audio_files//recording.wav'
-        self.SpeechToText.speechToText(path)
-        
+    def fillInField(self, field: FormItem, context: str) -> FieldAnswer:        
         """Fill in a field."""
         """Checking the field Type"""
         if field.fieldType == FieldType.TEXT:

@@ -1,5 +1,6 @@
 import json
 from typing import Annotated
+from enums.FieldType import FieldType
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from service.FormService import FormService
@@ -51,10 +52,10 @@ async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
 @app.post("/speech")
 async def convertSpeechToText(audioFile: bytes = File(...), field: str = Form(...), formName: str = Form(...)) -> FieldAnswer:
     field = json.loads(field)
+    field = FormItem(**field)
     context = audioServiceService.fillInAudioToText(audioFile)
     field = FieldSubmit(context=context, field=field, formName=formName)
-    return fieldSubmit(field)
-    return context
+    return await fieldSubmit(field)
 
 @app.post("/testFile")
 async def testFile(file: bytes = File(...)) -> str:

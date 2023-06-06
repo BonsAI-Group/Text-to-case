@@ -11,7 +11,7 @@ type RecorderProps = {
     answers: FormAnswer;
 }
 
-const RecorderInput = ({ form }: RecorderProps) => {
+const RecorderInput = ({ form, setAnswers, answers }: RecorderProps) => {
     const { isRecording, blob, startRecording, stopRecording } = UseRecordJs();
 
     const [error, setError] = useState<string | undefined>(undefined);
@@ -33,7 +33,11 @@ const RecorderInput = ({ form }: RecorderProps) => {
             api.convertSpeechToTextSpeechPost(
                 audioFile, JSON.stringify(field), form.name
             ).then((response) => {
-                console.log(response);
+                const newAnswers = {
+                    ...answers,
+                  }
+                  newAnswers.answers[field.fieldName] = response.data;
+                  setAnswers(newAnswers);
             }).catch((error) => {
                 setError(error.message);
             });
