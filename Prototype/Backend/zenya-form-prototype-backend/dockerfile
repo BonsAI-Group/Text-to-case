@@ -1,12 +1,25 @@
-FROM python:3.9-slim-buster
+# Use a base image with Python and Java installed
+FROM python:3.9.16
 
+# Install OpenJDK
+RUN apt-get update && apt-get install -y default-jre
+# Install Maven
+RUN apt-get install -y maven
+
+# Install pip
+RUN python -m ensurepip --upgrade
+
+# Install Java-specific dependencies
+RUN pip install py4j
+
+### 4. Start python application
 COPY . .
 
 RUN python -m venv venv
-RUN chmod +x venv/bin/activate
-RUN venv/bin/activate
+RUN . venv/bin/activate
 
 RUN pip install -r ./requirements.txt
+RUN mvn dependency:copy-dependencies -DoutputDirectory=./jars -f /usr/local/lib/python3.9/site-packages/sutime/pom.xml
 
 EXPOSE 8000
 WORKDIR /src

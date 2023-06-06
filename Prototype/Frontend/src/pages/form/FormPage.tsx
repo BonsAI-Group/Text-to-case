@@ -1,9 +1,11 @@
-import { Button, Container, Group, Stack, Textarea, Title } from "@mantine/core"
+import { Button, Container, Group, Select, Stack, Textarea, Title } from "@mantine/core"
 import { useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LunchLabels from "./components/LunchLabels";
-import { DefaultApi, FieldSubmit, FormAnswer } from "../../generated";
+import SecurityForm from "./components/SecurityForm";
+import { DefaultApi, FieldSubmit, Form, FormAnswer } from "../../generated";
 import { ApiConfiguration } from "../../api/ApiConfiguration";
+import UseZenyaForms from "./components/UseZenyaForms";
 
 /**
  * Page for displaying a form and submitting it.
@@ -16,15 +18,25 @@ const FormPage = () => {
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
+  const { forms:zenyaForms, arePending } = UseZenyaForms();
+
+  const forms = {
+    "Lunch": LunchLabels,
+    "Security": SecurityForm,
+    ...zenyaForms
+  } as {[key: string]: () => Form};
+
+  const [form, setForm] = useState(forms["Lunch"]());
+
   const onSubmit = async () => {
     const api = new DefaultApi(ApiConfiguration);
     setSending(true);
 
-    const form = LunchLabels();
     for (const field of form.fields) {
-      await api.fieldFieldPost({
+      await api.fieldSubmitFieldPost({
         context: story,
-        field: field
+        field: field,
+        formName: form.name
       } as FieldSubmit).then((response) => {
         const newAnswers = {
           ...answers,
@@ -40,7 +52,7 @@ const FormPage = () => {
   };
 
   return (
-    <Container>
+    <Container mb={"15vh"}>
       <Title order={1}>Form</Title>
       <Group grow align="start">
         <Stack>
@@ -62,7 +74,20 @@ const FormPage = () => {
                   "Submit"}
             </Button>
         </Stack>
-        <FormComponent form={LunchLabels()} answers={answers} />
+        <Stack>
+          <Select
+            label="Form"
+            data={Object.keys(forms)}
+            value={arePending ? "Loading..." : form.name}
+            disabled={arePending}
+            onChange={(event) => {
+              setForm(forms[event!]);
+            }
+            }
+          />
+          <FormComponent form={form} answers={answers} />
+        </Stack>
+        
       </Group>
 
     </Container>

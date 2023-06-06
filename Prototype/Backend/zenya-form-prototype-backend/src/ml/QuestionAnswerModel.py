@@ -1,5 +1,6 @@
 from typing import Tuple
 import requests
+from transformers import pipeline
 
 def query(model, payload):
     response = requests.post(
@@ -11,8 +12,9 @@ def query(model, payload):
     )
     return response.json()
 
-
 class QuestionAnswerModel:
+    _instances = {}
+
     """Contains a single question answering model"""
     def __init__(self, model_path):
         # from transformers import pipeline

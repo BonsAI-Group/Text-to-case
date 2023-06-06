@@ -1,35 +1,54 @@
-import { Form, FormItem } from "../../../generated";
+import { FieldType, Form, FormItem } from "../../../generated";
 
 const LunchLabels = () : Form => {
   return {
     name: "Lunch",
     fields: [
       {
-        fieldName: "Number of Attendees"
+        fieldName: "Number of Attendees",
+        fieldType: FieldType.NUMERIC,
       },
       {
-        fieldName: "Organizer"
+        fieldName: "Organizer",
+        fieldType: FieldType.TEXT,
       },
       {
-        fieldName: "Budget"
+        fieldName: "Budget",
+        fieldType: FieldType.NUMERIC,
       },
       {
-        fieldName: "Date"
+        fieldName: "Date",
+        fieldType: FieldType.DATE,
       },
       {
-        fieldName: "Start Time"
+        fieldName: "Start Time",
+        fieldType: FieldType.TIME,
       },
       {
-        fieldName: "End Time"
+        fieldName: "End Time",
+        fieldType: FieldType.TIME,
       },
       {
-        fieldName: "Location"
+        fieldName: "Location",
+        fieldType: FieldType.TEXT,
       },
       {
-        fieldName: "Food Allergies"
+        fieldName: "Food Diets",
+        fieldType: FieldType.TEXT,
       },
       {
-        fieldName: "Food Diets"
+        fieldName: "Food Allergies",
+        fieldType: FieldType.TEXT,
+      },
+      {
+        fieldName: "Planned for Third Party",
+        fieldType: FieldType.RADIO_BUTTON,
+        params:["yes", "no"]
+      },
+      {
+        fieldName: "Type of Lunch",
+        fieldType: FieldType.MULTI_SELECT,
+        params:["Seafood", "Meat", "Vegan"]
       }
     ] as FormItem[]
   } as Form;

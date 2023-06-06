@@ -27,10 +27,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+fieldService = FieldService()
+formService = FormService()
+
+@app.get("/")
+def default():
+    return {
+        "hello": "world",
+    }
+
 @app.post("/forms")
-async def forms(formSubmit: FormSubmit) -> FormAnswer:
-    return FormService().fillForm(formSubmit)
+async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
+    return formService.fillForm(formSubmit)
 
 @app.post("/field")
-async def field(field: FieldSubmit) -> FieldAnswer:
-    return FieldService().fillInField(field.field, field.context)
+async def fieldSubmit(field: FieldSubmit) -> FieldAnswer:
+    return fieldService.fillInField(field.field, field.context)
+
+@app.get("/forms")
+async def formsGetAll() -> list:
+    return formService\
+        .getAllForms()

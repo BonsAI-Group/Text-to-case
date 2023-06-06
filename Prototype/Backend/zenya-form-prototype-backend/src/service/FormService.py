@@ -1,6 +1,9 @@
 from dto.FormSubmit import FormSubmit
 from models.FormAnswer import FormAnswer
 from service.FieldService import FieldService
+from models.Form import Form
+from service.FormRequesterService import FormRequesterService
+from util.ZenyaFormParser import ZenyaFormParser
 
 
 class FormService:
@@ -22,3 +25,16 @@ class FormService:
         for field in formSubmit.form.fields:
             answers[field.fieldName] = self.fieldService.fillInQuestionField(field, formSubmit.context)
         return FormAnswer(answers=answers)
+    
+    def getAllForms(self) -> list[Form]:
+        """Get all forms."""
+        allForms = FormRequesterService.getAllForms()
+        allFormsRequested = []
+        for form in allForms:
+            try:
+                requestedForm = FormRequesterService.getFormById(form["form_id"])
+                allFormsRequested.append(requestedForm)
+            except:
+                pass
+        return ZenyaFormParser.parseFormList(allFormsRequested)
+        
