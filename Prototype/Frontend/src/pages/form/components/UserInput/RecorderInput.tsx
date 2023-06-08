@@ -30,7 +30,7 @@ const RecorderInput = ({ form, setAnswers, answers }: RecorderProps) => {
 
         for (const field of form.fields!) {
             formData.append("field", JSON.stringify(field));
-            api.convertSpeechToTextSpeechPost(
+            await api.convertSpeechToTextSpeechPost(
                 audioFile, JSON.stringify(field), form.name
             ).then((response) => {
                 const newAnswers = {
