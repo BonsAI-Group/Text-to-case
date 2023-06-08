@@ -1,4 +1,4 @@
-FROM node:14 AS build
+FROM node:16 AS build
 
 RUN apt-get update \
      && apt-get install default-jre -y \
@@ -8,9 +8,7 @@ COPY package.json ./
 RUN yarn install
 
 COPY . .
-RUN yarn build && rm -rf node_modules
 
-FROM nginx:1.19.0-alpine AS production
-COPY --from=build /build /usr/share/nginx/html
 EXPOSE 80
-CMD [ "nginx", "-g", "daemon off;" ]
+WORKDIR /src
+CMD [ "yarn", "prod"]

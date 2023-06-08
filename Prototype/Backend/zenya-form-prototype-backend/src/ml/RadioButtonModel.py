@@ -10,7 +10,7 @@ class RadioButtonModel:
     def answerRadioButton(self, candidate_labels: list, context: str) -> Tuple[str, float]:
         """Answer a radio button question given a context and labels. Returns the confidence for each label."""
         result = ModelRequesterService.RequestMultipleChoice(model=self.model_path, candidate_labels=candidate_labels, context=context)
-        return result["sequence"], result["labels"], result["scores"]
+        return result["labels"], result["scores"]
     
     # To make this class a singleton if a class with that model_path already exists
     def __new__(cls, model_path):
