@@ -15,11 +15,6 @@ from dto.AudioSubmit import AudioSubmit
 
 import os
 from dotenv import load_dotenv
-
-from ml.BertLargeSingleModelQuestionAnswerer import BertLargeSingleModelQuestionAnswerer
-from ml.DateTimeConverter import DateTimeConverter
-from ml.DestilbertBaseUncasedMnli import DestilbertBaseSingleModelMultiChoice
-from ml.MultiModelQuestionAnswerer import MultiModelQuestionAnswerer
 from models.FormItem import FormItem
 load_dotenv()
 
@@ -44,6 +39,12 @@ audioServiceService = AudioService()
 # fieldService = None
 # formService = None
 # audioServiceService = None
+
+@app.get("/")
+def default():
+    return {
+        "hello": "world",
+    }
 
 @app.post("/forms")
 async def formsSubmit(formSubmit: FormSubmit) -> FormAnswer:
