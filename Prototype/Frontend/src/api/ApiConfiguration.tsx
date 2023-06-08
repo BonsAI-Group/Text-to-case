@@ -1,5 +1,5 @@
 import { Configuration } from "../generated"
 
 export const ApiConfiguration = new Configuration({
-  basePath: "http://localhost:8000",
+  basePath: process.env.REACT_APP_API_URL,
 })

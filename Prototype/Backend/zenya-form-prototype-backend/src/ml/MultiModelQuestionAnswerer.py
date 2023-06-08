@@ -13,28 +13,20 @@ class MultiModelQuestionAnswerer(IQuestionAnswerer):
     def __init__(self):
         self.modelNames = {
             "deberta": "deepset/deberta-v3-large-squad2",
-            # "distilbert": "distilbert-base-cased-distilled-squad",
             "bert_large": "deepset/bert-large-uncased-whole-word-masking-squad2",
-            # "bert_base": "deepset/bert-base-cased-squad2",
-            "roberta": "deepset/roberta-base-squad2"
+            "roberta": "deepset/roberta-base-squad2",
         }
-        self.models = {}
-        for modelName in self.modelNames:
-            self.models[modelName] = QuestionAnswerModel(self.modelNames[modelName])
 
         self.similarityModel = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
-
         self.trustModel = keras.models.load_model('../models/trust_model.keras')
-
         self.TRUST_THRESHOLD = 0.72
 
     def answerQuestion(self, question: str, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence."""
-        
-
         answers = {}
-        for modelName in self.models:
-            answers[modelName] = self.models[modelName].answerQuestion(question, context)
+        for modelName in self.modelNames:
+            modelPath = self.modelNames[modelName]
+            answers[modelName] = QuestionAnswerModel(modelPath).answerQuestion(question, context)
 
         embeddings = {}
         for modelName in answers:

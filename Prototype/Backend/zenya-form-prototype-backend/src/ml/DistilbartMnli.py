@@ -10,7 +10,7 @@ class DistilbartRadioChoice(IRadioButtonModel):
 
     def answerRadioButton(self, candidate_labels: list, context: str) -> Answer:
         """Answer a question given a context. Returns the answer and the confidence.""" 
-        sequence, labels, scores = self.model.answerRadioButton(context, candidate_labels)
+        labels, scores = self.model.answerRadioButton(context, candidate_labels)
         highest_score = max(scores)
         highest_score_index = scores.index(highest_score)
         highest_score_trusted = True if highest_score > self.treshhold else False
