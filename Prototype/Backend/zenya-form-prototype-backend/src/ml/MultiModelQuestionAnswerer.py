@@ -12,14 +12,9 @@ from tensorflow import keras
 class MultiModelQuestionAnswerer(IQuestionAnswerer):
     def __init__(self):
         self.modelNames = {
-            # "deberta": "https://bert-large-uncased-who-1gsmt1ib.westeurope.inference.ml.azure.com/score",
             "deberta": "deepset/deberta-v3-large-squad2",
-            # # "distilbert": "distilbert-base-cased-distilled-squad",
-            # "bert_large": "https://bert-large-uncased-who-1gsmt1ib.westeurope.inference.ml.azure.com/score",
             "bert_large": "deepset/bert-large-uncased-whole-word-masking-squad2",
-            # # "bert_base": "deepset/bert-base-cased-squad2",
             "roberta": "deepset/roberta-base-squad2",
-            # "roberta": "https://bert-large-uncased-who-1gsmt1ib.westeurope.inference.ml.azure.com/score"
         }
 
         self.similarityModel = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
