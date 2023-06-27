@@ -9,29 +9,27 @@ from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from models.FieldAnswer import FieldAnswer
 from models.FormItem import FormItem
 from enums.FieldType import FieldType
-from models.FieldAnswer import FieldAnswer
-from models.FormItem import FormItem
 from models.Answer import Answer
 from models.MultiAnswer import MultiAnswer
-from ml.InterrogativeQuestionGenerator import InterrogativeQuestionGenerator
 from ml.TextToNum import TextToNum
 from ml.ITextToNum import ITextToNum
 from ml.IDateTimeConverter import IDateTimeConverter
 from ml.DateTimeConverter import DateTimeConverter
-import datetime
+from ml.SpeechToText import SpeechToText
+from ml.ISpeechToText import ISpeechToText
 
 class FieldService:
     """Service for handling fields."""
     def __init__(self):
-        # self.QuestionGenerator: IQuestionGenerator = QuestionGenerator(formName)
         self.QuestionGenerator: IQuestionGenerator = InterrogativeQuestionGenerator()
         self.QuestionAnswerer: IQuestionAnswerer = MultiModelQuestionAnswerer()
         self.MultiChoiceModel: IMultiChoiceModel = DabertaLargeMultiChoice()
         self.RadioButtonModel: IRadioButtonModel = DistilbartRadioChoice()
         self.TextToNum: ITextToNum = TextToNum()
         self.DateTimeConverter: IDateTimeConverter = DateTimeConverter() 
+        self.SpeechToText: ISpeechToText = SpeechToText()
 
-    def fillInField(self, field: FormItem, context: str) -> FieldAnswer:
+    def fillInField(self, field: FormItem, context: str) -> FieldAnswer:        
         """Fill in a field."""
         """Checking the field Type"""
         if field.fieldType == FieldType.TEXT:
