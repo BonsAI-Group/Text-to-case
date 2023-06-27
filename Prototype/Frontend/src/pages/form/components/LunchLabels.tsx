@@ -1,6 +1,6 @@
 import { FieldType, Form, FormItem } from "../../../generated";
 
-const LunchLabels = () : Form => {
+const LunchLabels = (): Form => {
   return {
     name: "Lunch",
     fields: [
@@ -43,12 +43,12 @@ const LunchLabels = () : Form => {
       {
         fieldName: "Planned for Third Party",
         fieldType: FieldType.RADIO_BUTTON,
-        params:["yes", "no"]
+        params: ["yes", "no"]
       },
       {
         fieldName: "Type of Lunch",
         fieldType: FieldType.MULTI_SELECT,
-        params:["Seafood", "Meat", "Vegan"]
+        params: ["Seafood", "Meat", "Vegan"]
       }
     ] as FormItem[]
   } as Form;
