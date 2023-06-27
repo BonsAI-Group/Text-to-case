@@ -4,10 +4,8 @@ RUN apt-get update \
      && apt-get install default-jre -y \
      && apt-get install default-jdk -y
 
-COPY package.json ./
-RUN yarn install
-
 COPY . .
+RUN yarn install
 
 EXPOSE 80
 WORKDIR /src
